@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transparent Image Header</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      position: relative;
+      height: 300px;
+      background-color: black;
+      overflow: hidden;
+    }
+
+    .header img.bg-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.2; /* Adjust transparency */
+      pointer-events: none;
+    }
+
+    .profile-pic {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      border: 4px solid #fff;
+      background-image: url('your-profile.jpg'); /* optional */
+      background-size: cover;
+      background-position: center;
+    }
+
+    .name {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="/mnt/data/9fcd52b4-e0a1-4b5a-a99e-d8ce5eb2fde8.png" class="bg-overlay" alt="Header Overlay">
+    <div class="profile-pic"></div>
+    <div class="name">Your Name</div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partylist Groups - Talino at Tapat na Halalan 2025</title> <!-- Changed Title -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb; /* Tailwind gray-50 */
+            color: #000000; /* Tailwind gray-800 for general text */
+        }
+
+        /* --- Navigation Header Styles --- */
+        .main-header {
+            background-color: #000000; /* Tailwind gray-800 */
+            color: #f9fafb; /* Tailwind gray-50 */
+            padding: 1rem 0; /* Vertical padding */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: center; /* Center nav items */
+            align-items: center;
+        }
+
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 2rem; /* Space between nav items */
+        }
+
+        .nav-list a {
+            color: #d1d5db; /* Tailwind gray-300 */
+            text-decoration: none;
+            font-weight: 600; /* semibold */
+            font-size: 1.1rem; /* Slightly larger */
+            padding: 0.5rem 0; /* Padding for larger click area and underline space */
+            transition: color 0.3s ease, border-color 0.3s ease;
+            border-bottom: 2px solid transparent; /* Placeholder for active border */
+        }
+
+        .nav-list a:hover {
+            color: #f97316; /* Tailwind orange-500 */
+        }
+
+        .nav-list a.active {
+            color: #f9fafb; /* Tailwind gray-50 or white */
+            border-bottom-color: #f97316; /* Tailwind orange-500 */
+        }
+
+        /* --- Partylist List Styles --- */
+        .partylist-list-container { /* Changed class name */
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .partylist-header { /* Changed class name */
+            margin-bottom: 2rem; /* Increased space */
+            text-align: center; /* Center the page header */
+        }
+
+        .partylist-header h1 {
+            font-size: 2.25rem; /* Tailwind text-3xl */
+            font-weight: 700; /* bold */
+            margin-bottom: 0.5rem;
+            color: #f97316; /* Tailwind orange-500 */
+            letter-spacing: 0.025em; /* Slight tracking */
+        }
+
+        .partylist-header h2 {
+            font-size: 1.875rem; /* Tailwind text-2xl */
+            font-weight: 600; /* semibold */
+            color: #000000; /* Tailwind gray-600 */
+            text-transform: uppercase; /* Uppercase */
+            letter-spacing: 0.05em; /* Wider tracking */
+        }
+
+        .partylist-grid { /* Changed class name */
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            align-items: stretch; /* Make cards equal height in a row */
+        }
+
+        .partylist-card { /* Changed class name */
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* Slightly more rounded */
+            padding: 1rem; /* Adjusted padding */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 10px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            display: flex; /* Use flexbox */
+            flex-direction: column; /* Stack link content vertically */
+            justify-content: center; /* Center content vertically */
+            min-height: 180px; /* Ensure a minimum height for cards, adjusted for logo */
+        }
+
+        .partylist-card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.07), 0 15px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .partylist-card a {
+            color: inherit;
+            text-decoration: none;
+            display: flex; /* Make link a flex container */
+            flex-direction: column; /* Stack internal elements (logo and name) */
+            justify-content: center; /* Center vertically within the link */
+            align-items: center; /* Center horizontally within the link */
+            flex-grow: 1; /* Allow link to fill card */
+            height: 100%; /* Ensure link takes full height */
+        }
+
+        .partylist-logo {
+            width: 72px; /* Adjust size as needed */
+            height: 72px; /* Adjust size as needed */
+            border-radius: 50%; /* Makes it circular */
+            object-fit: cover; /* Ensures image covers the area, might crop */
+            margin-bottom: 0.75rem; /* Space below the logo (Tailwind mb-3) */
+            /* Optional: add a subtle border if images lack contrast with card bg */
+            /* border: 1px solid #f3f4f6; */ /* Tailwind gray-100 */
+        }
+
+        .partylist-name { /* Changed class name */
+            font-size: 1.25rem; /* Tailwind text-xl */
+            font-weight: 600; /* semibold */
+            color: #111827; /* Tailwind gray-900 */
+            line-height: 1.4; /* Adjust line height if names wrap */
+            padding: 0.25rem 0.5rem; /* Adjusted padding slightly */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <nav class="nav-container">
+            <ul class="nav-list">
+                 <!-- Adjust href to your actual candidates page name -->
+                <li><a href="candidates.html">CANDIDATES</a></li>
+                <li><a href="partylist.html" class="active">PARTYLIST</a></li> <!-- Mark this as active -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content: Partylist List -->
+    <div class="partylist-list-container">
+        <div class="partylist-header">
+            <h1>PARTYLIST GROUPS</h1>
+            <h2>2025 NATIONAL ELECTIONS</h2> <!-- Optional Subtitle -->
+        </div>
+
+        <div class="partylist-grid">
+            <!-- Partylist Cards Start -->
+            <!--
+                IMPORTANT:
+                - Create an 'images' folder in the same directory as this HTML file.
+                - Place your partylist logos in that folder.
+                - Update the src="..." attributes below to point to your actual image files.
+                - Example: if you have 4ps_logo.png in the 'images' folder, src="images/4ps_logo.png" is correct.
+            -->
+
+            <div class="partylist-card">
+                <a href="PARTYLIST PAGES/4ps.html">
+                    <img src="PARTYLIST PICS/4Ps partylist.PNG" alt="4Ps Partylist Logo" class="partylist-logo">
+                    <p class="partylist-name">4Ps Partylist</p>
+                </a>
+            </div>
+
+            <div class="partylist-card">
+                <a href="PARTYLIST PAGES/DuterteYouth.html">
+                    <img src="PARTYLIST PICS/DUTERTE YOUTH.JPG" alt="Duterte Youth Logo" class="partylist-logo">
+                    <p class="partylist-name">Duterte Youth</p>
+                </a>
+            </div>
+
+            <div class="partylist-card">
+                <a href="PARTYLIST PAGES/Asenso.html">
+                    <img src="PARTYLIST PICS/ASENSO PINOY.JPG" alt="Asenso Pinoy Logo" class="partylist-logo">
+                    <p class="partylist-name">Asenso Pinoy</p>
+                </a>
+            </div>
+
+            <div class="partylist-card">
+                <a href="PARTYLIST PAGES/ACT.html">
+                    <img src="PARTYLIST PICS/ACT-CIS.PNG" alt="ACT-CIS Logo" class="partylist-logo">
+                    <p class="partylist-name">ACT-CIS</p>
+                </a>
+            </div>
+
+            <div class="partylist-card">
+                <a href="PARTYLIST PAGES/FPJ.html">
+                    <img src="PARTYLIST PICS/FPJ PANDAY BAYANIHAN.JPG" alt="FPJ Panday Bayanihan Logo" class="partylist-logo">
+                    <p class="partylist-name">FPJ Panday Bayanihan</p>
+                </a>
+            </div>
+
+            <div class="partylist-card">
+                <a href="PARTYLIST PAGES/Senior.html">
+                    <img src="PARTYLIST PICS/SENIOR CITIZEN.PNG" alt="Senior Citizens Partylist Logo" class="partylist-logo">
+                    <p class="partylist-name">Senior Citizens Partylist</p>
+                </a>
+            </div>
+
+            <div class="partylist-card">
+                <a href="PARTYLIST PAGES/Ako Bicol.html">
+                    <img src="PARTYLIST PICS/AKO BICOL.PNG" alt="Ako Bicol Logo" class="partylist-logo">
+                    <p class="partylist-name">Ako Bicol</p>
+                </a>
+            </div>
+
+            <div class="partylist-card">
+                <a href="PARTYLIST PAGES/Akbayan.html">
+                    <img src="PARTYLIST PICS/AKBAYAN.JPG" alt="AKBAYAN Partylist Logo" class="partylist-logo">
+                    <p class="partylist-name">AKBAYAN Partylist</p>
+                </a>
+            </div>
+
+            <div class="partylist-card">
+                <a href="PARTYLIST PAGES/ML.html">
+                    <img src="PARTYLIST PICS/ML Partylist.JPG" alt="Mamayang Liberal (ML) Logo" class="partylist-logo">
+                    <p class="partylist-name">Mamayang Liberal (ML)</p>
+                </a>
+            </div>
+
+            <div class="partylist-card">
+                <a href="PARTYLIST PAGES/PBBM.html">
+                    <img src="PARTYLIST PICS/PBBM.PNG" alt="Pilipinas Babangon Muli (PBBM) Logo" class="partylist-logo">
+                    <p class="partylist-name">Pilipinas Babangon Muli (PBBM)</p>
+                </a>
+            </div>
+
+            <div class="partylist-card">
+                <a href="PARTYLIST PAGES/Kabataan.html">
+                    <img src="PARTYLIST PICS/KABATAAN.PNG" alt="KABATAAN Partylist Logo" class="partylist-logo">
+                    <p class="partylist-name">KABATAAN Partylist</p>
+                </a>
+            </div>
+
+            <div class="partylist-card">
+                <a href="PARTYLIST PAGES/Tingog.html">
+                    <img src="PARTYLIST PICS/TINGOG.PNG" alt="TINGOG Partylist Logo" class="partylist-logo">
+                    <p class="partylist-name">TINGOG</p>
+                </a>
+            </div>
+
+             <!-- Add more partylist cards as needed, following the same structure:
+             <div class="partylist-card">
+                <a href="Partylist_Pages/your_partylist_page.html">
+                    <img src="images/your_partylist_logo.png" alt="Your Partylist Name Logo" class="partylist-logo">
+                    <p class="partylist-name">Your Partylist Name</p>
+                </a>
+            </div>
+             -->
+
+            <!-- Partylist Cards End -->
+        </div> <!-- End .partylist-grid -->
+    </div> <!-- End .partylist-list-container -->
+
+</body>
+</html>
