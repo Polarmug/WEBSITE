@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talino at Tapat na Halalan 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            position: relative;
+            background-color: #000; /* Black background */
+            overflow: hidden; /* Prevents scrollbars if the image is larger than the viewport */
+        }
 
+        /* Add the background image and overlay */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('senatorial2.jpg'); /* Initial background image */
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            opacity: 0.1; /* Adjust opacity */
+            z-index: -1; /* Behind content */
+            animation: backgroundSlideshow 15s infinite alternate; /* Slideshow animation */
+        }
+
+        @keyframes backgroundSlideshow {
+            0% {
+                background-image: url('senatorial3.jpg');
+            }
+            33.33% {
+                background-image: url('senatorial4.jpg'); /* Add your other image paths */
+            }
+            66.66% {
+                background-image: url('senatorial5.jpg'); /* Add more as needed */
+            }
+            100% {
+                background-image: url('senatorial2.jpg'); /* Loop back to the first */
+            }
+        }
+
+        .circle-image {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 0.5rem;
+            border: 2px solid #6b7280;
+        }
+        .name-label {
+            font-size: 0.875rem;
+            color: #6b7280;
+            text-align: center;
+            display: block;
+            margin-top: 0.25rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 8rem;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin-top: 2rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            max-width: 100%;
+        }
+
+        .footer-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1 0 auto;
+            width: calc(33.33% - 1.5rem);
+            max-width: 150px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-item {
+                width: calc(50% - 1.5rem);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-item {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+
+    </style>
+</head>
+<body class="bg-black text-white flex flex-col min-h-screen">
+    <!-- Black Section (Header) -->
+    <div class="container mx-auto px-4 flex flex-col items-center justify-center flex-grow">
+        <header class="header text-center">
+            <img src="image_d94f31.png" alt="ALAB Pilipino E-Boto Logo" class="max-w-xs mb-8">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold text-center mb-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-transparent bg-clip-text">
+                ALAB's Pilipino E-Boto
+            </h1>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6">
+                Talino at Tapat na Halalan 2025
+            </h2>
+            <p class="text-lg sm:text-xl text-center italic">
+                "MAGING ALERTO, MAGING ALAB – PARA SA KATOTOHANAN AT BAYAN"
+            </p>
+            <a href="Candidates.html">
+                <button class="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-400 text-white font-bold py-2 px-6 rounded-lg mt-4 transition duration-300">
+                  2025 SENATORIAL CANDIDATES' PROFILE
+                </button>
+              </a>
+        </header>
+    </div>
+
+    <!-- White Section (Footer) -->
+    <div class="bg-white text-black w-full px-10">
+        <footer class="footer mx-auto max-w-6xl">
+            <div class="footer-content">
+                <div class="footer-item">
+                    <img src="https://placehold.co/200x200/EEE/31343C" alt="Person 1" class="circle-image">
+                    <span class="name-label">Bautista, Kaycie</span>
+                </div>
+                <div class="footer-item">
+                    <img src="https://placehold.co/200x200/EEE/31343C" alt="Person 2" class="circle-image">
+                    <span class="name-label">Bulayong, Harvey</span>
+                </div>
+                <div class="footer-item">
+                    <img src="https://placehold.co/200x200/EEE/31343C" alt="Person 3" class="circle-image">
+                    <span class="name-label">David, Nels</span>
+                </div>
+                <div class="footer-item">
+                    <img src="https://placehold.co/200x200/EEE/31343C" alt="Person 4" class="circle-image">
+                    <span class="name-label">Diaz, Fritz</span>
+                </div>
+                <div class="footer-item">
+                    <img src="https://placehold.co/200x200/EEE/31343C" alt="Person 5" class="circle-image">
+                    <span class="name-label">Pasus, Kath</span>
+                </div>
+                <div class="footer-item">
+                    <img src="https://placehold.co/200x200/EEE/31343C" alt="Person 6" class="circle-image">
+                    <span class="name-label">Tan, Danilo</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
