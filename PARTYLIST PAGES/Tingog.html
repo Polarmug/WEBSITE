@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tingog Partylist - Partylist Profile</title> <!-- Updated Title -->
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4; overflow-x: hidden; color: #333; }
+    @keyframes slideUpFadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .header { position: relative; height: 300px; background-color: #005BBB; /* Example Blue, common for political themes */ overflow: hidden; margin-bottom: 20px; display: flex; align-items: flex-end; justify-content: center; opacity: 0; animation: slideUpFadeIn 0.6s ease-out 0.2s forwards; }
+    .header img.bg-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.2; pointer-events: none; z-index: 1; }
+    .profile-pic { position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); width: 150px; height: 150px; border-radius: 50%; background-color: #ffffff; border: 4px solid #fff; /* --- IMPORTANT: Replace image path --- */ background-image: url('../PARTYLIST\ PICS/TINGOG.PNG'); /* <<<--- REPLACE WITH ACTUAL LOGO */ background-size: cover; background-position: center; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); z-index: 3; }
+    .name { position: relative; z-index: 2; padding: 0 20px; box-sizing: border-box; width: 100%; font-size: 1.875rem; font-weight: 600; text-align: center; margin-bottom: 1rem; /* Example Gradient */ background: linear-gradient(to right, #FFD700, #F0E68C); /* Gold/Yellow Gradient Example */ -webkit-background-clip: text; background-clip: text; color: transparent; }
+    @media (min-width: 640px) { .name { font-size: 2.25rem; } }
+    @media (min-width: 768px) { .name { font-size: 3rem; } }
+    .content { padding: 0 20px 20px 20px; max-width: 900px; margin: 0 auto; }
+    .card { background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); opacity: 0; animation: slideUpFadeIn 0.5s ease-out forwards; animation-delay: 0.4s; }
+    /* Adjusted animation delays for cards */
+    .content > .card:nth-child(1) { animation-delay: 0.4s; }
+    .content > .card:nth-child(2) { animation-delay: 0.5s; }
+    .content > .card:nth-child(3) { animation-delay: 0.6s; }
+    .content > .card:nth-child(4) { animation-delay: 0.7s; }
+    /* .content > .card:nth-child(5) { animation-delay: 0.8s; } */ /* Removed 5th delay as there are only 4 cards */
+    .card h2 { color: #333; border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-top: 0; margin-bottom: 15px; font-size: 20px; }
+    .card p, .card li { line-height: 1.6; color: #333; margin-bottom: 0.7em; }
+    .card ul { padding-left: 40px; margin-top: 0; list-style: disc; }
+    .card ul ul { padding-left: 20px; margin-top: 0.5em; list-style-type: circle; }
+    .card > ul > li:has(ul) { list-style-type: none; margin-left: -20px; }
+    .card p strong, .card li strong { color: #333; display: inline-block; margin-right: 5px; }
+    .card a { color: #007bff; text-decoration: none; word-break: break-all; }
+    .card a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <img src="https://via.placeholder.com/1200x300/e0e0e0/666666?Text=Tingog+Partylist+Banner" class="bg-overlay" alt="Header Overlay"> <!-- <<<--- REPLACE WITH ACTUAL BACKGROUND IMAGE -->
+    <div class="profile-pic"></div>
+    <div class="name">Tingog Partylist</div> <!-- Updated Name -->
+  </div>
+
+  <!-- Main Content Cards -->
+  <div class="content">
+
+    <div class="card">
+      <h2>General Information</h2>
+      <p><strong>Partylist Name:</strong> Tingog Partylist (Tingog Sinirangan)</p>
+      <!-- <p><strong>Acronym:</strong> Tingog</p> --> <!-- Can add if needed -->
+      <p><strong>Current Representative:</strong> Yedda Romualdez</p> <!-- Based on provided input -->
+      <p><strong>Year Founded/Registered:</strong> 2012</p>
+      <p><strong>Sectoral Advocacy:</strong> Eastern Visayans</p>
+    </div>
+
+    <div class="card">
+      <h2>Platforms & Legislative Focus</h2>
+      <p>No specific platforms or legislative agendas were listed in the provided information.</p>
+      <!-- If platforms are found later, replace the <p> above with a <ul> -->
+    </div>
+
+    <div class="card">
+      <h2>Controversies</h2>
+      <p>No specific controversies were listed in the provided information.</p>
+      <!-- If controversies are found later, replace the <p> above with a <ul> -->
+    </div>
+
+    <div class="card">
+      <h2>Sources</h2>
+      <ul>
+          <li><a href="https://manilastandard.net/spotlight/corporate-philanthropy-csr-champions-of-today/287839/tingog-party-list-profile-what-is-tingog.html" target="_blank">https://manilastandard.net/spotlight/corporate-philanthropy-csr-champions-of-today/287839/tingog-party-list-profile-what-is-tingog.html</a></li>
+      </ul>
+    </div>
+
+  </div> <!-- end .content -->
+
+</body>
+</html>
