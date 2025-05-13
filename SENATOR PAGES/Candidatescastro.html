@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Added viewport -->
+  <!-- Updated Title -->
+  <title>Francisca “France” L. Castro - Candidate Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      overflow-x: hidden; /* Prevent horizontal scrollbar during animation */
+      color: #333; /* Default text color */
+    }
+
+    /* --- Animation Keyframes --- */
+    @keyframes slideUpFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Header Section - Using Flexbox layout */
+    .header {
+      position: relative;
+      height: 300px;
+      background-color: black; /* Black background example */
+      overflow: hidden;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      /* --- Header Animation --- */
+      opacity: 0;
+      animation: slideUpFadeIn 0.6s ease-out 0.2s forwards;
+    }
+
+    .header img.bg-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.2;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .profile-pic {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #ffffff; /* Fallback */
+      border: 4px solid #fff;
+      /* --- IMPORTANT: Replace with Castro's profile image path --- */
+      background-image: url('../SENATOR\ PICS/Castro.JPG'); /* <<<--- REMEMBER TO REPLACE THIS IMAGE */
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 3;
+    }
+
+    /* Name Styling - Gradient + Responsive Sizes */
+    .name {
+      position: relative;
+      z-index: 2;
+      padding: 0 20px;
+      box-sizing: border-box;
+      width: 100%;
+
+      font-size: 1.875rem; /* text-3xl */
+      font-weight: 600;    /* font-semibold */
+      text-align: center;  /* text-center */
+      margin-bottom: 1rem; /* mb-4 */
+
+      /* Example Gradient - Adjust colors if needed (Green/Yellow for ACT/Makabayan leaning) */
+      background: linear-gradient(to right, #16a34a, #eab308); /* Green/Yellow Gradient Example */
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent; /* text-transparent */
+
+    }
+
+    /* Responsive Font Sizes for Name */
+    @media (min-width: 640px) { /* sm breakpoint */
+      .name { font-size: 2.25rem; } /* text-4xl */
+    }
+    @media (min-width: 768px) { /* md breakpoint */
+      .name { font-size: 3rem; } /* text-5xl */
+    }
+
+    /* Main Content Area */
+    .content {
+      padding: 0 20px 20px 20px;
+      max-width: 900px; /* Optional: Limit content width */
+      margin: 0 auto; /* Center the content area */
+    }
+
+    /* Card Styling */
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+      /* --- Card Animation (Base) --- */
+      opacity: 0;
+      animation: slideUpFadeIn 0.5s ease-out forwards;
+      animation-delay: 0.4s; /* Default delay */
+    }
+
+    /* Staggered Card Animation Delays */
+    .content > .card:nth-child(1) { animation-delay: 0.4s; }
+    .content > .card:nth-child(2) { animation-delay: 0.5s; }
+    .content > .card:nth-child(3) { animation-delay: 0.6s; }
+    .content > .card:nth-child(4) { animation-delay: 0.7s; }
+    .content > .card:nth-child(5) { animation-delay: 0.8s; }
+    .content > .card:nth-child(6) { animation-delay: 0.9s; }
+    /* Adjust if more cards are added */
+
+    /* Card Content Styling */
+    .card h2 {
+      color: #333;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    .card p { /* Target only paragraphs for general margin */
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 0.7em;
+    }
+
+    .card li { /* Target only list items for general margin */
+        line-height: 1.6;
+        color: #333;
+        margin-bottom: 0.7em; /* Spacing between list items */
+    }
+
+
+    .card ul {
+      padding-left: 40px;   /* Indentation for list items */
+      margin-top: 0;
+      list-style: disc; /* Default bullet style */
+    }
+
+     .card p strong, .card li strong {
+        color: #333;
+        display: inline-block;
+        margin-right: 5px;
+     }
+
+     .card a {
+        color: #007bff;
+        text-decoration: none;
+        word-break: break-all; /* Helps break long URLs */
+     }
+     .card a:hover {
+        text-decoration: underline;
+     }
+
+     /* --- Styling for Bill Numbers (Optional Enhancement) --- */
+     .bill-number {
+        font-weight: bold;
+        margin-right: 5px;
+        color: #555; /* Slightly distinct color */
+     }
+     /* --- End Styling for Bill Numbers --- */
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <!-- --- IMPORTANT: Replace image paths --- -->
+    <img src="your-castro-background.jpg" class="bg-overlay" alt="Header Overlay"> <!-- <<<--- REMEMBER TO REPLACE THIS IMAGE -->
+    <div class="profile-pic"></div>
+    <!-- Updated Name -->
+    <div class="name">Francisca “France” L. Castro</div>
+  </div>
+
+  <!-- Main Content Cards -->
+  <div class="content">
+
+    <div class="card">
+      <h2>Personal Information</h2>
+      <p><strong>Full Name:</strong> Francisca Lustina Castro</p>
+      <p><strong>Birthdate:</strong> May 24, 1966</p>
+      <p><strong>Age:</strong> 58 (as of late 2024/early 2025)</p> <!-- Clarified age context -->
+      <p><strong>Birthplace:</strong> Quezon City, Metro Manila, Philippines</p>
+      <!-- <p><strong>Education:</strong> [Data not provided]</p> -->
+      <!-- <p><strong>Nationality:</strong> Filipino</p> -->
+      <!-- <p><strong>Sex:</strong> Female</p> -->
+      <!-- <p><strong>Civil Status:</strong> [Data not provided]</p> -->
+      <!-- <p><strong>Profession/Occupation:</strong> Teacher, Legislator</p> -->
+      <p><strong>Current Political Affiliation:</strong> Makabayang Koalisyon ng Mamamayan (Makabayan)</p>
+      <p><strong>Represented Party-list:</strong> ACT Teachers Party-list</p>
+    </div>
+
+    <div class="card">
+      <h2>Political Platforms / Key Advocacy Areas</h2>
+      <ul>
+        <li>Advocating for increased salaries and benefits for teachers and government employees.</li>
+        <li>Promoting accessible and quality education for all Filipinos.</li>
+        <li>Championing the protection of human rights and civil liberties.</li>
+        <li>Pushing for genuine agrarian reform and national industrialization.</li>
+        <li>Opposing political dynasties and advocating for electoral reforms.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Notable Positions</h2>
+      <ul>
+        <li><strong>Representative, ACT Teachers Party-list (17th-19th Congress, 2016–Present)</strong></li>
+        <li><strong>Assistant Minority Leader, House of Representatives (18th-19th Congress, 2019–Present)</strong></li>
+      </ul>
+    </div>
+
+    <!-- Updated Legislative Accomplishments Card -->
+    <div class="card">
+        <h2>Legislative Accomplishments (as Representative)</h2>
+        <p>As a representative for the ACT Teachers Party-list, Rep. Castro has been a vocal advocate for teachers' rights, education reforms, and human rights. Notable bills she has authored or co-authored include:</p>
+        <ul>
+            <li><span class="bill-number">House Bill 159:</span> Seeking to strengthen the right of government to expropriate lands for socialized housing purposes.</li>
+            <li><span class="bill-number">House Bill 252:</span> Aiming to prohibit the establishment and perpetuation of political dynasties.</li>
+            <li><span class="bill-number">House Bill 253:</span> Proposing the declaration of certain areas as 'no mining zones' to protect communities and the environment.</li>
+            <li><span class="bill-number">House Bill 254:</span> Pushing for the re-orientation of the Philippine mining industry towards national industrialization and development.</li>
+            <li><span class="bill-number">House Bill 255:</span> Seeking the creation of the Genuine Small Coconut Farmers’ Fund to support coconut farmers.</li>
+        </ul>
+    </div> <!-- End Legislative Accomplishments -->
+
+    <!-- Sources Card Updated -->
+    <div class="card">
+      <h2>Sources</h2>
+      <ul>
+        <li>PeoPlaid. (2019, December 11). France Castro Biography. Retrieved from <a href="https://peoplaid.com/2019/12/11/france-castro/" target="_blank">https://peoplaid.com/2019/12/11/france-castro/</a></li>
+        <!-- Note: Additional information may be sourced from official House of Representatives records (congress.gov.ph) or news articles covering her legislative work and statements. -->
+      </ul>
+    </div>
+
+  </div> <!-- end .content -->
+
+</body>
+</html>

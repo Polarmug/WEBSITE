@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Added viewport -->
+  <!-- Updated Title -->
+  <title>Teodoro “Teddy” A. Casiño - Candidate Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      overflow-x: hidden; /* Prevent horizontal scrollbar during animation */
+      color: #333; /* Default text color */
+    }
+
+    /* --- Animation Keyframes --- */
+    @keyframes slideUpFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Header Section - Using Flexbox layout */
+    .header {
+      position: relative;
+      height: 300px;
+      background-color: black; /* Black background example */
+      overflow: hidden;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      /* --- Header Animation --- */
+      opacity: 0;
+      animation: slideUpFadeIn 0.6s ease-out 0.2s forwards;
+    }
+
+    .header img.bg-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.2;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .profile-pic {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #ffffff; /* Fallback */
+      border: 4px solid #fff;
+      /* --- IMPORTANT: Replace with Casiño's profile image path --- */
+      background-image: url('../SENATOR PICS/CASIÑO.jpg'); /* <<<--- REMEMBER TO REPLACE THIS IMAGE */
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 3;
+    }
+
+    /* Name Styling - Gradient + Responsive Sizes */
+    .name {
+      position: relative;
+      z-index: 2;
+      padding: 0 20px;
+      box-sizing: border-box;
+      width: 100%;
+
+      font-size: 1.875rem; /* text-3xl */
+      font-weight: 600;    /* font-semibold */
+      text-align: center;  /* text-center */
+      margin-bottom: 1rem; /* mb-4 */
+
+      /* Example Gradient - Adjust colors if needed */
+      background: linear-gradient(to right, #ef4444, #f97316); /* Red/Orange Gradient Example */
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent; /* text-transparent */
+
+    }
+
+    /* Responsive Font Sizes for Name */
+    @media (min-width: 640px) { /* sm breakpoint */
+      .name { font-size: 2.25rem; } /* text-4xl */
+    }
+    @media (min-width: 768px) { /* md breakpoint */
+      .name { font-size: 3rem; } /* text-5xl */
+    }
+
+    /* Main Content Area */
+    .content {
+      padding: 0 20px 20px 20px;
+      max-width: 900px; /* Optional: Limit content width */
+      margin: 0 auto; /* Center the content area */
+    }
+
+    /* Card Styling */
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+      /* --- Card Animation (Base) --- */
+      opacity: 0;
+      animation: slideUpFadeIn 0.5s ease-out forwards;
+      animation-delay: 0.4s; /* Default delay */
+    }
+
+    /* Staggered Card Animation Delays */
+    .content > .card:nth-child(1) { animation-delay: 0.4s; }
+    .content > .card:nth-child(2) { animation-delay: 0.5s; }
+    .content > .card:nth-child(3) { animation-delay: 0.6s; }
+    .content > .card:nth-child(4) { animation-delay: 0.7s; }
+    .content > .card:nth-child(5) { animation-delay: 0.8s; }
+    .content > .card:nth-child(6) { animation-delay: 0.9s; }
+    /* Adjust if more cards are added */
+
+    /* Card Content Styling */
+    .card h2 {
+      color: #333;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    .card p { /* Target only paragraphs for general margin */
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 0.7em;
+    }
+
+    .card li { /* Target only list items for general margin */
+        line-height: 1.6;
+        color: #333;
+        margin-bottom: 0.7em; /* Spacing between list items */
+    }
+
+
+    .card ul {
+      padding-left: 40px;   /* Indentation for list items */
+      margin-top: 0;
+      list-style: disc; /* Default bullet style */
+    }
+
+     .card p strong, .card li strong {
+        color: #333;
+        display: inline-block;
+        margin-right: 5px;
+     }
+
+     .card a {
+        color: #007bff;
+        text-decoration: none;
+        word-break: break-all; /* Helps break long URLs */
+     }
+     .card a:hover {
+        text-decoration: underline;
+     }
+
+     /* --- Styling for Accomplishment Categories --- */
+     /* Style for the list item containing the category (REMOVED FOR CASIÑO - NO CATEGORIES PROVIDED) */
+     /* .category-list-item { ... } */
+
+     /* Style for the category text div itself (REMOVED FOR CASIÑO - NO CATEGORIES PROVIDED) */
+     /* .accomplishment-category { ... } */
+
+     /* --- End Styling for Accomplishment Categories --- */
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <!-- --- IMPORTANT: Replace image paths --- -->
+    <img src="your-casino-background.jpg" class="bg-overlay" alt="Header Overlay"> <!-- <<<--- REMEMBER TO REPLACE THIS IMAGE -->
+    <div class="profile-pic"></div>
+    <!-- Updated Name -->
+    <div class="name">Teodoro “Teddy” A. Casiño</div>
+  </div>
+
+  <!-- Main Content Cards -->
+  <div class="content">
+
+    <div class="card">
+      <h2>Personal Information</h2>
+      <p><strong>Full Name:</strong> Teodoro Acevedo Casiño</p>
+      <p><strong>Birthdate:</strong> November 15, 1968</p>
+      <p><strong>Age:</strong> 56 (as of late 2024/early 2025)</p> <!-- Clarified age context -->
+      <p><strong>Birthplace:</strong> Davao City, Philippines</p>
+      <!-- <p><strong>Residence:</strong> [Data not provided]</p> -->
+      <!-- <p><strong>Nationality:</strong> Filipino</p> -->
+      <!-- <p><strong>Sex:</strong> Male</p> -->
+      <!-- <p><strong>Civil Status:</strong> [Data not provided]</p> -->
+      <!-- <p><strong>Profession/Occupation:</strong> Politician, Activist, Former Representative</p> -->
+      <p><strong>Education:</strong> Bachelor of Arts in Sociology, University of the Philippines Los Baños (1993)</p>
+      <p><strong>Current Political Affiliation:</strong> Makabayang Koalisyon ng Mamamayan (Makabayan)</p>
+      <p><strong>Previous Affiliation:</strong> Bayan Muna</p>
+    </div>
+
+    <div class="card">
+      <h2>Political Platforms</h2>
+      <ul>
+        <li>Advocates for anti-dynasty legislation, whistleblower protection, freedom of information, and amendments to the Party-list Law.</li>
+        <li>Pushes for the elimination of confidential and intelligence funds and pork barrel allocations in the national budget.</li>
+        <li>Consistently opposes budget cuts in state colleges and universities.</li>
+        <li>Opposes the privatization of public utilities like hospitals and water districts.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Notable Positions</h2>
+      <ul>
+        <li><strong>Representative, Bayan Muna Party-list (13th-15th Congress, 2004–2013)</strong></li>
+        <li><strong>Committee Roles (during Congressional terms):</strong>
+            <ul>
+                <li>Chairperson, Committee on Small Business and Entrepreneurship Development</li>
+                <li>Senior Vice Chairperson, Committee on Higher and Technical Education</li>
+            </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Updated Legislative Accomplishments Card -->
+    <div class="card">
+        <h2>Legislative Accomplishments (as Representative)</h2>
+        <p>During his tenure in the House of Representatives, Teddy Casiño authored or co-authored significant legislation, including:</p>
+        <ul>
+            <li><strong>Public Attorneys Act of 2007 (R.A. 9406):</strong> Strengthened the Public Attorney's Office to provide free legal assistance to indigent litigants.</li>
+            <li><strong>Tax Relief Act of 2009 (R.A. 9504):</strong> Increased the personal exemption levels for taxpayers, providing economic relief.</li>
+            <li><strong>Rent Control Act of 2009 (R.A. 9653):</strong> Provided regulations for rental rates of certain residential units to protect tenants.</li>
+            <li><strong>Anti-Torture Act of 2009 (R.A. 9745):</strong> Penalizes acts of torture and other cruel, inhuman, and degrading treatment or punishment.</li>
+        </ul>
+    </div> <!-- End Legislative Accomplishments -->
+
+
+    <div class="card">
+      <h2>Controversies</h2>
+      <ul>
+        <li>Has faced legal challenges and accusations of affiliation with communist groups, which he has consistently denied (often referred to as "red-tagging").</li>
+        <li>In 2017, he and other activists were charged with breach of peace, assault upon an agent of authority, and disobedience following a protest against the ASEAN Summit held in Manila.</li>
+        <li>In 2023, Casiño filed a civil lawsuit against hosts of Sonshine Media Network International (SMNI) for alleged red-tagging and defamation.</li>
+      </ul>
+    </div>
+
+    <!-- Sources Card Updated -->
+    <div class="card">
+      <h2>Sources</h2>
+      <ul>
+        <li>Casiño, T. A. (n.d.). Who is Teddy? Retrieved from <a href="https://teddycasino.wordpress.com/who-is-teddy/" target="_blank">https://teddycasino.wordpress.com/who-is-teddy/</a></li>
+        <li>Rappler. (n.d.). Teddy Casiño. Retrieved from <a href="https://www.rappler.com/people/p78645871-teddy-casino/" target="_blank">https://www.rappler.com/people/p78645871-teddy-casino/</a></li>
+      </ul>
+    </div>
+
+  </div> <!-- end .content -->
+
+</body>
+</html>

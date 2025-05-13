@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panfilo "Ping" Lacson - Senatorial Candidate</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4; overflow-x: hidden; color: #333; }
+    @keyframes slideUpFadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .header { position: relative; height: 300px; background-color: black; /* Example */ overflow: hidden; margin-bottom: 20px; display: flex; align-items: flex-end; justify-content: center; opacity: 0; animation: slideUpFadeIn 0.6s ease-out 0.2s forwards; }
+    .header img.bg-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.2; pointer-events: none; z-index: 1; }
+    .profile-pic { position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); width: 150px; height: 150px; border-radius: 50%; background-color: #ffffff; border: 4px solid #fff; /* --- IMPORTANT: Replace image path --- */ background-image: url('../SENATOR\ PICS/LACSON.jpg'); /* <<<--- REPLACE IMAGE */ background-size: cover; background-position: center; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); z-index: 3; }
+    .name { position: relative; z-index: 2; padding: 0 20px; box-sizing: border-box; width: 100%; font-size: 1.875rem; font-weight: 600; text-align: center; margin-bottom: 1rem; /* Example Gradient */ background: linear-gradient(to right, #6b7280, #1f2937); /* Gray Gradient Example */ -webkit-background-clip: text; background-clip: text; color: transparent; }
+    @media (min-width: 640px) { .name { font-size: 2.25rem; } }
+    @media (min-width: 768px) { .name { font-size: 3rem; } }
+    .content { padding: 0 20px 20px 20px; max-width: 900px; margin: 0 auto; }
+    .card { background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); opacity: 0; animation: slideUpFadeIn 0.5s ease-out forwards; animation-delay: 0.4s; }
+    /* Adjusted animation delays for 6 cards */
+    .content > .card:nth-child(1) { animation-delay: 0.4s; }
+    .content > .card:nth-child(2) { animation-delay: 0.5s; }
+    .content > .card:nth-child(3) { animation-delay: 0.6s; }
+    .content > .card:nth-child(4) { animation-delay: 0.7s; }
+    .content > .card:nth-child(5) { animation-delay: 0.8s; }
+    .content > .card:nth-child(6) { animation-delay: 0.9s; }
+    .card h2 { color: #333; border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-top: 0; margin-bottom: 15px; font-size: 20px; }
+    .card p, .card li { line-height: 1.6; color: #333; margin-bottom: 0.7em; }
+    .card ul { padding-left: 40px; margin-top: 0; list-style: disc; }
+    /* Specific rule for nested lists */
+    .card ul ul {
+        padding-left: 20px;
+        margin-top: 0.5em;
+        list-style-type: circle;
+    }
+    /* Remove bullet from the main list item if it only contains a nested list */
+     .card > ul > li:has(ul) {
+        list-style-type: none;
+        margin-left: -20px; /* Adjust pull-back if needed */
+    }
+    .card p strong, .card li strong { color: #333; display: inline-block; margin-right: 5px; }
+    .card a { color: #007bff; text-decoration: none; word-break: break-all; }
+    .card a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <img src="your-lacson-background.jpg" class="bg-overlay" alt="Header Overlay"> <!-- <<<--- REPLACE IMAGE -->
+    <div class="profile-pic"></div>
+    <div class="name">Panfilo "Ping" Lacson</div>
+  </div>
+
+  <!-- Main Content Cards -->
+  <div class="content">
+
+    <div class="card">
+      <h2>Personal Information</h2>
+      <p><strong>Birthdate:</strong> June 1, 1948</p>
+      <p><strong>Age on Election Day:</strong> 76</p>
+      <p><strong>Birthplace:</strong> Imus, Cavite</p>
+      <p><strong>Residence:</strong> Brgy. Ayala Alabang, Muntinlupa, Metro Manila</p>
+      <p><strong>Sex:</strong> Male</p>
+      <p><strong>Civil Status:</strong> Married</p>
+      <p><strong>Spouse:</strong> Alice de Perio Lacson</p>
+      <p><strong>Profession/Occupation:</strong> Businessman</p>
+      <p><strong>Political Party:</strong> Independent</p>
+    </div>
+
+    <div class="card">
+      <h2>Platforms</h2>
+      <ul>
+        <li>Anti-corruption and transparency in government</li>
+        <li>Strengthening disaster risk reduction and management</li>
+        <li>Enhancing national security and public safety</li>
+        <li>Promoting efficient public service delivery</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Notable Positions</h2>
+      <ul>
+        <li><strong>Senator:</strong> 2001–2013; 2016–2022</li>
+        <li><strong>Presidential Assistant on Rehabilitation and Recovery:</strong> 2013–2015</li>
+        <li><strong>Chief, Philippine National Police:</strong> 1999–2001</li>
+        <li><strong>Chief, Presidential Anti-Organized Crime Task Force:</strong> 1998–2001</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Notable Laws and Projects</h2>
+      <ul>
+        <!-- Full Text for Laws/Projects -->
+        <li>Lacson was the principal sponsor and one of the authors of the <strong>Anti-Terrorism Act of 2020 (Republic Act 11479)</strong>, which gives Philippine authorities much-needed legal tools to strengthen their efforts against the menace of terrorism.</li>
+        <li>He was one of the authors of the <strong>Bayanihan to Heal As One Act (RA 11469)</strong>; and a co-author of the <strong>GMRC and Values Education Act (RA 11476)</strong>.</li>
+        <li>Also, Lacson sponsored and co-authored <strong>RA 11709</strong>, which strengthens professionalism in the Armed Forces of the Philippines by prescribing fixed terms for its key officers, among others.</li>
+        <li>He authored <strong>RA 11683</strong>, which provides exemptions in the requirements for the conversion of a municipality into a component city.</li>
+        <li>Lacson was the principal sponsor of the <strong>National ID Law (Republic Act 11055)</strong>, which provides for easier transactions with the government and private entities and which helps deter criminality. Lacson had been a perennial author of the measure since his first term as senator in 2001.</li>
+        <li>He was one of the principal authors of <strong>Joint Resolution 1</strong>, which sought to authorize the increase in the base pay of military and other uniformed personnel (MUP) in the government. Among those who benefit from the increase of the base pay are the retired MUP of the Armed Forces of the Philippines – General Headquarters (AFP- GHQ), Philippine National Police (PNP), Bureau of Fire Protection (BFP) and Bureau of Jail Management and Penology (BJMP).</li>
+        <li>Also, Lacson authored and sponsored <strong>Republic Act 11053, The Anti-Hazing Law of 2018</strong>, which provides heavier penalties that would prevent hazing-related deaths.</li>
+        <li>Lacson authored and sponsored as well <strong>Republic Act 9485, the Anti-Red Tape Act of 2007</strong>, which brings down the number of steps and days involved in a government transaction, and in turn paves the way for efficient and expeditious public service.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Controversies</h2>
+       <ul>
+          <!-- Full Text for Controversies -->
+          <li>
+             <strong>Dacer–Corbito Double Murder Case</strong>
+             <ul>
+                <li>In 2000, publicist Salvador "Bubby" Dacer and his driver Emmanuel Corbito were abducted and murdered.</li>
+                <li>Members of the Presidential Anti-Organized Crime Task Force (PAOCTF), which was under the leadership of then-Philippine National Police Chief Panfilo Lacson, were implicated in the crime.</li>
+                <li>Witnesses alleged that PAOCTF agents were involved in the killings.</li>
+                <li>In 2010, the Department of Justice filed double murder charges against Lacson.</li>
+                <li>He left the country before a warrant for his arrest was issued, later claiming his departure was legal.</li>
+                <li>In 2011, the Court of Appeals dismissed the charges against him due to insufficient evidence.</li>
+                <li>Lacson has consistently denied involvement in the case, attributing the accusations to political motivations.</li>
+             </ul>
+          </li>
+       </ul>
+    </div>
+
+    <div class="card">
+      <h2>Sources</h2>
+      <ul>
+        <li>Congress of the Philippines. (2007, June 2). Republic Act No. 9485: Anti-Red Tape Act of 2007. Official Gazette. <a href="https://www.officialgazette.gov.ph/2007/06/02/republic-act-no-9485/" target="_blank">https://www.officialgazette.gov.ph/2007/06/02/republic-act-no-9485/</a></li>
+        <li>Lacson, P. (2018, July 11). Lacson-sponsored measure providing heavier penalties vs. hazing deaths signed into law. PingLacson.net. <a href="https://pinglacson.net/2018/07/11/lacson-sponsored-measure-providing-heavier-penalties-vs-hazing-deaths-signed-into-law/" target="_blank">https://pinglacson.net/2018/07/11/lacson-sponsored-measure-providing-heavier-penalties-vs-hazing-deaths-signed-into-law/</a></li>
+        <li>Congress of the Philippines. (2018, January 1). Joint Resolution No. 1: Authorizing the Increase in the Base Pay of Military and Uniformed Personnel. Official Gazette. <a href="https://www.officialgazette.gov.ph/2018/01/01/joint-resolution-no-1/" target="_blank">https://www.officialgazette.gov.ph/2018/01/01/joint-resolution-no-1/</a></li>
+        <li>Lacson, P. (2018, August 8). Batas na: An Act Establishing the Philippine Identification System (National ID). PingLacson.net. <a href="https://pinglacson.net/2018/08/08/batas-na-an-act-establishing-the-philippine-identification-system-national-id/" target="_blank">https://pinglacson.net/2018/08/08/batas-na-an-act-establishing-the-philippine-identification-system-national-id/</a></li>
+        <li>Congress of the Philippines. (2022, April 10). Republic Act No. 11683: An Act Amending Section 450 of Republic Act No. 7160. Official Gazette. <a href="https://www.officialgazette.gov.ph/2022/04/10/republic-act-no-11683/" target="_blank">https://www.officialgazette.gov.ph/2022/04/10/republic-act-no-11683/</a></li>
+        <li>Congress of the Philippines. (2022, April 13). Republic Act No. 11709: An Act Strengthening Professionalism and Promoting the Continuity of Policies and Modernization Initiatives in the Armed Forces of the Philippines. Official Gazette. <a href="https://www.officialgazette.gov.ph/2022/04/13/republic-act-no-11709/" target="_blank">https://www.officialgazette.gov.ph/2022/04/13/republic-act-no-11709/</a></li>
+        <li>Congress of the Philippines. (2020, July 3). Republic Act No. 11479: Anti-Terrorism Act of 2020. LawPhil. <a href="https://lawphil.net/statutes/repacts/ra2020/ra_11479_2020.html" target="_blank">https://lawphil.net/statutes/repacts/ra2020/ra_11479_2020.html</a></li>
+        <li>Congress of the Philippines. (2020, March 25). Republic Act No. 11469: Bayanihan to Heal As One Act. Senate of the Philippines. <a href="https://www.senate.gov.ph/Bayanihan-to-Heal-as-One-Act-RA-11469.pdf" target="_blank">https://www.senate.gov.ph/Bayanihan-to-Heal-as-One-Act-RA-11469.pdf</a></li>
+        <li>Congress of the Philippines. (2020, June 25). Republic Act No. 11476: An Act Institutionalizing Good Manners and Right Conduct and Values Education in the K to 12 Curriculum. Official Gazette. <a href="https://www.officialgazette.gov.ph/2020/06/25/republic-act-no-11476/" target="_blank">https://www.officialgazette.gov.ph/2020/06/25/republic-act-no-11476/</a></li>
+      </ul>
+    </div>
+
+  </div> <!-- end .content -->
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ramon "Bong" Revilla Jr. - Senatorial Candidate</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4; overflow-x: hidden; color: #333; }
+    @keyframes slideUpFadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .header { position: relative; height: 300px; background-color: black; /* Example */ overflow: hidden; margin-bottom: 20px; display: flex; align-items: flex-end; justify-content: center; opacity: 0; animation: slideUpFadeIn 0.6s ease-out 0.2s forwards; }
+    .header img.bg-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.2; pointer-events: none; z-index: 1; }
+    .profile-pic { position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); width: 150px; height: 150px; border-radius: 50%; background-color: #ffffff; border: 4px solid #fff; /* --- IMPORTANT: Replace image path --- */ background-image: url('../SENATOR\ PICS/REVILLA.jpg'); /* <<<--- REPLACE IMAGE */ background-size: cover; background-position: center; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); z-index: 3; }
+    .name { position: relative; z-index: 2; padding: 0 20px; box-sizing: border-box; width: 100%; font-size: 1.875rem; font-weight: 600; text-align: center; margin-bottom: 1rem; /* Example Gradient */ background: linear-gradient(to right, #0ea5e9, #2563eb); /* Blue Gradient Example */ -webkit-background-clip: text; background-clip: text; color: transparent; }
+    @media (min-width: 640px) { .name { font-size: 2.25rem; } }
+    @media (min-width: 768px) { .name { font-size: 3rem; } }
+    .content { padding: 0 20px 20px 20px; max-width: 900px; margin: 0 auto; }
+    .card { background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); opacity: 0; animation: slideUpFadeIn 0.5s ease-out forwards; animation-delay: 0.4s; }
+    /* Adjusted animation delays for 7 cards */
+    .content > .card:nth-child(1) { animation-delay: 0.4s; }
+    .content > .card:nth-child(2) { animation-delay: 0.5s; }
+    .content > .card:nth-child(3) { animation-delay: 0.6s; }
+    .content > .card:nth-child(4) { animation-delay: 0.7s; }
+    .content > .card:nth-child(5) { animation-delay: 0.8s; }
+    .content > .card:nth-child(6) { animation-delay: 0.9s; }
+    .content > .card:nth-child(7) { animation-delay: 1.0s; }
+    .card h2 { color: #333; border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-top: 0; margin-bottom: 15px; font-size: 20px; }
+    .card p, .card li { line-height: 1.6; color: #333; margin-bottom: 0.7em; }
+    .card ul { padding-left: 40px; margin-top: 0; list-style: disc; }
+     /* Specific rule for nested lists to control indentation */
+    .card ul ul {
+        padding-left: 20px; /* Indent nested lists less than the main list */
+        margin-top: 0.5em; /* Add some space above nested lists */
+        list-style-type: circle; /* Different bullet for sub-items */
+    }
+    /* Remove bullet from the main list item if it only contains a nested list */
+    .card > ul > li:has(ul) {
+        list-style-type: none;
+        margin-left: -20px; /* Adjust pull-back if needed */
+    }
+    .card p strong, .card li strong { color: #333; display: inline-block; margin-right: 5px; }
+    .card a { color: #007bff; text-decoration: none; word-break: break-all; }
+    .card a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <img src="your-revilla-background.jpg" class="bg-overlay" alt="Header Overlay"> <!-- <<<--- REPLACE IMAGE -->
+    <div class="profile-pic"></div>
+    <div class="name">Ramon "Bong" Revilla Jr.</div>
+  </div>
+
+  <!-- Main Content Cards -->
+  <div class="content">
+
+    <div class="card">
+      <h2>Personal Information</h2>
+      <p><strong>Full Name:</strong> Jose Mari Mortel Bautista</p>
+      <p><strong>Birthdate:</strong> September 25, 1966</p>
+      <p><strong>Age on Election Day:</strong> 58</p>
+      <p><strong>Birthplace:</strong> Manila</p>
+      <p><strong>Residence:</strong> Brgy. PF Espiritu V, City of Bacoor, Cavite</p>
+      <p><strong>Sex:</strong> Male</p>
+      <p><strong>Civil Status:</strong> Married</p>
+      <p><strong>Spouse:</strong> Lani Mercado-Revilla</p>
+      <p><strong>Profession/Occupation:</strong> Senator (2019-2025)</p>
+      <p><strong>Political Party:</strong> Lakas–Christian Muslim Democrats (Lakas–CMD)</p>
+    </div>
+
+    <div class="card">
+      <h2>Political Platforms</h2>
+       <ul>
+         <!-- Restored Full Text for Platforms -->
+         <li>Reviving the Local Movie Industry and bringing it out of its dormant state in the last few years;</li>
+         <li>Strengthening the Anti-Piracy Laws and amendments to the Intellectual Property Code and other laws, if necessary;</li>
+         <li>Passing legislation that will expedite the completion of vital infrastructure projects in order to boost the investment climate in the country to attract more foreign direct investments.</li>
+         <li>Providing a framework that will give more powers to the Barangays in order to better respond to the basic needs of the people and support any move for the amendment of the Local Government Code of 1991;</li>
+         <li>Initiating moves for the immediate passage of a New Labor Code of the Philippines and supporting other necessary legislation for the protection of various labor sectors, working locally and abroad;</li>
+         <li>Pinpointing the sites to be declared as protected areas through the amendment of the NIPAS Act;</li>
+         <li>Passing crucial legislation that promotes the welfare of the public school teachers and the students at all levels;</li>
+         <li>Strengthening the programs of government on both formal, non-formal and technical education, as well as improving the curriculum of the public school system;</li>
+         <li>Developing better support and incentives for the development and empowerment of the youth sector; and</li>
+         <li>Rationalizing the sports development program of the government to respond to the needs of the athletes, down to the grassroots level, and institutionalizing transparency and proper accountability of sports officials.</li>
+       </ul>
+    </div>
+
+    <div class="card">
+      <h2>Notable Positions</h2>
+      <ul>
+        <li><strong>Senator:</strong> 2004–2016; 2019–present</li>
+        <li><strong>Chairman, Videogram Regulatory Board (now Optical Media Board):</strong> 2002–2004</li>
+        <li><strong>Governor of Cavite:</strong> Appointed 1997; Elected 1998–2001</li>
+        <li><strong>Vice Governor of Cavite:</strong> 1995–1998</li>
+      </ul>
+    </div>
+
+    <div class="card">
+        <h2>Senatorial Election Record</h2>
+        <ul>
+            <li>Senator, 2019, Won</li>
+            <li>Senator, 2010, Won</li>
+            <li>Senator, 2004, Won</li>
+        </ul>
+    </div>
+
+
+    <div class="card">
+        <h2>Notable Laws and Projects</h2>
+        <ul>
+             <!-- Restored Full Text for Laws/Projects -->
+            <li>
+                <strong>OFW Hospital Bill</strong>
+                <ul>
+                    <li>Senator Ramon "Bong" Revilla Jr. is listed as one of the co-authors of House Bill No. 9202 during the 17th Congress, which sought to establish the Overseas Filipino Workers (OFW) Hospital. This bill was principally authored by then-Speaker Gloria Macapagal-Arroyo and several other representatives.</li>
+                    <li>He has championed a bill to establish and institutionalize a dedicated hospital for Overseas Filipino Workers (OFWs) and their families, aiming to provide specialized healthcare services to this sector.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>RA 10665 Open High School System Act</strong>
+                <ul>
+                    <li>In the Senate, Senate Bill No. 2277 served as the counterpart to the House bill. Bong Revilla is listed as one of the principal authors.</li>
+                    <li>Enacted to provide alternative secondary education through open learning modalities, making education more accessible to out-of-school youth and adults.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="card">
+      <h2>Controversies</h2>
+      <ul>
+         <!-- Restored Full Text for Controversies -->
+        <li>
+            <strong>Pork Barrel Scam and Plunder Charges</strong>
+            <ul>
+                 <li>In 2013, the Commission on Audit (COA) released a report indicating that approximately ₱1.015 billion of Senator Revilla's PDAF allocations were funneled into non-governmental organizations (NGOs) linked to businesswoman Janet Lim-Napoles, who was identified as the mastermind behind the scam. This amount was the largest among the legislators implicated in the scandal.</li>
+                 <li>Subsequently, in June 2014, the Office of the Ombudsman filed plunder charges against Senator Revilla, along with Senators Juan Ponce Enrile and Jinggoy Estrada, for allegedly receiving kickbacks from Napoles in exchange for allocating their PDAF to her bogus NGOs.</li>
+                 <li>Senator Revilla surrendered to authorities on June 20, 2014, and was detained at the Philippine National Police Custodial Center in Camp Crame.</li>
+                 <li>His trial commenced in June 2017.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Acquittal and Civil Liability</strong>
+            <ul>
+                <li>On December 7, 2018, the Sandiganbayan acquitted Senator Revilla of plunder charges, citing insufficient evidence to prove that he received kickbacks from the PDAF allocations.</li>
+                <li>However, the court ordered him to return ₱124.5 million to the government, representing the amount allegedly misused. Despite the acquittal, this civil liability remains a point of contention.</li>
+                <li>Notably, two Sandiganbayan justices dissented from the majority decision, arguing that the evidence indicated Senator Revilla's complicity in the misuse of funds.</li>
+            </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Sources</h2>
+      <ul>
+        <li>Rappler. (n.d.). Bong Revilla. Rappler. Retrieved May 11, 2025, from <a href="https://www.rappler.com/people/n34273576-bong-revilla/" target="_blank">https://www.rappler.com/people/n34273576-bong-revilla/</a></li>
+        <li>Senate of the Philippines. (n.d.). Legislative agenda of Sen. Ramon “Bong” Revilla Jr. Senate.gov.ph. Retrieved May 11, 2025, from <a href="https://web.senate.gov.ph/senators/sen_bio/revillajr_agenda.asp" target="_blank">https://web.senate.gov.ph/senators/sen_bio/revillajr_agenda.asp</a></li>
+        <li>Cebu Daily News. (2024, April 8). Revilla renews push for OFW Hospital Bill. Inquirer.net. <a href="https://cebudailynews.inquirer.net/619541/revilla-renews-push-for-ofw-hospital-bill" target="_blank">https://cebudailynews.inquirer.net/619541/revilla-renews-push-for-ofw-hospital-bill</a></li>
+        <li>Senate of the Philippines. (2014, September 8). Open High School System institutionalized. Senate.gov.ph. <a href="https://legacy.senate.gov.ph/press_release/2014/0908_prib1.asp" target="_blank">https://legacy.senate.gov.ph/press_release/2014/0908_prib1.asp</a></li>
+        <li>GMA News Online. (n.d.). The Bong Revilla plunder case: A timeline. GMA Network. Retrieved May 11, 2025, from <a href="https://www.gmanetwork.com/news/specials/content/27/the-bong-revilla-plunder-case-a-timeline/" target="_blank">https://www.gmanetwork.com/news/specials/content/27/the-bong-revilla-plunder-case-a-timeline/</a></li>
+        <li>Sandiganbayan. (2018, December 7). People of the Philippines vs. Ramon “Bong” Revilla Jr., et al. [SB-14-CRM-0240]. <a href="https://sb.judiciary.gov.ph/wp-content/uploads/2024/06/L_Crim_SB-14-CRM-0240_People-vs-RevillaJr-et-al_12_07_2018.pdf" target="_blank">https://sb.judiciary.gov.ph/wp-content/uploads/2024/06/L_Crim_SB-14-CRM-0240_People-vs-RevillaJr-et-al_12_07_2018.pdf</a></li>
+        <li>Inquirer.net. (2021, July 12). Dissenting Sandigan justices: Bong Revilla can’t be innocent. Inquirer News. <a href="https://newsinfo.inquirer.net/1457151/dissenting-sandigan-justices-bong-revilla-cant-be-innocent" target="_blank">https://newsinfo.inquirer.net/1457151/dissenting-sandigan-justices-bong-revilla-cant-be-innocent</a></li>
+      </ul>
+    </div>
+
+  </div> <!-- end .content -->
+
+</body>
+</html>

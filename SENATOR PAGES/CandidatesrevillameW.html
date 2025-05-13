@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Willie Revillame - Candidate Information</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      overflow-x: hidden; /* Prevent horizontal scrollbar during animation */
+      color: #333; /* Default text color */
+    }
+
+    /* --- Animation Keyframes --- */
+    @keyframes slideUpFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Header Section - Using Flexbox layout */
+    .header {
+      position: relative;
+      height: 300px;
+      background-color: black; /* Black background from original */
+      overflow: hidden;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      /* --- Header Animation --- */
+      opacity: 0;
+      animation: slideUpFadeIn 0.6s ease-out 0.2s forwards;
+    }
+
+    .header img.bg-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.2;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .profile-pic {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #ffffff; /* Fallback */
+      border: 4px solid #fff;
+      /* --- IMPORTANT: Replace with Sotto's profile image path --- */
+      background-image: url('../SENATOR PICS/REVILLAME.jpg'); /* <<<--- REMEMBER TO REPLACE THIS IMAGE */
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 3;
+    }
+
+    /* Name Styling - Gradient + Responsive Sizes */
+    .name {
+      position: relative;
+      z-index: 2;
+      padding: 0 20px;
+      box-sizing: border-box;
+      width: 100%;
+
+      font-size: 1.875rem; /* text-3xl */
+      font-weight: 600;    /* font-semibold */
+      text-align: center;  /* text-center */
+      margin-bottom: 1rem; /* mb-4 */
+
+      background: linear-gradient(to right, #FBBF24, #F97316); /* Gradient */
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent; /* text-transparent */
+
+    }
+
+    /* Responsive Font Sizes for Name */
+    @media (min-width: 640px) { /* sm breakpoint */
+      .name { font-size: 2.25rem; } /* text-4xl */
+    }
+    @media (min-width: 768px) { /* md breakpoint */
+      .name { font-size: 3rem; } /* text-5xl */
+    }
+
+    /* Main Content Area */
+    .content {
+      padding: 0 20px 20px 20px;
+      max-width: 900px; /* Optional: Limit content width for better readability on large screens */
+      margin: 0 auto; /* Center the content area */
+    }
+
+    /* Card Styling */
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+      /* --- Card Animation (Base) --- */
+      opacity: 0;
+      animation: slideUpFadeIn 0.5s ease-out forwards;
+      animation-delay: 0.4s; /* Default delay */
+    }
+
+    /* Staggered Card Animation Delays */
+    .content > .card:nth-child(1) { animation-delay: 0.4s; }
+    .content > .card:nth-child(2) { animation-delay: 0.5s; }
+    .content > .card:nth-child(3) { animation-delay: 0.6s; }
+    .content > .card:nth-child(4) { animation-delay: 0.7s; }
+    .content > .card:nth-child(5) { animation-delay: 0.8s; }
+    .content > .card:nth-child(6) { animation-delay: 0.9s; }
+    .content > .card:nth-child(7) { animation-delay: 1.0s; }
+    .content > .card:nth-child(8) { animation-delay: 1.1s; }
+    /* Add more if needed */
+
+    /* Card Content Styling */
+    .card h2 {
+      color: #333; /* Color from original Sotto example */
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    .card p, .card li {
+      line-height: 1.6;
+      color: #333; /* Default text color */
+      margin-bottom: 0.5em; /* Add spacing between list items and paragraphs */
+    }
+
+    .card ul {
+      padding-left: 20px;
+      margin-top: 0;
+      list-style: disc; /* Explicitly set list style */
+    }
+
+     .card p strong, .card li strong {
+        color: #333; /* Make bold text same color or slightly darker */
+        display: inline-block; /* Prevents awkward line breaks after strong tag */
+        margin-right: 5px; /* Add a small space after the bold label */
+     }
+
+     .card a {
+        color: #007bff; /* Standard link color */
+        text-decoration: none;
+        word-break: break-all; /* Break long URLs */
+     }
+     .card a:hover {
+        text-decoration: underline;
+     }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <!-- --- IMPORTANT: Replace image paths --- -->
+    <img src="your-background-image.jpg" class="bg-overlay" alt="Header Overlay">
+    <div class="profile-pic"></div>
+    <div class="name">Willie Revillame</div>
+  </div>
+
+  <!-- Main Content Cards -->
+  <div class="content">
+
+    <div class="card">
+      <h2>Personal Information</h2>
+      <p><strong>Birthdate:</strong> January 27, 1961</p>
+      <p><strong>Age on Election Day:</strong> 64</p>
+      <p><strong>Birthplace:</strong> Cabanatuan City, Nueva Ecija</p>
+      <!-- Residence information was missing in the source text -->
+      <p><strong>Residence:</strong> (Not specified in provided source)</p>
+      <p><strong>Sex:</strong> Male</p>
+      <p><strong>Civil Status:</strong> Single</p>
+      <p><strong>Spouse:</strong> N/A</p>
+      <p><strong>Profession/Occupation:</strong> TV Host / Entertainer</p>
+      <p><strong>Political Party:</strong> Independent</p>
+    </div>
+
+    <div class="card">
+      <h2>Political Platform</h2>
+      <p>Revillame has stated he does not have a formal platform, emphasizing his focus on helping the poor and avoiding corruption:</p>
+      <blockquote>“Simple lang ang gusto natin, wala tayong plataporma. Jusko 27 years na akong tumutulong sa mahihirap wala pang plataporma. Ang plataporma ay tumulong sa mahihirap at hindi magnakaw.”</blockquote>
+      <p>(Translation: "What we want is simple, we don't have a platform. My goodness, I've been helping the poor for 27 years without a platform. The platform is to help the poor and not steal.")</p>
+    </div>
+
+    <div class="card">
+        <h2>Notable Positions / Roles</h2> <!-- Adjusted title -->
+        <ul>
+          <li>CEO, WBR Entertainment Productions Corporation</li>
+          <li>Host of various television programs, including "Wowowin" and "Wil Time Bigtime"</li>
+        </ul>
+      </div>
+
+    <div class="card">
+      <h2>Notable Laws and Projects</h2>
+      <p>No legislative experience. However, he has conducted various charitable activities through his television programs and personal initiatives.</p>
+      <!-- Removed ul as there are no list items -->
+    </div>
+
+    <div class="card">
+      <h2>Controversies</h2>
+      <ul>
+        <li><strong>ABS-CBN Contract Breach Case (2010):</strong> On August 23, 2010, Revillame filed a civil action before the Quezon City Regional Trial Court (RTC) seeking to cancel, terminate, and rescind his three-year contract with ABS-CBN (Civil Case No Q-10-67770). Under the contract, Revillame was to host the show “Wowowee” on the ABS-CBN network until September 10, 2011, or upon cancellation or earlier termination of the program.” The suit was prompted by Revillame’s withdrawal from “Wowowee” on May 5, 2010, which was followed by ABS-CBN’s refusal to release Revillame as its talent and the network’s subsequent replacement of “Wowowee” with a different program. On September 15, 2010, ABS-CBN filed its Answer with Compulsory Counterclaim, praying for liquidated damages in the amount of over PhP700 million, plus over PhP400 million for each further violation by Revillame, or for each week of violation of their contract. A month later, ABS-CBN applied for a Temporary Restraining Order (TRO) and/or Writ of Preliminary Injunction to restrain Revillame from performing with TV5, owned by ABC Development Corporation (ABC Corporation), on a similar show, titled “Willing Willie.” The RTC denied the TRO application but ordered Revillame to post a bond in the amount of PhP426,917,646.96 as security for any damage that may be incurred by ABS-CBN.</li>
+        <li><strong>Child Abuse Allegations ("Willing Willie", 2011):</strong> The host, Willie Revillame, cajoled the child into completing the suggestive dance, despite the boy having tears streaming down his face. The audience seemed oblivious to his discomfort, laughing and cheering along with the host. It later transpired that the boy's family, like the majority of audience members, were poor, and came on the game show because of the cash prizes on offer. Human rights groups were quick to condemn the incident."This was a form of child abuse," says Magnolia Jacinto, a spokeswoman for Asia Against Child Trafficking. "The boy's human dignity wasn't respected - in fact, it was violated." Her organisation, several other campaign groups, and the government's social welfare department have filed legal cases against Revillame and TV5, the network that broadcasts Willing Willie.
+</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Sources</h2>
+      <ul>
+        <li>Rappler. (n.d.). Willie Revillame. <a href="https://www.rappler.com/people/p69249448-willie-revillame/" target="_blank">https://www.rappler.com/people/p69249448-willie-revillame/</a></li>
+        <li>GMA Integrated News. (2025, May 2). Willie Revillame: My platform is to serve. GMA News Online. <a href="https://www.gmanetwork.com/news/topstories/nation/944705/willie-revillame-my-platform-is-to-serve/story/" target="_blank">https://www.gmanetwork.com/news/topstories/nation/944705/willie-revillame-my-platform-is-to-serve/story/</a></li>
+        <li>Supreme Court of the Philippines. (2023, August 15). Supreme Court dismisses ABS-CBN counterclaims in dispute with Willie Revillame. <a href="https://sc.judiciary.gov.ph/supreme-court-dismisses-abs-cbn-counterclaims-in-dispute-with-willie-revillame/" target="_blank">https://sc.judiciary.gov.ph/supreme-court-dismisses-abs-cbn-counterclaims-in-dispute-with-willie-revillame/</a></li>
+        <li>BBC News. (n.d.). Philippine Game Shows: Abuse or Entertainment? <a href="https://www.bbc.com/news/world-asia-pacific-13615146" target="_blank">https://www.bbc.com/news/world-asia-pacific-13615146</a></li>
+      </ul>
+    </div>
+
+  </div> <!-- end .content -->
+
+</body>
+</html>

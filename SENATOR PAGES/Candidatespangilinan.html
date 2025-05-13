@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Francis "Kiko" Pangilinan - Senatorial Candidate</title> <!-- Updated Title -->
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4; overflow-x: hidden; color: #333; }
+    @keyframes slideUpFadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .header { position: relative; height: 300px; background-color: black; /* Example */ overflow: hidden; margin-bottom: 20px; display: flex; align-items: flex-end; justify-content: center; opacity: 0; animation: slideUpFadeIn 0.6s ease-out 0.2s forwards; }
+    .header img.bg-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.2; pointer-events: none; z-index: 1; }
+    .profile-pic { position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); width: 150px; height: 150px; border-radius: 50%; background-color: #ffffff; border: 4px solid #fff; /* --- IMPORTANT: Replace image path --- */ background-image: url('../SENATOR\ PICS/KIKO.jpg'); /* <<<--- REPLACE IMAGE */ background-size: cover; background-position: center; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); z-index: 3; }
+    .name { position: relative; z-index: 2; padding: 0 20px; box-sizing: border-box; width: 100%; font-size: 1.875rem; font-weight: 600; text-align: center; margin-bottom: 1rem; /* Example Gradient */ background: linear-gradient(to right, #facc15, #eab308); /* Yellow Gradient Example */ -webkit-background-clip: text; background-clip: text; color: transparent; }
+    @media (min-width: 640px) { .name { font-size: 2.25rem; } }
+    @media (min-width: 768px) { .name { font-size: 3rem; } }
+    .content { padding: 0 20px 20px 20px; max-width: 900px; margin: 0 auto; }
+    .card { background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); opacity: 0; animation: slideUpFadeIn 0.5s ease-out forwards; animation-delay: 0.4s; }
+    /* Adjusted animation delays for 7 cards */
+    .content > .card:nth-child(1) { animation-delay: 0.4s; }
+    .content > .card:nth-child(2) { animation-delay: 0.5s; }
+    .content > .card:nth-child(3) { animation-delay: 0.6s; }
+    .content > .card:nth-child(4) { animation-delay: 0.7s; }
+    .content > .card:nth-child(5) { animation-delay: 0.8s; }
+    .content > .card:nth-child(6) { animation-delay: 0.9s; }
+    .content > .card:nth-child(7) { animation-delay: 1.0s; }
+    .card h2 { color: #333; border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-top: 0; margin-bottom: 15px; font-size: 20px; }
+    .card p, .card li { line-height: 1.6; color: #333; margin-bottom: 0.7em; }
+    .card ul { padding-left: 40px; margin-top: 0; list-style: disc; }
+    .card ul ul { padding-left: 20px; margin-top: 0.5em; list-style-type: circle; }
+    .card > ul > li:has(ul) { list-style-type: none; margin-left: -20px; }
+    .card p strong, .card li strong { color: #333; display: inline-block; margin-right: 5px; }
+    .card a { color: #007bff; text-decoration: none; word-break: break-all; }
+    .card a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <img src="your-pangilinan-background.jpg" class="bg-overlay" alt="Header Overlay"> <!-- <<<--- REPLACE IMAGE -->
+    <div class="profile-pic"></div>
+    <div class="name">Francis "Kiko" Pangilinan</div> <!-- Updated Name -->
+  </div>
+
+  <!-- Main Content Cards -->
+  <div class="content">
+
+    <div class="card">
+      <h2>Personal Information</h2>
+      <p><strong>Full Name:</strong> Francis Pancratius Nepomuceno Pangilinan</p>
+      <p><strong>Birthdate:</strong> August 24, 1963</p>
+      <p><strong>Age on Election Day:</strong> 61</p>
+      <p><strong>Birthplace:</strong> Manila, Philippines</p>
+      <p><strong>Residence:</strong> Brgy. Inchican, Silang, Cavite</p>
+      <p><strong>Sex:</strong> Male</p>
+      <p><strong>Civil Status:</strong> Married</p>
+      <p><strong>Spouse:</strong> Sharon Cuneta (actress and singer)</p>
+      <p><strong>Children:</strong> 3, including KC Concepcion (stepdaughter)</p>
+      <p><strong>Profession/Occupation:</strong> Lawyer / Politician / Farm Owner</p>
+      <p><strong>Political Party:</strong> Liberal Party of the Philippines</p>
+    </div>
+
+    <div class="card">
+      <h2>Platforms</h2>
+      <ul>
+        <!-- Full Text Included -->
+        <li>Advocates for lowering food prices and improving food security</li>
+        <li>Supports increasing the minimum wage and addressing primary concerns of the masses</li>
+        <li>Promotes agricultural development and modernization</li>
+        <li>Emphasizes the importance of transparency and accountability in government operations</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Notable Positions</h2>
+      <ul>
+        <!-- Full Text Included -->
+        <li><strong>Senator of the Philippines</strong> (2001–2013; 2016–2022)</li>
+        <li><strong>Senate Majority Leader</strong> (2004–2008)</li>
+        <li><strong>Chairman, Senate Committees on Agriculture and Food; Agrarian Reform; Constitutional Amendments and Revision of Codes</strong></li>
+        <li><strong>Presidential Assistant for Food Security and Agricultural Modernization</strong> (2014–2015)</li>
+        <li><strong>Member, Quezon City Council</strong> (1988–1992)</li>
+        <li><strong>President, Liberal Party of the Philippines</strong> (2022–present)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Notable Laws and Projects</h2>
+      <ul>
+        <!-- Full Text Included -->
+        <li>Doubled the budget and staff complement of the <strong>Fertilizer and Pesticide Authority</strong> to meet increasing regulatory demands</li>
+        <li>Pushed for a 52% increase in the <strong>agriculture budget in 2012</strong> after initiating the Agriculture and Fisheries 2025 summit</li>
+        <li>Bridged market, training, and credit gaps in the food supply chain for farmer-beneficiaries through the pilot <strong>Sagip Saka program</strong></li>
+        <li>Supported the construction of <strong>200 school buildings/classrooms</strong> across 45 provinces in collaboration with the Filipino Chinese Chamber of Commerce</li>
+        <li>Authored the <strong>Judiciary Modernization and Compensation Act (RA 9227)</strong>, doubling the pay and benefits of judiciary members</li>
+        <li>Proposed the creation of the <strong>Judicial Executive, Legislative, Advisory and Consultative Council (JELACC)</strong> to address judiciary budgetary and infrastructure challenges</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Controversies</h2>
+      <ul>
+        <!-- Full Text Included -->
+        <li>In 2022, ran for vice president alongside Leni Robredo but lost to Sara Duterte</li>
+        <li>Faced criticism from political opponents for his stance on various issues, including his opposition to certain policies of the Marcos and Duterte administrations</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Sources</h2>
+      <ul>
+          <li>Wikipedia contributors. (n.d.). Francis Pangilinan. Wikipedia. Retrieved May 12, 2025, from <a href="https://en.wikipedia.org/wiki/Francis_Pangilinan" target="_blank">https://en.wikipedia.org/wiki/Francis_Pangilinan</a></li>
+          <li>Senate of the Philippines. (n.d.). Senator Kiko Pangilinan - Biography. Retrieved May 12, 2025, from <a href="https://legacy.senate.gov.ph/senators/sen_bio/pangilinan_bio.asp" target="_blank">https://legacy.senate.gov.ph/senators/sen_bio/pangilinan_bio.asp</a></li>
+          <li>Senate of the Philippines. (n.d.). Resume of Senator Pangilinan. Retrieved May 12, 2025, from <a href="https://legacy.senate.gov.ph/senators/sen_bio/pangilinan_resume.asp" target="_blank">https://legacy.senate.gov.ph/senators/sen_bio/pangilinan_resume.asp</a></li>
+          <li>Pangilinan, F. N. (n.d.). Mga Naisabatas ni Kiko. Official Website of Senator Francis "Kiko" Pangilinan. Retrieved May 12, 2025, from <a href="https://kikopangilinan.com/legislation/" target="_blank">https://kikopangilinan.com/legislation/</a></li>
+          <li>Pangilinan, F. N. (n.d.). Authored and Co-Authored Bills. Official Website of Senator Francis "Kiko" Pangilinan. Retrieved May 12, 2025, from <a href="https://kikopangilinan.com/authored-and-co-authored-bills/" target="_blank">https://kikopangilinan.com/authored-and-co-authored-bills/</a></li>
+          <li>Senate of the Philippines Legislative Reference Bureau. (n.d.). PANGILINAN, FRANCIS "KIKO" N. Retrieved May 12, 2025, from <a href="https://ldr.senate.gov.ph/senator/francis-n-pangilinan" target="_blank">https://ldr.senate.gov.ph/senator/francis-n-pangilinan</a></li>
+          <li>ABS-CBN News. (2025, January 8). What Kiko Pangilinan learned from his vice-presidential bid in 2022. Retrieved May 12, 2025, from <a href="https://www.abs-cbn.com/news/nation/2025/1/8/what-kiko-pangilinan-learned-from-his-vice-presidential-bid-in-2022-1217" target="_blank">https://www.abs-cbn.com/news/nation/2025/1/8/what-kiko-pangilinan-learned-from-his-vice-presidential-bid-in-2022-1217</a></li>
+          <li>Inquirer.net. (2025, April 5). Kiko Pangilinan bats for more agri-infra investment for food security. Retrieved May 12, 2025, from <a href="https://www.inquirer.net/435211/pangilinan-pushes-for-more-agri-infra-investment-for-food-security-jobs/" target="_blank">https://www.inquirer.net/435211/pangilinan-pushes-for-more-agri-infra-investment-for-food-security-jobs/</a></li>
+          <li>Tribune.net.ph. (2024, December 8). Kiko: Making farms sexy, boon to food security. Retrieved May 12, 2025, from <a href="https://tribune.net.ph/2024/12/08/kiko-making-farms-sexy-boon-to-food-security" target="_blank">https://tribune.net.ph/2024/12/08/kiko-making-farms-sexy-boon-to-food-security</a></li>
+          <li>Tribune.net.ph. (2025, March 21). Kiko Pangilinan pushes "Sagip Saka" for food security. Retrieved May 12, 2025, from <a href="https://tribune.net.ph/2025/03/21/kiko-pangilinan-pushes-sagip-saka-for-food-security" target="_blank">https://tribune.net.ph/2025/03/21/kiko-pangilinan-pushes-sagip-saka-for-food-security</a></li>
+          <li>Tribune.net.ph. (2025, April 5). Kiko Pangilinan calls for cluster farming to boost farmer income. Retrieved May 12, 2025, from <a href="https://tribune.net.ph/2025/04/05/kiko-pangilinan-calls-for-cluster-farming-to-boost-farmer-income" target="_blank">https://tribune.net.ph/2025/04/05/kiko-pangilinan-calls-for-cluster-farming-to-boost-farmer-income</a></li>
+          <li>Inquirer.net. (2025, March 1). Pangilinan admits lacking campaign resources for 2025 polls. Retrieved May 12, 2025, from <a href="https://www.inquirer.net/431578/pangilinan-admits-lacking-resources-for-messaging-banks-on-volunteerism/" target="_blank">https://www.inquirer.net/431578/pangilinan-admits-lacking-resources-for-messaging-banks-on-volunteerism/</a></li>
+          <li>GMA News Online. (2021, November 16). Sotto admits going against Pangilinan in VP race a 'big deal' for his family. Retrieved May 12, 2025, from <a href="https://www.gmanetwork.com/news/topstories/nation/811077/sotto-admits-going-against-pangilinan-in-vp-race-a-big-deal-for-his-family/story/" target="_blank">https://www.gmanetwork.com/news/topstories/nation/811077/sotto-admits-going-against-pangilinan-in-vp-race-a-big-deal-for-his-family/story/</a></li>
+          <li>Inquirer.net. (2021, October 8). 'Wala nang atrasan': Pangilinan not backing out of VP race after Robredo's announcement. Retrieved May 12, 2025, from <a href="https://newsinfo.inquirer.net/1505153/wala-nang-atrasan-pangilinan-not-backing-out-from-vp-race-in-2022" target="_blank">https://newsinfo.inquirer.net/1505153/wala-nang-atrasan-pangilinan-not-backing-out-from-vp-race-in-2022</a></li>
+          <li>Manila Bulletin. (2022, February 26). Pangilinan on Pharmally controversy: 'Justice will be served'. Retrieved May 12, 2025, from <a href="https://mb.com.ph/2022/02/26/pangilinan-on-pharmally-controversy-justice-will-be-served/" target="_blank">https://mb.com.ph/2022/02/26/pangilinan-on-pharmally-controversy-justice-will-be-served/</a></li>
+          <li>Liberal Party of the Philippines. (n.d.). Francis "Kiko" Pangilinan. Retrieved May 12, 2025, from <a href="https://liberal.ph/francis-kiko-pangilinan/" target="_blank">https://liberal.ph/francis-kiko-pangilinan/</a></li>
+          <li>PeoPlaid. (2021, July 7). Francis "Kiko" Pangilinan Biography, Latest Update, Achievements. Retrieved May 12, 2025, from <a href="https://peoplaid.com/2021/07/07/kiko-pangilinan/" target="_blank">https://peoplaid.com/2021/07/07/kiko-pangilinan/</a></li>
+          <li>PHVote. (2022). PROFILE: Francis "Kiko" Pangilinan | Candidate for Vice President - 2022 elections. Retrieved May 12, 2025, from <a href="https://phvote2022.rappler.com/elections/2022/candidates/francis-pangilinan" target="_blank">https://phvote2022.rappler.com/elections/2022/candidates/francis-pangilinan</a></li>
+          <li>Profiles.ph. (n.d.). Kiko Pangilinan - Biography Profiles. Retrieved May 12, 2025, from <a href="https://profiles.ph/kiko-pangilinan" target="_blank">https://profiles.ph/kiko-pangilinan</a></li>
+          <li>Oxford Business Group. (n.d.). Francis N Pangilinan, Secretary, Office of the Presidential Assistant for Food Security and Agricultural Modernisation: Interview. Retrieved May 12, 2025, from <a href="https://oxfordbusinessgroup.com/articles-interviews/francis-n-pangilinan-secretary-office-of-the-presidential-assistant-for-food-security-and-agricultural-modernisation-interview-interview" target="_blank">https://oxfordbusinessgroup.com/articles-interviews/francis-n-pangilinan-secretary-office-of-the-presidential-assistant-for-food-security-and-agricultural-modernisation-interview-interview</a></li>
+      </ul>
+    </div>
+
+  </div> <!-- end .content -->
+
+</body>
+</html>

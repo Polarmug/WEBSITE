@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ronald "Bato" dela Rosa - Senatorial Candidate</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      overflow-x: hidden; /* Prevent horizontal scrollbar during animation */
+      color: #333; /* Default text color */
+    }
+
+    /* --- Animation Keyframes --- */
+    @keyframes slideUpFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Header Section - Using Flexbox layout */
+    .header {
+      position: relative;
+      height: 300px;
+      background-color: black; /* Black background from original */
+      overflow: hidden;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      /* --- Header Animation --- */
+      opacity: 0;
+      animation: slideUpFadeIn 0.6s ease-out 0.2s forwards;
+    }
+
+    .header img.bg-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.2;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .profile-pic {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #ffffff; /* Fallback */
+      border: 4px solid #fff;
+      /* --- IMPORTANT: Replace with Sotto's profile image path --- */
+      background-image: url('../SENATOR PICS/BATO.jpg'); /* <<<--- REMEMBER TO REPLACE THIS IMAGE */
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 3;
+    }
+
+    /* Name Styling - Gradient + Responsive Sizes */
+    .name {
+      position: relative;
+      z-index: 2;
+      padding: 0 20px;
+      box-sizing: border-box;
+      width: 100%;
+
+      font-size: 1.875rem; /* text-3xl */
+      font-weight: 600;    /* font-semibold */
+      text-align: center;  /* text-center */
+      margin-bottom: 1rem; /* mb-4 */
+
+      background: linear-gradient(to right, #FBBF24, #F97316); /* Gradient */
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent; /* text-transparent */
+
+    }
+
+    /* Responsive Font Sizes for Name */
+    @media (min-width: 640px) { /* sm breakpoint */
+      .name { font-size: 2.25rem; } /* text-4xl */
+    }
+    @media (min-width: 768px) { /* md breakpoint */
+      .name { font-size: 3rem; } /* text-5xl */
+    }
+
+    /* Main Content Area */
+    .content {
+      padding: 0 20px 20px 20px;
+      max-width: 900px; /* Optional: Limit content width for better readability on large screens */
+      margin: 0 auto; /* Center the content area */
+    }
+
+    /* Card Styling */
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+      /* --- Card Animation (Base) --- */
+      opacity: 0;
+      animation: slideUpFadeIn 0.5s ease-out forwards;
+      animation-delay: 0.4s; /* Default delay */
+    }
+
+    /* Staggered Card Animation Delays */
+    .content > .card:nth-child(1) { animation-delay: 0.4s; }
+    .content > .card:nth-child(2) { animation-delay: 0.5s; }
+    .content > .card:nth-child(3) { animation-delay: 0.6s; }
+    .content > .card:nth-child(4) { animation-delay: 0.7s; }
+    .content > .card:nth-child(5) { animation-delay: 0.8s; }
+    .content > .card:nth-child(6) { animation-delay: 0.9s; }
+    .content > .card:nth-child(7) { animation-delay: 1.0s; }
+    .content > .card:nth-child(8) { animation-delay: 1.1s; }
+    /* Add more if needed */
+
+    /* Card Content Styling */
+    .card h2 {
+      color: #333; /* Color from original Sotto example */
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    .card p, .card li {
+      line-height: 1.6;
+      color: #333; /* Default text color */
+      margin-bottom: 0.5em; /* Add spacing between list items and paragraphs */
+    }
+
+    .card ul {
+      padding-left: 20px;
+      margin-top: 0;
+      list-style: disc; /* Explicitly set list style */
+    }
+
+     .card p strong, .card li strong {
+        color: #333; /* Make bold text same color or slightly darker */
+        display: inline-block; /* Prevents awkward line breaks after strong tag */
+        margin-right: 5px; /* Add a small space after the bold label */
+     }
+
+     .card a {
+        color: #007bff; /* Standard link color */
+        text-decoration: none;
+        word-break: break-all; /* Break long URLs */
+     }
+     .card a:hover {
+        text-decoration: underline;
+     }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <!-- --- IMPORTANT: Replace with your actual image paths --- -->
+    <img src="your-background-image.jpg" class="bg-overlay" alt="Header Overlay">
+    <div class="profile-pic"></div>
+    <div class="name">Ronald "Bato" dela Rosa</div>
+  </div>
+
+  <div class="content">
+
+    <div class="card">
+      <h2>Personal Information</h2>
+      <p><strong>Full Name:</strong> Ronald Marapon Dela Rosa</p>
+      <p><strong>Nickname:</strong> Bato</p>
+      <p><strong>Birthdate:</strong> January 21, 1962</p>
+      <p><strong>Age on Election Day:</strong> 63</p>
+      <p><strong>Birthplace:</strong> Santa Cruz, Davao del Sur</p>
+      <p><strong>Residence:</strong> Brgy. Magtuod, Davao City, Davao del Sur</p>
+      <p><strong>Civil Status:</strong> Married to Grace Nancy Commandante Dela Rosa</p>
+      <p><strong>Profession/Occupation:</strong> Government Official</p>
+      <p><strong>Political Party:</strong> PDP–Laban</p>
+    </div>
+
+    <div class="card">
+      <h2>Political Platforms</h2>
+      <ul>
+        <li>Reimposition of Death Penalty for drug-related and heinous crimes</li>
+        <li>Welfare and modernization of uniformed personnel</li>
+        <li>Continuation of the government’s anti-drug campaign</li>
+        <li>Anti-Terrorism and National Peacebuilding initiatives</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Notable Positions</h2>
+      <ul>
+        <li>Senator (2019–Present)</li>
+        <li>Director General, Bureau of Corrections (April–October 2018)</li>
+        <li>Chief, Philippine National Police (July 2016–April 2018)</li>
+        <li>Executive Officer, PNP Directorate for Human Resource and Doctrine Development</li>
+        <li>Deputy Director for Administration, PNP Intelligence Group</li>
+        <li>City Director, Davao City Police Office</li>
+        <li>Chief, Regional Intelligence and Investigation Division, PNP</li>
+      </ul>
+    </div>
+
+    <div class="card">
+        <h2>Senatorial Record</h2>
+        <ul>
+          <li>Authored or Co-authored: 22 laws</li>
+          <li>Sponsored or Co-sponsored: 20 laws during the 18th Congress</li>
+        </ul>
+    </div>
+
+    <div class="card">
+      <h2>Legislative Accomplishments</h2>
+      <ul>
+        <li>RA 11549 – Height Equality Act (PNP, BFP, BJMP, BuCor)</li>
+        <li>RA 11589 – BFP Modernization Act</li>
+        <li>RA 11766 – Firearms Licensing Validity Extension</li>
+        <li>RA 11926 – Penalizing Indiscriminate Discharge of Firearms</li>
+        <li>RA 11917 – Private Security Services Industry Act</li>
+        <li>RA 11479 – Anti-Terrorism Act of 2020</li>
+        <li>RA 11525 – COVID-19 Vaccination Program Act of 2021</li>
+        <li>RA 11547 – Davao as Chocolate Capital of the Philippines</li>
+        <li>RA 11468 – National Day of Remembrance for Road Crash Victims</li>
+        <li>RA 11641 – Department of Migrant Workers Act</li>
+        <li>RA 11691 – Judicial Marshals Act</li>
+        <li>RA 11712 – COVID-19 Benefits and Allowances for Health Workers Act</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Key Advocacy Areas</h2>
+      <ul>
+        <li>Drug Control and Rehabilitation</li>
+        <li>Law Enforcement Modernization</li>
+        <li>National Security and Anti-Terrorism</li>
+        <li>Support for Uniformed Personnel</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Controversies</h2>
+      <ul>
+        <li><strong>Oplan Tokhang & ICC Investigation:</strong> Criticized for alleged extrajudicial killings during drug war; subject of ICC probe</li>
+        <li><strong>Red-Tagging Accusations:</strong> Accused of linking progressive groups to insurgents without solid evidence</li>
+        <li><strong>Populist Rhetoric:</strong> Criticized for emotional and controversial remarks on national issues</li>
+      </ul>
+    </div>
+
+    <div class="card">
+        <h2>Notable Recognitions</h2>
+        <ul>
+          <li>Medalya ng Pambihirang Paglilingkod (2014)</li>
+          <li>Cavalier Award (2015)</li>
+          <li>PAOCTF Award (2012)</li>
+          <li>Senior Police Commissioned Officer of the Year – Operations (2012)</li>
+          <li>Achievement Award in Police Operations (2013)</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Senate Leadership</h2>
+        <ul>
+          <li>Chairperson: Senate Committee on Public Order and Dangerous Drugs</li>
+          <li>Chairperson: Special Committee on Marawi City Rehabilitation</li>
+          <li>Vice-Chairperson: Committees on Finance, National Defense, and Foreign Relations</li>
+        </ul>
+    </div>
+
+    <div class="card">
+      <h2>Sources</h2>
+      <ul>
+        <li><a href="https://legacy.senate.gov.ph/senators/sen_bio/delarosa_bio.asp" target="_blank">Senate of the Philippines</a></li>
+        <li><a href="https://web.senate.gov.ph/senators/sen_bio/delarosa_resume.asp" target="_blank">Dela Rosa Resume</a></li>
+        <li><a href="https://pdplaban.org.ph/ronald-dela-rosa/" target="_blank">PDP-Laban</a></li>
+        <li><a href="https://thediplomat.com/2025/03/philippine-govt-condemns-senator-for-saying-he-wont-surrender-to-icc/" target="_blank">The Diplomat (2025)</a></li>
+        <li><a href="https://www.pna.gov.ph/articles/1235713" target="_blank">Philippine News Agency (2024)</a></li>
+      </ul>
+    </div>
+
+  </div> <!-- end .content -->
+
+</body>
+</html>

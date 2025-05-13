@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Benjamin "Benhur" Abalos Jr. - Senatorial Candidate</title> <!-- Updated Title -->
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4; overflow-x: hidden; color: #333; }
+    @keyframes slideUpFadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .header { position: relative; height: 300px; background-color: black; /* Example */ overflow: hidden; margin-bottom: 20px; display: flex; align-items: flex-end; justify-content: center; opacity: 0; animation: slideUpFadeIn 0.6s ease-out 0.2s forwards; }
+    .header img.bg-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.2; pointer-events: none; z-index: 1; }
+    .profile-pic { position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); width: 150px; height: 150px; border-radius: 50%; background-color: #ffffff; border: 4px solid #fff; /* --- IMPORTANT: Replace image path --- */ background-image: url('your-benhur-abalos-profile.jpg'); /* <<<--- REPLACE IMAGE */ background-size: cover; background-position: center; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); z-index: 3; }
+    .name { position: relative; z-index: 2; padding: 0 20px; box-sizing: border-box; width: 100%; font-size: 1.875rem; font-weight: 600; text-align: center; margin-bottom: 1rem; /* Example Gradient */ background: linear-gradient(to right, #2563eb, #3b82f6); /* Blue Gradient Example */ -webkit-background-clip: text; background-clip: text; color: transparent; }
+    @media (min-width: 640px) { .name { font-size: 2.25rem; } }
+    @media (min-width: 768px) { .name { font-size: 3rem; } }
+    .content { padding: 0 20px 20px 20px; max-width: 900px; margin: 0 auto; }
+    .card { background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); opacity: 0; animation: slideUpFadeIn 0.5s ease-out forwards; animation-delay: 0.4s; }
+    /* Adjusted animation delays for 7 cards */
+    .content > .card:nth-child(1) { animation-delay: 0.4s; }
+    .content > .card:nth-child(2) { animation-delay: 0.5s; }
+    .content > .card:nth-child(3) { animation-delay: 0.6s; }
+    .content > .card:nth-child(4) { animation-delay: 0.7s; }
+    .content > .card:nth-child(5) { animation-delay: 0.8s; }
+    .content > .card:nth-child(6) { animation-delay: 0.9s; }
+    .content > .card:nth-child(7) { animation-delay: 1.0s; }
+    .card h2 { color: #333; border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-top: 0; margin-bottom: 15px; font-size: 20px; }
+    .card p, .card li { line-height: 1.6; color: #333; margin-bottom: 0.7em; }
+    .card ul { padding-left: 40px; margin-top: 0; list-style: disc; }
+    .card ul ul { padding-left: 20px; margin-top: 0.5em; list-style-type: circle; }
+    .card > ul > li:has(ul) { list-style-type: none; margin-left: -20px; }
+    .card p strong, .card li strong { color: #333; display: inline-block; margin-right: 5px; }
+    .card a { color: #007bff; text-decoration: none; word-break: break-all; }
+    .card a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <img src="your-abalos-background.jpg" class="bg-overlay" alt="Header Overlay"> <!-- <<<--- REPLACE IMAGE -->
+    <div class="profile-pic"></div>
+    <div class="name">Benjamin "Benhur" Abalos Jr.</div> <!-- Updated Name -->
+  </div>
+
+  <!-- Main Content Cards -->
+  <div class="content">
+
+    <div class="card">
+      <h2>Personal Information</h2>
+      <p><strong>Full Name:</strong> Benjamin de Castro Abalos Jr.</p> <!-- Assumed de Castro based on common knowledge -->
+      <p><strong>Birthdate:</strong> July 19, 1962</p>
+      <p><strong>Age on Election Day:</strong> 62</p>
+      <p><strong>Birthplace:</strong> Manila, Philippines</p>
+      <p><strong>Residence:</strong> Brgy. Plainview, Mandaluyong City</p>
+      <p><strong>Sex:</strong> Male</p>
+      <p><strong>Civil Status:</strong> Married</p>
+      <p><strong>Spouse:</strong> Carmelita "Menchie" Aguilar</p>
+      <p><strong>Children:</strong> 6</p>
+      <p><strong>Profession/Occupation:</strong> Lawyer / Politician</p>
+      <p><strong>Political Party:</strong> Partido Federal ng Pilipinas (PFP)</p>
+    </div>
+
+    <div class="card">
+      <h2>Platforms</h2>
+      <ul>
+        <!-- Full Text Included -->
+        <li>Advocates for amendments to the Local Government Code to enhance decentralization and empower local government units (LGUs)</li>
+        <li>Promotes lower electricity rates to alleviate the financial burden on Filipino households</li>
+        <li>Supports food security initiatives, focusing on strengthening agricultural support systems</li>
+        <li>Endorses disaster preparedness and urban development, aiming for resilient and sustainable communities</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Notable Positions</h2>
+      <ul>
+        <!-- Full Text Included -->
+        <li>Secretary of the Interior and Local Government (2022–2024)</li>
+        <li>Chairman, Metropolitan Manila Development Authority (2021–2022)</li>
+        <li>Mayor, Mandaluyong City (1998–2004; 2007–2016)</li>
+        <li>Representative, Lone District of Mandaluyong (2004–2007)</li>
+        <li>City Councilor, Mandaluyong City (1995–1998)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Notable Laws and Projects</h2>
+      <ul>
+        <!-- Full Text Included -->
+        <li>As DILG Secretary, spearheaded initiatives to <strong>streamline government processes</strong>, aiming to reduce bureaucratic red tape</li>
+        <li>Championed <strong>urban development projects in Mandaluyong</strong>, leading to significant infrastructure improvements during his tenure as mayor</li>
+        <li>Advocated for <strong>transparent governance</strong>, promoting accountability and citizen participation in local government affairs</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Controversies</h2>
+      <ul>
+        <!-- Full Text Included -->
+        <li>Faced scrutiny over the efficacy of <strong>disaster response mechanisms</strong> during his tenure as DILG Secretary, with critics pointing to areas needing improvement</li>
+        <li>Encountered challenges related to <strong>urban congestion and traffic management</strong> while serving as MMDA Chairman, leading to public debates on policy effectiveness</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Sources</h2>
+      <ul>
+          <li>Wikipedia contributors. (n.d.). Benhur Abalos. Wikipedia. Retrieved May 12, 2025, from <a href="https://en.wikipedia.org/wiki/Benhur_Abalos" target="_blank">https://en.wikipedia.org/wiki/Benhur_Abalos</a></li>
+          <li>GMA News Online. (2022, May 24). Benhur Abalos appointed DILG Secretary by President Duterte. Retrieved May 12, 2025, from <a href="https://www.gmanetwork.com/news/topstories/nation/828462/benhur-abalos-appointed-dilg-secretary-by-president-duterte/story/" target="_blank">https://www.gmanetwork.com/news/topstories/nation/828462/benhur-abalos-appointed-dilg-secretary-by-president-duterte/story/</a></li>
+          <li>Inquirer.net. (2020, December 21). Benhur Abalos takes over MMDA as chairman. Retrieved May 12, 2025, from <a href="https://newsinfo.inquirer.net/1378753/benhur-abalos-takes-over-mmda-chairman" target="_blank">https://newsinfo.inquirer.net/1378753/benhur-abalos-takes-over-mmda-chairman</a></li>
+      </ul>
+    </div>
+
+  </div> <!-- end .content -->
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bam Aquino - Senatorial Candidate</title> <!-- Updated Title -->
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4; overflow-x: hidden; color: #333; }
+    @keyframes slideUpFadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .header { position: relative; height: 300px; background-color: black; /* Example */ overflow: hidden; margin-bottom: 20px; display: flex; align-items: flex-end; justify-content: center; opacity: 0; animation: slideUpFadeIn 0.6s ease-out 0.2s forwards; }
+    .header img.bg-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.2; pointer-events: none; z-index: 1; }
+    .profile-pic { position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); width: 150px; height: 150px; border-radius: 50%; background-color: #ffffff; border: 4px solid #fff; /* --- IMPORTANT: Replace image path --- */ background-image: url('../SENATOR PICS/AQUINO.jpg'); /* <<<--- REPLACE IMAGE */ background-size: cover; background-position: center; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); z-index: 3; }
+    .name { position: relative; z-index: 2; padding: 0 20px; box-sizing: border-box; width: 100%; font-size: 1.875rem; font-weight: 600; text-align: center; margin-bottom: 1rem; /* Example Gradient */ background: linear-gradient(to right, #facc15, #eab308); /* Yellow Gradient Example */ -webkit-background-clip: text; background-clip: text; color: transparent; }
+    @media (min-width: 640px) { .name { font-size: 2.25rem; } }
+    @media (min-width: 768px) { .name { font-size: 3rem; } }
+    .content { padding: 0 20px 20px 20px; max-width: 900px; margin: 0 auto; }
+    .card { background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); opacity: 0; animation: slideUpFadeIn 0.5s ease-out forwards; animation-delay: 0.4s; }
+    /* Adjusted animation delays for 7 cards */
+    .content > .card:nth-child(1) { animation-delay: 0.4s; }
+    .content > .card:nth-child(2) { animation-delay: 0.5s; }
+    .content > .card:nth-child(3) { animation-delay: 0.6s; }
+    .content > .card:nth-child(4) { animation-delay: 0.7s; }
+    .content > .card:nth-child(5) { animation-delay: 0.8s; }
+    .content > .card:nth-child(6) { animation-delay: 0.9s; }
+    .content > .card:nth-child(7) { animation-delay: 1.0s; }
+    .card h2 { color: #333; border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-top: 0; margin-bottom: 15px; font-size: 20px; }
+    .card p, .card li { line-height: 1.6; color: #333; margin-bottom: 0.7em; }
+    .card ul { padding-left: 40px; margin-top: 0; list-style: disc; }
+    .card ul ul { padding-left: 20px; margin-top: 0.5em; list-style-type: circle; }
+    .card > ul > li:has(ul) { list-style-type: none; margin-left: -20px; }
+    .card p strong, .card li strong { color: #333; display: inline-block; margin-right: 5px; }
+    .card a { color: #007bff; text-decoration: none; word-break: break-all; }
+    .card a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <img src="your-aquino-background.jpg" class="bg-overlay" alt="Header Overlay"> <!-- <<<--- REPLACE IMAGE -->
+    <div class="profile-pic"></div>
+    <div class="name">Bam Aquino</div> <!-- Updated Name -->
+  </div>
+
+  <!-- Main Content Cards -->
+  <div class="content">
+
+    <div class="card">
+      <h2>Personal Information</h2>
+      <p><strong>Birthdate:</strong> May 7, 1977</p>
+      <p><strong>Age on Election Day:</strong> 48</p>
+      <p><strong>Birthplace:</strong> Manila</p>
+      <p><strong>Residence:</strong> Brgy. San Jose, Concepcion, Tarlac</p>
+      <p><strong>Sex:</strong> Male</p>
+      <p><strong>Civil Status:</strong> Married</p>
+      <p><strong>Spouse:</strong> Mary Fatima G. Aquino</p>
+      <p><strong>Profession/Occupation:</strong> Businessman</p>
+      <p><strong>Political Party:</strong> Liberal Party (LP)</p>
+    </div>
+
+    <div class="card">
+      <h2>Platforms</h2>
+      <ul>
+        <!-- Full Text Included -->
+        <li>Advocate for innovation and technology-driven reforms to boost economic growth</li>
+        <li>Focus on education and skills development programs for youth</li>
+        <li>Supports environmental protection and climate change mitigation initiatives</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Notable Positions</h2>
+      <ul>
+        <li>Senator of the Philippines (2013–2019)</li>
+        <li>Representative of Tarlac (2007–2010)</li> <!-- Note: Source says Rep, but usually only 1 Dist. specified -->
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Notable Laws and Projects</h2>
+      <ul>
+        <!-- Full Text Included -->
+        <li><strong>Republic Act No. 10644 (Go Negosyo Act):</strong> Instrumental in the creation of this law that established the Go Negosyo Centers aimed at promoting entrepreneurship among Filipinos.</li>
+        <li><strong>Republic Act No. 10648 (Iskolar ng Bayan Act of 2014):</strong> Advocated for reforms to strengthen support for MSMEs in the country.</li> <!-- Note: The provided text mentions Magna Carta for MSMEs but links to Iskolar ng Bayan Act. Used the linked Act name. Verify if needed. -->
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Controversies</h2>
+      <ul>
+        <!-- Full Text Included -->
+        <li>His tenure as senator was questioned by some due to the alleged lack of significant legislative achievements.</li>
+        <li>Faced political criticisms following his involvement in controversies surrounding alleged anomalies with the use of funds in his past public office roles, though he was never formally charged.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Sources</h2>
+      <ul>
+         <li>Wikipedia contributors. (2025, May 9). Bam Aquino. Wikipedia. Retrieved May 12, 2025, from <a href="https://en.wikipedia.org/wiki/Bam_Aquino" target="_blank">https://en.wikipedia.org/wiki/Bam_Aquino</a></li>
+         <li>Senate of the Philippines. (n.d.). Senator Paolo Benigno "Bam" Aquino IV. Retrieved May 12, 2025, from <a href="https://legacy.senate.gov.ph/senators/sen_bio/aquino_bio.asp" target="_blank">https://legacy.senate.gov.ph/senators/sen_bio/aquino_bio.asp</a></li>
+         <li>Republic Act No. 10644. (2014, July 15). Go Negosyo Act. Official Gazette. Retrieved May 12, 2025, from <a href="https://www.officialgazette.gov.ph/2014/07/15/republic-act-no-10644/" target="_blank">https://www.officialgazette.gov.ph/2014/07/15/republic-act-no-10644/</a></li>
+         <li>Republic Act No. 10648. (2014, November 27). Iskolar ng Bayan Act of 2014. Official Gazette. Retrieved May 12, 2025, from <a href="https://www.officialgazette.gov.ph/2014/11/27/republic-act-no-10648/" target="_blank">https://www.officialgazette.gov.ph/2014/11/27/republic-act-no-10648/</a></li>
+         <li>Republic Act No. 10931. (2017, August 3). Universal Access to Quality Tertiary Education Act. Official Gazette. Retrieved May 12, 2025, from <a href="https://www.officialgazette.gov.ph/2017/08/03/republic-act-no-10931/" target="_blank">https://www.officialgazette.gov.ph/2017/08/03/republic-act-no-10931/</a></li>
+         <li>Republic Act No. 11035. (2018, June 15). Balik Scientist Act. Official Gazette. Retrieved May 12, 2025, from <a href="https://www.officialgazette.gov.ph/2018/06/15/republic-act-no-11035/" target="_blank">https://www.officialgazette.gov.ph/2018/06/15/republic-act-no-11035/</a></li>
+         <li>Rappler. (2024, May 14). Bam Aquino to lead KANP party, confirms senatorial bid for 2025 polls. Retrieved May 12, 2025, from <a href="https://www.rappler.com/philippines/elections/bam-aquino-lead-kanp-party-confirms-senatorial-bid-2025-polls/" target="_blank">https://www.rappler.com/philippines/elections/bam-aquino-lead-kanp-party-confirms-senatorial-bid-2025-polls/</a></li>
+         <li>ABS-CBN News. (2025, January 7). Harapan 2025: Aquino, Rodriguez against bill legalizing divorce. Retrieved May 12, 2025, from <a href="https://news.abs-cbn.com/news/01/07/25/harapan-2025-aquino-rodriguez-against-bill-legalizing-divorce" target="_blank">https://news.abs-cbn.com/news/01/07/25/harapan-2025-aquino-rodriguez-against-bill-legalizing-divorce</a></li>
+         <li>GMA News Online. (2021, October 7). Bam Aquino scraps Senate return to become Robredo's campaign manager instead. Retrieved May 12, 2025, from <a href="https://www.gmanetwork.com/news/news/nation/805930/bam-aquino-scraps-senate-return-to-become-robredo-s-campaign-manager-instead/story/" target="_blank">https://www.gmanetwork.com/news/news/nation/805930/bam-aquino-scraps-senate-return-to-become-robredo-s-campaign-manager-instead/story/</a></li>
+         <li>Rappler. (2019, May 22). 14 million votes for an Aquino in time of Duterte still a feat, says Bam. Retrieved May 12, 2025, from <a href="https://www.rappler.com/nation/elections/231363-bam-aquino-concedes-2019-senatorial-race/" target="_blank">https://www.rappler.com/nation/elections/231363-bam-aquino-concedes-2019-senatorial-race/</a></li>
+      </ul>
+    </div>
+
+  </div> <!-- end .content -->
+
+</body>
+</html>

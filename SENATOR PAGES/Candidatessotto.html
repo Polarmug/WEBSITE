@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Added viewport -->
+  <title>Vicente "Tito" Sotto III - Senatorial Candidate</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      overflow-x: hidden; /* Prevent horizontal scrollbar during animation */
+      color: #333; /* Default text color */
+    }
+
+    /* --- Animation Keyframes --- */
+    @keyframes slideUpFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Header Section - Using Flexbox layout */
+    .header {
+      position: relative;
+      height: 300px;
+      background-color: black; /* Black background from original */
+      overflow: hidden;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      /* --- Header Animation --- */
+      opacity: 0;
+      animation: slideUpFadeIn 0.6s ease-out 0.2s forwards;
+    }
+
+    .header img.bg-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.2;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .profile-pic {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #ffffff; /* Fallback */
+      border: 4px solid #fff;
+      /* --- IMPORTANT: Replace with Sotto's profile image path --- */
+      background-image: url('../SENATOR PICS/sottO.jpg'); /* <<<--- REMEMBER TO REPLACE THIS IMAGE */
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 3;
+    }
+
+    /* Name Styling - Gradient + Responsive Sizes */
+    .name {
+      position: relative;
+      z-index: 2;
+      padding: 0 20px;
+      box-sizing: border-box;
+      width: 100%;
+
+      font-size: 1.875rem; /* text-3xl */
+      font-weight: 600;    /* font-semibold */
+      text-align: center;  /* text-center */
+      margin-bottom: 1rem; /* mb-4 */
+
+      background: linear-gradient(to right, #FBBF24, #F97316); /* Gradient */
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent; /* text-transparent */
+
+    }
+
+    /* Responsive Font Sizes for Name */
+    @media (min-width: 640px) { /* sm breakpoint */
+      .name { font-size: 2.25rem; } /* text-4xl */
+    }
+    @media (min-width: 768px) { /* md breakpoint */
+      .name { font-size: 3rem; } /* text-5xl */
+    }
+
+    /* Main Content Area */
+    .content {
+      padding: 0 20px 20px 20px;
+      max-width: 900px; /* Optional: Limit content width for better readability on large screens */
+      margin: 0 auto; /* Center the content area */
+    }
+
+    /* Card Styling */
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+      /* --- Card Animation (Base) --- */
+      opacity: 0;
+      animation: slideUpFadeIn 0.5s ease-out forwards;
+      animation-delay: 0.4s; /* Default delay */
+    }
+
+    /* Staggered Card Animation Delays */
+    .content > .card:nth-child(1) { animation-delay: 0.4s; }
+    .content > .card:nth-child(2) { animation-delay: 0.5s; }
+    .content > .card:nth-child(3) { animation-delay: 0.6s; }
+    .content > .card:nth-child(4) { animation-delay: 0.7s; }
+    .content > .card:nth-child(5) { animation-delay: 0.8s; }
+    .content > .card:nth-child(6) { animation-delay: 0.9s; }
+    .content > .card:nth-child(7) { animation-delay: 1.0s; }
+    .content > .card:nth-child(8) { animation-delay: 1.1s; }
+    /* Add more if needed */
+
+    /* Card Content Styling */
+    .card h2 {
+      color: #333; /* Color from original Sotto example */
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    .card p, .card li {
+      line-height: 1.6;
+      color: #333; /* Default text color */
+      margin-bottom: 0.5em; /* Add spacing between list items and paragraphs */
+    }
+
+    .card ul {
+      padding-left: 20px;
+      margin-top: 0;
+      list-style: disc; /* Explicitly set list style */
+    }
+
+     .card p strong, .card li strong {
+        color: #333; /* Make bold text same color or slightly darker */
+        display: inline-block; /* Prevents awkward line breaks after strong tag */
+        margin-right: 5px; /* Add a small space after the bold label */
+     }
+
+     .card a {
+        color: #007bff; /* Standard link color */
+        text-decoration: none;
+        word-break: break-all; /* Break long URLs */
+     }
+     .card a:hover {
+        text-decoration: underline;
+     }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <!-- --- IMPORTANT: Replace image paths --- -->
+    <img src="your-background-image.jpg" class="bg-overlay" alt="Header Overlay"> <!-- <<<--- REMEMBER TO REPLACE THIS IMAGE -->
+    <div class="profile-pic"></div>
+    <div class="name">Vicente "Tito" Sotto III</div>
+  </div>
+
+  <!-- Main Content Cards -->
+  <div class="content">
+
+    <div class="card">
+      <h2>Personal Information</h2>
+      <p><strong>Full Name:</strong> Vicente Castelo Sotto III</p>
+      <p><strong>Birthdate:</strong> August 24, 1948</p>
+      <p><strong>Age on Election Day:</strong> 76</p>
+      <p><strong>Birthplace:</strong> Manila</p>
+      <p><strong>Residence:</strong> Brgy. White Plains, Quezon City, Metro Manila</p>
+      <p><strong>Sex:</strong> Male</p>
+      <p><strong>Civil Status:</strong> Married</p>
+      <p><strong>Spouse:</strong> Helen Gamboa-Sotto</p>
+      <p><strong>Profession/Occupation:</strong> Businessman and TV Host</p>
+      <p><strong>Political Affiliation:</strong> Nationalist People's Coalition (NPC)</p>
+    </div>
+
+    <div class="card">
+      <h2>Political Platforms</h2>
+      <ul>
+        <li><strong>Education & Youth:</strong> Advocates the integration of drug abuse prevention programs into the basic education curriculum; supports enhanced benefits and professional development for teachers.</li>
+        <li><strong>Illegal Drug Problem:</strong> A strong anti-drug campaigner; chaired the Dangerous Drugs Board (2008–2009); principal author of the Comprehensive Dangerous Drugs Act of 2002.</li>
+        <li><strong>Human Rights:</strong> Pro-life advocate; promotes child protection laws such as the Juvenile Justice Act; instrumental in amending and strengthening the Anti-Hazing Law.</li>
+        <li><strong>Corruption:</strong> Promotes transparency and accountability through consistent public disclosure of his Statement of Assets, Liabilities, and Net Worth (SALN).</li>
+        <li><strong>Economic Development:</strong> Supports agricultural modernization, strategic tax reform, labor law enforcement, and protection for local farmers.</li>
+        <li><strong>Peace & Order:</strong> Pushes for national security, economic-driven peacebuilding, and anti-terrorism laws.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Notable Positions</h2>
+      <ul>
+        <li><strong>Vice Mayor, Quezon City (1988–1992):</strong> Founded the Vice Mayors’ League of the Philippines; initiated local anti-drug policies.</li>
+        <li><strong>Senator (1992–2004; 2010–2022):</strong> Chaired various committees, including Local Government, Youth and Sports Development, and Illegal Drugs. Co-authored RA 8747 (Year 2000 Readiness Act) and RA 8750 (Seat Belts Use Act of 1999). Authored several cityhood conversion laws promoting local autonomy and development.</li>
+        <li><strong>Senate President (2016–2022):</strong> Oversaw key legislation including anti-drug measures, telecommunication reforms, and labor laws. Played a key role during the COVID-19 crisis in pushing pandemic response laws like the Bayanihan Acts.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Senatorial Record</h2>
+      <p><strong>Congressional Terms:</strong> 9th–12th, 15th–18th Congress</p>
+      <p><strong>Sponsored/Co-sponsored:</strong> Dozens of national and local measures, including major healthcare, anti-drug, anti-corruption, education, and pandemic-related laws during the 18th Congress.</p>
+    </div>
+
+    <div class="card">
+      <h2>Legislative Accomplishments</h2>
+      <p>Vicente Sotto III has had a prolific legislative career with landmark contributions spanning public health, national security, education, and social protection. Among his most significant roles and bills are:</p>
+      <ul>
+        <li><strong>RA 11469 – Bayanihan to Heal as One Act (2020):</strong> Principal co-author; granted special powers to the President to manage the COVID-19 crisis.</li>
+        <li><strong>RA 11494 – Bayanihan to Recover as One Act (2020):</strong> Co-sponsor; facilitated pandemic recovery by allocating resources for public health, economic support, and emergency relief.</li>
+        <li><strong>RA 11509 – Medical Scholarship Act (2021):</strong> Author; provided free medical education to qualified Filipino students in exchange for public service.</li>
+        <li><strong>RA 11476 – Comprehensive Values Education Act (2020):</strong> Principal author; mandated values education in all levels of basic education.</li>
+        <li><strong>RA 11479 – Anti-Terrorism Act of 2020:</strong> Co-sponsor; expanded government powers to prevent and respond to terrorism.</li>
+        <li><strong>RA 11549 – Height Equality Act (2021):</strong> Principal author; eliminated height requirements for PNP, BFP, BJMP, and BuCor applicants.</li>
+        <li><strong>RA 11589 – BFP Modernization Act (2021):</strong> Principal sponsor; upgraded facilities, training, and benefits for firefighters.</li>
+        <li><strong>RA 11053 – Anti-Hazing Act of 2018:</strong> Author; strengthened regulation against violent fraternity initiations.</li>
+        <li><strong>RA 11223 – Universal Health Care Act (2019):</strong> Co-author; guaranteed equitable access to quality healthcare for all Filipinos.</li>
+        <li><strong>RA 11517 – Fast-Tracking Permits Act (2021):</strong> Co-sponsor; streamlined processing of permits and licenses, especially during emergencies.</li>
+        <li><strong>RA 11591 – Extension of Voter Registration (2021):</strong> Principal sponsor; ensured higher voter turnout through extended deadlines.</li>
+        <li><strong>RA 11525 – COVID-19 Vaccination Program Act (2021):</strong> Key contributor; established indemnity funds and procurement support for COVID-19 vaccines.</li>
+        <li><strong>RA 11502 – National Cooperative Month Act (2020):</strong> Co-author; declared October as National Cooperative Month to promote cooperative values.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Key Advocacy Areas</h2>
+      <ul>
+        <li><strong>Anti-Drug Legislation:</strong> Championed comprehensive anti-drug policies both legislatively and administratively, including the crafting of foundational laws and national strategy through the Dangerous Drugs Board.</li>
+        <li><strong>Youth and Education:</strong> Strong proponent of institutionalizing moral and values education and enhancing teacher welfare.</li>
+        <li><strong>Public Health and Safety:</strong> Advocated for accessible healthcare, safe learning environments, and modernized emergency response agencies.</li>
+        <li><strong>National Security:</strong> Supported laws enhancing peace and security, including the Anti-Terrorism Act and modernization of uniformed services.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Controversies</h2>
+      <ul>
+        <li><strong>Drug Policy Approach:</strong> His strong anti-drug stance—emphasizing rehabilitation and enforcement—received both support and criticism, with debates over human rights implications.</li>
+        <li><strong>2012 Plagiarism Allegations:</strong> Sotto was accused of plagiarism for allegedly copying passages from U.S. Senator Robert F. Kennedy and blogger Sarah Pope. Sotto defended his actions, arguing that he had translated the material and intended to deliver an inspirational message. While no legal consequences followed, the incident generated significant public debate.</li>
+        <li><strong>Pepsi Paloma Case (1982):</strong> Involved in the alleged suppression of charges against his brother Vic Sotto and two others. Sotto was accused of coercing actress Pepsi Paloma into signing an affidavit of desistance. He denies involvement, calling it a publicity stunt. The issue resurfaced in 2025 when Sotto filed cyber libel cases related to a film about the case.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Sources</h2>
+      <ul>
+        <li>Cruz, N. (2012). Sotto: What really happened in plagiarism issue. Philippine Daily Inquirer. <a href="https://opinion.inquirer.net/41218/sotto-what-really-happened-in-plagiarism-issue" target="_blank">https://opinion.inquirer.net/41218/sotto-what-really-happened-in-plagiarism-issue</a></li>
+        <li>Cruz, R., & Gasgonia, D. (2025, January 31). Harapan 2025: Tito Sotto says Pepsi Paloma issue was just 'showbiz gimmick'. ABS-CBN News. <a href="https://www.abs-cbn.com/news/nation/2025/1/31/harapan-2025-tito-sotto-says-pepsi-paloma-issue-was-just-showbiz-gimmick-1818" target="_blank">https://www.abs-cbn.com/news/nation/2025/1/31/harapan-2025-tito-sotto-says-pepsi-paloma-issue-was-just-showbiz-gimmick-1818</a></li>
+        <li>Senate of the Philippines. (n.d.). Vicente C. Sotto III. <a href="https://web.senate.gov.ph/senators/former_senators/vicente_sotto_iii.htm" target="_blank">https://web.senate.gov.ph/senators/former_senators/vicente_sotto_iii.htm</a></li>
+        <li>Vicente Sotto Official Website. (n.d.). Platforms & Programs. <a href="https://vicentesotto.com/platforms-programs" target="_blank">https://vicentesotto.com/platforms-programs</a></li>
+        <li>Vicente Sotto Official Website. (n.d.). Legislation Records (12th to 18th Congress). <a href="https://vicentesotto.com" target="_blank">https://vicentesotto.com</a></li>
+      </ul>
+    </div>
+
+  </div> <!-- end .content -->
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Senator Imee Marcos - Senatorial Candidate</title> <!-- Updated Title -->
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4; overflow-x: hidden; color: #333; }
+    @keyframes slideUpFadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .header { position: relative; height: 300px; background-color: black; /* Example */ overflow: hidden; margin-bottom: 20px; display: flex; align-items: flex-end; justify-content: center; opacity: 0; animation: slideUpFadeIn 0.6s ease-out 0.2s forwards; }
+    .header img.bg-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.2; pointer-events: none; z-index: 1; }
+    .profile-pic { position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); width: 150px; height: 150px; border-radius: 50%; background-color: #ffffff; border: 4px solid #fff; /* --- IMPORTANT: Replace image path --- */ background-image: url('../SENATOR\ PICS/MARCOS.jpg'); /* <<<--- REPLACE IMAGE */ background-size: cover; background-position: center; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); z-index: 3; }
+    .name { position: relative; z-index: 2; padding: 0 20px; box-sizing: border-box; width: 100%; font-size: 1.875rem; font-weight: 600; text-align: center; margin-bottom: 1rem; /* Example Gradient */ background: linear-gradient(to right, #ef4444, #dc2626); /* Red Gradient Example */ -webkit-background-clip: text; background-clip: text; color: transparent; }
+    @media (min-width: 640px) { .name { font-size: 2.25rem; } }
+    @media (min-width: 768px) { .name { font-size: 3rem; } }
+    .content { padding: 0 20px 20px 20px; max-width: 900px; margin: 0 auto; }
+    .card { background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); opacity: 0; animation: slideUpFadeIn 0.5s ease-out forwards; animation-delay: 0.4s; }
+    /* Adjusted animation delays for 7 cards */
+    .content > .card:nth-child(1) { animation-delay: 0.4s; }
+    .content > .card:nth-child(2) { animation-delay: 0.5s; }
+    .content > .card:nth-child(3) { animation-delay: 0.6s; }
+    .content > .card:nth-child(4) { animation-delay: 0.7s; }
+    .content > .card:nth-child(5) { animation-delay: 0.8s; }
+    .content > .card:nth-child(6) { animation-delay: 0.9s; }
+    .content > .card:nth-child(7) { animation-delay: 1.0s; }
+    .card h2 { color: #333; border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-top: 0; margin-bottom: 15px; font-size: 20px; }
+    .card p, .card li { line-height: 1.6; color: #333; margin-bottom: 0.7em; }
+    .card ul { padding-left: 40px; margin-top: 0; list-style: disc; }
+    .card ul ul { padding-left: 20px; margin-top: 0.5em; list-style-type: circle; }
+    .card > ul > li:has(ul) { list-style-type: none; margin-left: -20px; }
+    .card p strong, .card li strong { color: #333; display: inline-block; margin-right: 5px; }
+    .card a { color: #007bff; text-decoration: none; word-break: break-all; }
+    .card a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <img src="your-imee-marcos-background.jpg" class="bg-overlay" alt="Header Overlay"> <!-- <<<--- REPLACE IMAGE -->
+    <div class="profile-pic"></div>
+    <div class="name">Senator Imee Marcos</div> <!-- Updated Name -->
+  </div>
+
+  <!-- Main Content Cards -->
+  <div class="content">
+
+    <div class="card">
+      <h2>Personal Information</h2>
+      <p><strong>Full Name:</strong> Maria Imelda Josefa Remedios "Imee" Romualdez Marcos</p>
+      <p><strong>Birthdate:</strong> November 12, 1955</p>
+      <p><strong>Age on Election Day:</strong> 69</p>
+      <p><strong>Birthplace:</strong> Manila, Philippines</p>
+      <p><strong>Residence:</strong> Batac, Ilocos Norte</p>
+      <p><strong>Sex:</strong> Female</p>
+      <p><strong>Civil Status:</strong> Divorced</p>
+      <p><strong>Children:</strong> 3</p>
+      <p><strong>Profession/Occupation:</strong> Politician / Former Actress / Film Producer</p>
+      <p><strong>Political Party:</strong> Independent (formerly Nacionalista Party)</p>
+    </div>
+
+    <div class="card">
+      <h2>Platforms</h2>
+      <ul>
+        <!-- Full Text Included -->
+        <li>Advocates for a uniform minimum wage across all regions to promote equitable economic growth</li>
+        <li>Supports increased funding for agriculture, aiming to strengthen the entire supply chain from production to distribution</li>
+        <li>Promotes national sovereignty, expressing concerns over foreign military presence and its implications on Philippine security</li>
+        <li>Endorses digital innovation and creative industries to boost employment and economic development</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Notable Positions</h2>
+      <ul>
+        <!-- Full Text Included -->
+        <li>Senator of the Philippines (2019–present)</li>
+        <li>Governor of Ilocos Norte (2010–2019)</li>
+        <li>Representative, Ilocos Norte's 2nd District (1998–2007)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Notable Laws and Projects</h2>
+      <ul>
+        <!-- Full Text Included -->
+        <li>Introduced a <strong>Seven-Point Plan</strong> focusing on economic recovery, digital transformation, and cultural preservation</li>
+        <li>Championed legislation to support local farmers and fisherfolk, aiming to enhance food security and rural development</li> <!-- Added 'development' based on context -->
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Controversies</h2>
+      <ul>
+        <!-- Full Text Included -->
+        <li>Faced criticism for her <strong>TikTok video alleging Chinese missile threats</strong>, which was deemed unverified by national security officials</li>
+        <li>Experienced a public rift with her brother, <strong>President Ferdinand Marcos Jr.</strong>, leading to her withdrawal from the administration's senatorial slate</li>
+        <li>Released a campaign ad titled <strong>"Itim" (Black)</strong>, which drew backlash from activist groups who viewed it as a negative portrayal of the country's future under continued Marcos-Duterte leadership</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Sources</h2>
+      <ul>
+         <li>Wikipedia contributors. (n.d.). Imee Marcos. Wikipedia. Retrieved May 12, 2025, from <a href="https://en.wikipedia.org/wiki/Imee_Marcos" target="_blank">https://en.wikipedia.org/wiki/Imee_Marcos</a></li>
+         <li>Senate of the Philippines. (n.d.). Senator Imee Marcos - Biography. Retrieved May 12, 2025, from <a href="https://www.senate.gov.ph/senators/sen_bio/marcos_bio.asp" target="_blank">https://www.senate.gov.ph/senators/sen_bio/marcos_bio.asp</a></li>
+         <li>Inquirer.net. (2021, June 17). Imee Marcos joins Marcos-Duterte alliance for 2022 elections. Retrieved May 12, 2025, from <a href="https://newsinfo.inquirer.net/1446757/imee-marcos-joins-marcos-duterte-alliance-for-2022-elections" target="_blank">https://newsinfo.inquirer.net/1446757/imee-marcos-joins-marcos-duterte-alliance-for-2022-elections</a></li>
+         <li>Manila Bulletin. (2020, October 5). Imee Marcos defends her TikTok video about Chinese missile threats. Retrieved May 12, 2025, from <a href="https://mb.com.ph/2020/10/05/imee-marcos-defends-her-tiktok-video-about-chinese-missile-threats/" target="_blank">https://mb.com.ph/2020/10/05/imee-marcos-defends-her-tiktok-video-about-chinese-missile-threats/</a></li>
+         <li>GMA News Online. (2022, April 21). Imee Marcos withdraws from Marcos-Duterte slate for 2022 elections. Retrieved May 12, 2025, from <a href="https://www.gmanetwork.com/news/topstories/nation/830231/imee-marcos-withdraws-from-marcos-duterte-slate-for-2022-elections/" target="_blank">https://www.gmanetwork.com/news/topstories/nation/830231/imee-marcos-withdraws-from-marcos-duterte-slate-for-2022-elections/</a></li>
+         <li>Philippine News Agency. (2020, October 28). Imee Marcos advocates for agricultural modernization, local industries. Retrieved May 12, 2025, from <a href="https://www.pna.gov.ph/articles/1122334" target="_blank">https://www.pna.gov.ph/articles/1122334</a></li>
+         <li>Marcos, I. R. (n.d.). Imee Marcos Legislative Agenda. Retrieved May 12, 2025, from <a href="https://www.imeemarcos.ph/" target="_blank">https://www.imeemarcos.ph/</a></li> <!-- Link updated to base URL -->
+         <li>Partido Federal ng Pilipinas. (n.d.). Imee Marcos: Biography and Career. Retrieved May 12, 2025, from <a href="https://www.pfp.ph/senator-imee-marcos" target="_blank">https://www.pfp.ph/senator-imee-marcos</a></li>
+      </ul>
+    </div>
+
+  </div> <!-- end .content -->
+
+</body>
+</html>

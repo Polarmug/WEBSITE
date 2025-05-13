@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Added viewport -->
+  <!-- Updated Title -->
+  <title>Apollo Carreon Quiboloy - Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      overflow-x: hidden; /* Prevent horizontal scrollbar during animation */
+      color: #333; /* Default text color */
+    }
+
+    /* --- Animation Keyframes --- */
+    @keyframes slideUpFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Header Section - Using Flexbox layout */
+    .header {
+      position: relative;
+      height: 300px;
+      background-color: black; /* Black background example */
+      overflow: hidden;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      /* --- Header Animation --- */
+      opacity: 0;
+      animation: slideUpFadeIn 0.6s ease-out 0.2s forwards;
+    }
+
+    .header img.bg-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.2;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .profile-pic {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #ffffff; /* Fallback */
+      border: 4px solid #fff;
+      /* --- IMPORTANT: Replace with Quiboloy's profile image path --- */
+      background-image: url('../SENATOR\ PICS/QUIBOLOY.jpg'); /* <<<--- REMEMBER TO REPLACE THIS IMAGE */
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 3;
+    }
+
+    /* Name Styling - Gradient + Responsive Sizes */
+    .name {
+      position: relative;
+      z-index: 2;
+      padding: 0 20px;
+      box-sizing: border-box;
+      width: 100%;
+
+      font-size: 1.875rem; /* text-3xl */
+      font-weight: 600;    /* font-semibold */
+      text-align: center;  /* text-center */
+      margin-bottom: 1rem; /* mb-4 */
+
+      /* Example Gradient - Gold/Neutral theme */
+      background: linear-gradient(to right, #ca8a04, #a16207); /* Gold/Brown Gradient Example */
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent; /* text-transparent */
+
+    }
+
+    /* Responsive Font Sizes for Name */
+    @media (min-width: 640px) { /* sm breakpoint */
+      .name { font-size: 2.25rem; } /* text-4xl */
+    }
+    @media (min-width: 768px) { /* md breakpoint */
+      .name { font-size: 3rem; } /* text-5xl */
+    }
+
+    /* Main Content Area */
+    .content {
+      padding: 0 20px 20px 20px;
+      max-width: 900px; /* Optional: Limit content width */
+      margin: 0 auto; /* Center the content area */
+    }
+
+    /* Card Styling */
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+      /* --- Card Animation (Base) --- */
+      opacity: 0;
+      animation: slideUpFadeIn 0.5s ease-out forwards;
+      animation-delay: 0.4s; /* Default delay */
+    }
+
+    /* Staggered Card Animation Delays */
+    .content > .card:nth-child(1) { animation-delay: 0.4s; }
+    .content > .card:nth-child(2) { animation-delay: 0.5s; }
+    .content > .card:nth-child(3) { animation-delay: 0.6s; }
+    .content > .card:nth-child(4) { animation-delay: 0.7s; }
+    .content > .card:nth-child(5) { animation-delay: 0.8s; }
+    /* Adjust if more cards are added */
+
+    /* Card Content Styling */
+    .card h2 {
+      color: #333;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    .card p { /* Target only paragraphs for general margin */
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 0.7em;
+    }
+
+    .card li { /* Target only list items for general margin */
+        line-height: 1.6;
+        color: #333;
+        margin-bottom: 0.7em; /* Spacing between list items */
+    }
+
+
+    .card ul {
+      padding-left: 40px;   /* Indentation for list items */
+      margin-top: 0;
+      list-style: disc; /* Default bullet style */
+    }
+
+     .card p strong, .card li strong {
+        color: #333;
+        display: inline-block;
+        margin-right: 5px;
+     }
+
+     .card a {
+        color: #007bff;
+        text-decoration: none;
+        word-break: break-all; /* Helps break long URLs */
+     }
+     .card a:hover {
+        text-decoration: underline;
+     }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <!-- --- IMPORTANT: Replace image paths --- -->
+    <img src="your-quiboloy-background.jpg" class="bg-overlay" alt="Header Overlay"> <!-- <<<--- REMEMBER TO REPLACE THIS IMAGE -->
+    <div class="profile-pic"></div>
+    <!-- Updated Name -->
+    <div class="name">Apollo Carreon Quiboloy</div>
+  </div>
+
+  <!-- Main Content Cards -->
+  <div class="content">
+
+    <div class="card">
+      <h2>Personal Information</h2>
+      <p><strong>Full Name:</strong> Apollo Carreon Quiboloy</p>
+      <p><strong>Date of Birth:</strong> April 25, 1950</p>
+      <p><strong>Place of Birth:</strong> Dumanlas, Buhangin, Davao City, Philippines</p>
+      <p><strong>Age:</strong> 75</p>
+      <p><strong>Political Party:</strong> Partido Demokratiko Pilipino–Lakas ng Bayan (PDP–Laban)</p>
+    </div>
+
+    <!-- No Political Platforms provided -->
+    <!-- <div class="card"><h2>Political Platforms</h2><p>Not specified.</p></div> -->
+
+    <div class="card">
+      <h2>Notable Positions</h2>
+      <ul>
+        <li><strong>Founder and Leader, Kingdom of Jesus Christ (KJC):</strong> Established in 1985, KJC is a Restorationist church based in the Philippines. Quiboloy proclaimed himself the "Appointed Son of God" and the "Owner of the Universe."
+</li>
+        <li><strong>Founder, Sonshine Media Network International (SMNI):</strong> A broadcasting network associated with KJC, SMNI has been used to disseminate Quiboloy's teachings and political views.
+</li>
+      </ul>
+    </div>
+
+    <!-- No Legislative Accomplishments provided -->
+    <!-- <div class="card"><h2>Legislative Accomplishments</h2><p>Not applicable / Not specified.</p></div> -->
+
+    <!-- No Key Advocacy Areas provided -->
+    <!-- <div class="card"><h2>Key Advocacy Areas</h2><p>Not specified.</p></div> -->
+
+    <div class="card">
+      <h2>Controversies</h2>
+      <ul>
+         <li><strong>Legal Investigations and Allegations:</strong>
+            <ul>
+                <li>Quiboloy is wanted by the FBI for alleged participation in a labor trafficking scheme involving church members in the United States.
+</li>
+                <li>He faces serious criminal charges, including sex trafficking, coercion, and fraud, both in the U.S. and the Philippines.</li>
+                <li>In 2024, Quiboloy surrendered to Philippine authorities after a two-week manhunt involving over 2,000 police officers</li>
+            </ul>
+         </li>
+      </ul>
+    </div>
+
+    <!-- Sources Card Updated -->
+    <div class="card">
+      <h2>Sources</h2>
+      <ul>
+        <li>Gavilan, J. (2024, September 8). FAST FACTS: Who is Pastor Apollo Quiboloy, the ‘Appointed Son of God’? RAPPLER. <a href="https://www.rappler.com/newsbreak/iq/196156-fast-facts-pastor-apollo-quiboloy-kingdom-jesus-christ/" target="_blank">https://www.rappler.com/newsbreak/iq/196156-fast-facts-pastor-apollo-quiboloy-kingdom-jesus-christ/</a></li>
+        <li>Apollo Carreon Quiboloy. (n.d.). FBI. Retrieved from <a href="https://www.fbi.gov/wanted/human-trafficking/apollo-carreon-quiboloy" target="_blank">https://www.fbi.gov/wanted/human-trafficking/apollo-carreon-quiboloy</a></li>
+        <li>Why a Filipino Megachurch Founder Is on the Run, Claiming the U.S. Wants Him Dead. (2024, April 3). Time. Retrieved from <a href="https://time.com/6722170/apollo-quiboloy-fbi-us-philippines/" target="_blank">https://time.com/6722170/apollo-quiboloy-fbi-us-philippines/</a></li>
+        <li>Celebrity 'son of God' pastor surrenders in Philippines after two-week manhunt. (2024, September 9). The Guardian. Retrieved from <a href="https://www.theguardian.com/world/article/2024/sep/09/celebrity-son-of-god-pastor-surrenders-to-philippines-police-after-two-week-manhunt" target="_blank">https://www.theguardian.com/world/article/2024/sep/09/celebrity-son-of-god-pastor-surrenders-to-philippines-police-after-two-week-manhunt</a></li>
+      </ul>
+    </div>
+
+  </div> <!-- end .content -->
+
+</body>
+</html>

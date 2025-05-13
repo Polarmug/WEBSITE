@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phillip Salvador - Senatorial Candidate</title> <!-- Updated Title -->
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4; overflow-x: hidden; color: #333; }
+    @keyframes slideUpFadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .header { position: relative; height: 300px; background-color: black; /* Example */ overflow: hidden; margin-bottom: 20px; display: flex; align-items: flex-end; justify-content: center; opacity: 0; animation: slideUpFadeIn 0.6s ease-out 0.2s forwards; }
+    .header img.bg-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.2; pointer-events: none; z-index: 1; }
+    .profile-pic { position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); width: 150px; height: 150px; border-radius: 50%; background-color: #ffffff; border: 4px solid #fff; /* --- IMPORTANT: Replace image path --- */ background-image: url('../SENATOR PICS/sALVADOR.jpg'); /* <<<--- REPLACE IMAGE */ background-size: cover; background-position: center; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); z-index: 3; }
+    .name { position: relative; z-index: 2; padding: 0 20px; box-sizing: border-box; width: 100%; font-size: 1.875rem; font-weight: 600; text-align: center; margin-bottom: 1rem; /* Example Gradient */ background: linear-gradient(to right, #78716c, #44403c); /* Brown/Gray Gradient Example */ -webkit-background-clip: text; background-clip: text; color: transparent; }
+    @media (min-width: 640px) { .name { font-size: 2.25rem; } }
+    @media (min-width: 768px) { .name { font-size: 3rem; } }
+    .content { padding: 0 20px 20px 20px; max-width: 900px; margin: 0 auto; }
+    .card { background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); opacity: 0; animation: slideUpFadeIn 0.5s ease-out forwards; animation-delay: 0.4s; }
+    /* Adjusted animation delays for 7 cards */
+    .content > .card:nth-child(1) { animation-delay: 0.4s; }
+    .content > .card:nth-child(2) { animation-delay: 0.5s; }
+    .content > .card:nth-child(3) { animation-delay: 0.6s; }
+    .content > .card:nth-child(4) { animation-delay: 0.7s; }
+    .content > .card:nth-child(5) { animation-delay: 0.8s; }
+    .content > .card:nth-child(6) { animation-delay: 0.9s; }
+    .content > .card:nth-child(7) { animation-delay: 1.0s; }
+    .card h2 { color: #333; border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-top: 0; margin-bottom: 15px; font-size: 20px; }
+    .card p, .card li { line-height: 1.6; color: #333; margin-bottom: 0.7em; }
+    .card ul { padding-left: 40px; margin-top: 0; list-style: disc; }
+    .card ul ul { padding-left: 20px; margin-top: 0.5em; list-style-type: circle; }
+    .card > ul > li:has(ul) { list-style-type: none; margin-left: -20px; }
+    .card p strong, .card li strong { color: #333; display: inline-block; margin-right: 5px; }
+    .card a { color: #007bff; text-decoration: none; word-break: break-all; }
+    .card a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <img src="SASALVADOR.JPG" class="bg-overlay" alt="Header Overlay"> <!-- <<<--- REPLACE IMAGE -->
+    <div class="profile-pic"></div>
+    <div class="name">Phillip Salvador</div> <!-- Updated Name -->
+  </div>
+
+  <!-- Main Content Cards -->
+  <div class="content">
+
+    <div class="card">
+      <h2>Personal Information</h2>
+      <p><strong>Birthdate:</strong> August 21, 1953</p>
+      <p><strong>Age on Election Day:</strong> 71</p>
+      <p><strong>Birthplace:</strong> Manila</p>
+      <p><strong>Residence:</strong> Brgy. Kapitolyo, Pasig City, Metro Manila</p>
+      <p><strong>Sex:</strong> Male</p>
+      <p><strong>Civil Status:</strong> Married</p>
+      <p><strong>Spouse:</strong> Emma Estocada Salvador</p>
+      <p><strong>Profession/Occupation:</strong> Actor</p>
+      <p><strong>Political Party:</strong> Independent</p>
+    </div>
+
+    <div class="card">
+      <h2>Platforms</h2>
+      <ul>
+        <!-- Full Text Included -->
+        <li>Advocates for better opportunities for the entertainment sector</li>
+        <li>Promotes social reforms for the marginalized, including PWDs, seniors, and low-income families</li>
+        <li>Strong proponent of reforms in the justice system and police modernization</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Notable Positions</h2>
+      <!-- Full Text Included -->
+      <p>Primarily known for his work in entertainment and film industry, particularly in action roles in the 1980s and 1990s.</p>
+    </div>
+
+    <div class="card">
+      <h2>Notable Laws and Projects</h2>
+      <!-- Full Text Included -->
+      <p>No specific laws or projects attributed to him during his political career, as he has not held any substantial governmental roles.</p>
+    </div>
+
+    <div class="card">
+      <h2>Controversies</h2>
+      <ul>
+        <!-- Full Text Included -->
+        <li>In 2006, Salvador was involved in a drug-related case, which led to his arrest for drug possession. He later underwent rehabilitation and returned to the entertainment industry after serving his sentence.</li>
+        <li>Has been criticized for using his celebrity status to gain political influence without significant legislative contributions.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Sources</h2>
+      <ul>
+         <li>Wikipedia contributors. (n.d.). Phillip Salvador. Wikipedia. Retrieved May 12, 2025, from <a href="https://en.wikipedia.org/wiki/Phillip_Salvador" target="_blank">https://en.wikipedia.org/wiki/Phillip_Salvador</a></li>
+         <li>Rappler. (n.d.). Phillip Salvador. Retrieved May 12, 2025, from <a href="https://www.rappler.com/people/p74740007-phillip-salvador/" target="_blank">https://www.rappler.com/people/p74740007-phillip-salvador/</a></li>
+         <li>Chi, C. (2024, October 3). Action star Phillip Salvador files candidacy for senator. Philstar.com. Retrieved from <a href="https://www.philstar.com/headlines/2024/10/03/2389054/action-star-phillip-salvador-files-candidacy-senator" target="_blank">https://www.philstar.com/headlines/2024/10/03/2389054/action-star-phillip-salvador-files-candidacy-senator</a></li>
+      </ul>
+    </div>
+
+  </div> <!-- end .content -->
+
+</body>
+</html>

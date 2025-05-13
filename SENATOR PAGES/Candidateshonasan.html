@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gregorio "Gringo" Honasan II - Senatorial Candidate</title> <!-- Updated Title -->
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4; overflow-x: hidden; color: #333; }
+    @keyframes slideUpFadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .header { position: relative; height: 300px; background-color: black; /* Example */ overflow: hidden; margin-bottom: 20px; display: flex; align-items: flex-end; justify-content: center; opacity: 0; animation: slideUpFadeIn 0.6s ease-out 0.2s forwards; }
+    .header img.bg-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.2; pointer-events: none; z-index: 1; }
+    .profile-pic { position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); width: 150px; height: 150px; border-radius: 50%; background-color: #ffffff; border: 4px solid #fff; /* --- IMPORTANT: Replace image path --- */ background-image: url('../SENATOR\ PICS/HONASAN.jpg'); /* <<<--- REPLACE IMAGE */ background-size: cover; background-position: center; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); z-index: 3; }
+    .name { position: relative; z-index: 2; padding: 0 20px; box-sizing: border-box; width: 100%; font-size: 1.875rem; font-weight: 600; text-align: center; margin-bottom: 1rem; /* Example Gradient */ background: linear-gradient(to right, #4b5563, #1f2937); /* Gray/Dark Gray Gradient Example */ -webkit-background-clip: text; background-clip: text; color: transparent; }
+    @media (min-width: 640px) { .name { font-size: 2.25rem; } }
+    @media (min-width: 768px) { .name { font-size: 3rem; } }
+    .content { padding: 0 20px 20px 20px; max-width: 900px; margin: 0 auto; }
+    .card { background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); opacity: 0; animation: slideUpFadeIn 0.5s ease-out forwards; animation-delay: 0.4s; }
+    /* Adjusted animation delays for 7 cards */
+    .content > .card:nth-child(1) { animation-delay: 0.4s; }
+    .content > .card:nth-child(2) { animation-delay: 0.5s; }
+    .content > .card:nth-child(3) { animation-delay: 0.6s; }
+    .content > .card:nth-child(4) { animation-delay: 0.7s; }
+    .content > .card:nth-child(5) { animation-delay: 0.8s; }
+    .content > .card:nth-child(6) { animation-delay: 0.9s; }
+    .content > .card:nth-child(7) { animation-delay: 1.0s; }
+    .card h2 { color: #333; border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-top: 0; margin-bottom: 15px; font-size: 20px; }
+    .card p, .card li { line-height: 1.6; color: #333; margin-bottom: 0.7em; }
+    .card ul { padding-left: 40px; margin-top: 0; list-style: disc; }
+    .card ul ul { padding-left: 20px; margin-top: 0.5em; list-style-type: circle; }
+    .card > ul > li:has(ul) { list-style-type: none; margin-left: -20px; }
+    .card p strong, .card li strong { color: #333; display: inline-block; margin-right: 5px; }
+    .card a { color: #007bff; text-decoration: none; word-break: break-all; }
+    .card a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <img src="your-honasan-background.jpg" class="bg-overlay" alt="Header Overlay"> <!-- <<<--- REPLACE IMAGE -->
+    <div class="profile-pic"></div>
+    <div class="name">Gregorio "Gringo" Honasan II</div> <!-- Updated Name -->
+  </div>
+
+  <!-- Main Content Cards -->
+  <div class="content">
+
+    <div class="card">
+      <h2>Personal Information</h2>
+      <p><strong>Full Name:</strong> Gregorio Ballesteros Honasan II</p>
+      <p><strong>Birthdate:</strong> March 14, 1948</p>
+      <p><strong>Age on Election Day:</strong> 77</p>
+      <p><strong>Birthplace:</strong> Baguio City, Benguet</p>
+      <p><strong>Residence:</strong> Brgy. IVC, Marikina, Metro Manila</p>
+      <p><strong>Sex:</strong> Male</p>
+      <p><strong>Civil Status:</strong> Married</p>
+      <p><strong>Spouse:</strong> Jane Umali Honasan</p>
+      <p><strong>Children:</strong> 5</p>
+      <p><strong>Profession/Occupation:</strong> Public Servant / Former Soldier</p>
+      <p><strong>Political Party:</strong> Reform PH (2024–present)</p>
+    </div>
+
+    <div class="card">
+      <h2>Platforms</h2>
+      <ul>
+        <!-- Full Text Included -->
+        <li>Advocates for land use reform, aiming to optimize the allocation and utilization of the country's land resources</li>
+        <li>Supports national security enhancements, focusing on strengthening the country's defense capabilities</li>
+        <li>Promotes the Freedom of Information (FOI) Act, seeking transparency and accountability in government operations</li>
+        <li>Endorses food security initiatives, aiming to ensure sufficient and accessible food supply for all Filipinos</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Notable Positions</h2>
+      <ul>
+        <!-- Full Text Included -->
+        <li>Senator of the Philippines (1995–2004; 2007–2019)</li>
+        <li>Secretary of the Department of Information and Communications Technology (2019–2021)</li>
+        <li>Chair of the Senate National Defense and Security Committee (2016–2018)</li>
+        <li>Chair of the Senate Peace, Unification and Reconciliation Committee (2016–2018)</li>
+        <li>Chair of the Senate Agrarian Reform Committee (2010–2016)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Notable Laws and Projects</h2>
+      <ul>
+        <!-- Full Text Included -->
+        <li>As DICT Secretary, implemented policies to advance the country's <strong>information and communications technology infrastructure</strong></li>
+        <li>As Senator, contributed to legislation aimed at <strong>national defense, agrarian reform, and peace processes</strong></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Controversies</h2>
+      <ul>
+        <!-- Full Text Included -->
+        <li>Led several <strong>coup attempts against President Corazon Aquino's administration</strong> in the late 1980s, for which he was granted amnesty in 1992</li>
+        <li>Faced allegations of involvement in <strong>military mutinies and attempted coups</strong> during President Gloria Macapagal-Arroyo's tenure, leading to temporary detention in 2006</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Sources</h2>
+      <ul>
+         <li>Wikipedia contributors. (n.d.). Gregorio Honasan. Wikipedia. Retrieved May 12, 2025, from <a href="https://en.wikipedia.org/wiki/Gregorio_Honasan" target="_blank">https://en.wikipedia.org/wiki/Gregorio_Honasan</a></li>
+         <li>Senate of the Philippines. (n.d.). Senator Gregorio Honasan II - Biography. Retrieved May 12, 2025, from <a href="https://www.senate.gov.ph/senators/sen_bio/honasan_bio.asp" target="_blank">https://www.senate.gov.ph/senators/sen_bio/honasan_bio.asp</a></li>
+         <li>GMA News Online. (2021, February 19). Gringo Honasan steps down as DICT Secretary. Retrieved May 12, 2025, from <a href="https://www.gmanetwork.com/news/topstories/nation/776785/gringo-honasan-steps-down-as-dict-secretary/story/" target="_blank">https://www.gmanetwork.com/news/topstories/nation/776785/gringo-honasan-steps-down-as-dict-secretary/story/</a></li>
+         <li>ABS-CBN News. (2019, September 24). Honasan defends food security programs in the Senate. Retrieved May 12, 2025, from <a href="https://news.abs-cbn.com/news/09/24/19/honasan-defends-food-security-programs-in-the-senate" target="_blank">https://news.abs-cbn.com/news/09/24/19/honasan-defends-food-security-programs-in-the-senate</a></li>
+         <li>Inquirer.net. (2017, December 12). Honasan: FOI bill is about transparency. Retrieved May 12, 2025, from <a href="https://newsinfo.inquirer.net/955838/honasan-foi-bill-is-about-transparency" target="_blank">https://newsinfo.inquirer.net/955838/honasan-foi-bill-is-about-transparency</a></li>
+         <li>Rappler. (2020, February 18). Honasan faces criticism over controversial military actions. Retrieved May 12, 2025, from <a href="https://www.rappler.com/nation/honasan-faces-criticism-over-coup-attempts/" target="_blank">https://www.rappler.com/nation/honasan-faces-criticism-over-coup-attempts/</a></li>
+         <li>ABS-CBN News. (1992, March 30). Honasan granted amnesty after coup attempt. Retrieved May 12, 2025, from <a href="https://news.abs-cbn.com/nation/03/30/92/honasan-granted-amnesty-after-coup-attempt" target="_blank">https://news.abs-cbn.com/nation/03/30/92/honasan-granted-amnesty-after-coup-attempt</a></li>
+         <li>Manila Bulletin. (2017, May 23). Honasan promotes national security initiatives in the Senate. Retrieved May 12, 2025, from <a href="https://mb.com.ph/2017/05/23/honasan-promotes-national-security-initiatives-in-the-senate/" target="_blank">https://mb.com.ph/2017/05/23/honasan-promotes-national-security-initiatives-in-the-senate/</a></li>
+      </ul>
+    </div>
+
+  </div> <!-- end .content -->
+
+</body>
+</html>

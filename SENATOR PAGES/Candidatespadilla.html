@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Senator Robin Padilla - Candidate Information</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      overflow-x: hidden; /* Prevent horizontal scrollbar during animation */
+      color: #333; /* Default text color */
+    }
+
+    /* --- Animation Keyframes --- */
+    @keyframes slideUpFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Header Section - Using Flexbox layout */
+    .header {
+      position: relative;
+      height: 300px;
+      background-color: black; /* Black background from original */
+      overflow: hidden;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      /* --- Header Animation --- */
+      opacity: 0;
+      animation: slideUpFadeIn 0.6s ease-out 0.2s forwards;
+    }
+
+    .header img.bg-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.2;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .profile-pic {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #ffffff; /* Fallback */
+      border: 4px solid #fff;
+      /* --- IMPORTANT: Replace with Sotto's profile image path --- */
+      background-image: url('../SENATOR\ PICS/PADILLA.jpg'); /* <<<--- REMEMBER TO REPLACE THIS IMAGE */
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 3;
+    }
+
+    /* Name Styling - Gradient + Responsive Sizes */
+    .name {
+      position: relative;
+      z-index: 2;
+      padding: 0 20px;
+      box-sizing: border-box;
+      width: 100%;
+
+      font-size: 1.875rem; /* text-3xl */
+      font-weight: 600;    /* font-semibold */
+      text-align: center;  /* text-center */
+      margin-bottom: 1rem; /* mb-4 */
+
+      background: linear-gradient(to right, #FBBF24, #F97316); /* Gradient */
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent; /* text-transparent */
+
+    }
+
+    /* Responsive Font Sizes for Name */
+    @media (min-width: 640px) { /* sm breakpoint */
+      .name { font-size: 2.25rem; } /* text-4xl */
+    }
+    @media (min-width: 768px) { /* md breakpoint */
+      .name { font-size: 3rem; } /* text-5xl */
+    }
+
+    /* Main Content Area */
+    .content {
+      padding: 0 20px 20px 20px;
+      max-width: 900px; /* Optional: Limit content width for better readability on large screens */
+      margin: 0 auto; /* Center the content area */
+    }
+
+    /* Card Styling */
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+      /* --- Card Animation (Base) --- */
+      opacity: 0;
+      animation: slideUpFadeIn 0.5s ease-out forwards;
+      animation-delay: 0.4s; /* Default delay */
+    }
+
+    /* Staggered Card Animation Delays */
+    .content > .card:nth-child(1) { animation-delay: 0.4s; }
+    .content > .card:nth-child(2) { animation-delay: 0.5s; }
+    .content > .card:nth-child(3) { animation-delay: 0.6s; }
+    .content > .card:nth-child(4) { animation-delay: 0.7s; }
+    .content > .card:nth-child(5) { animation-delay: 0.8s; }
+    .content > .card:nth-child(6) { animation-delay: 0.9s; }
+    .content > .card:nth-child(7) { animation-delay: 1.0s; }
+    .content > .card:nth-child(8) { animation-delay: 1.1s; }
+    /* Add more if needed */
+
+    /* Card Content Styling */
+    .card h2 {
+      color: #333; /* Color from original Sotto example */
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    .card p, .card li {
+      line-height: 1.6;
+      color: #333; /* Default text color */
+      margin-bottom: 0.5em; /* Add spacing between list items and paragraphs */
+    }
+
+    .card ul {
+      padding-left: 20px;
+      margin-top: 0;
+      list-style: disc; /* Explicitly set list style */
+    }
+
+     .card p strong, .card li strong {
+        color: #333; /* Make bold text same color or slightly darker */
+        display: inline-block; /* Prevents awkward line breaks after strong tag */
+        margin-right: 5px; /* Add a small space after the bold label */
+     }
+
+     .card a {
+        color: #007bff; /* Standard link color */
+        text-decoration: none;
+        word-break: break-all; /* Break long URLs */
+     }
+     .card a:hover {
+        text-decoration: underline;
+     }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <!-- --- IMPORTANT: Replace image paths --- -->
+    <img src="your-background-image.jpg" class="bg-overlay" alt="Header Overlay">
+    <div class="profile-pic"></div>
+    <div class="name">Senator Robin Padilla</div>
+  </div>
+
+  <!-- Main Content Cards -->
+  <div class="content">
+
+    <div class="card">
+      <h2>Personal Information</h2>
+      <p><strong>Birthdate:</strong> November 23, 1969</p>
+      <p><strong>Age on Election Day:</strong> 55</p>
+      <p><strong>Birthplace:</strong> Daet, Camarines Norte, Philippines</p>
+      <p><strong>Residence:</strong> Quezon City, Metro Manila</p>
+      <p><strong>Sex:</strong> Male</p>
+      <p><strong>Civil Status:</strong> Married</p>
+      <p><strong>Spouse:</strong> Mariel Rodriguez-Padilla (actress/TV host)</p>
+      <p><strong>Profession/Occupation:</strong> Actor / Senator / Political Commentator</p>
+      <p><strong>Political Party:</strong> PDP–Laban (aligned with the UniTeam coalition)</p>
+    </div>
+
+    <div class="card">
+      <h2>Political Platforms</h2>
+      <ul>
+        <li>Advocates constitutional reform (especially federalism and parliamentary system)</li>
+        <li>Pushes for the legalization of medical marijuana</li>
+        <li>Strong supporter of Muslim rights and Mindanao autonomy</li>
+        <li>Promotes Philippine cultural preservation and patriotism in education</li>
+      </ul>
+    </div>
+
+    <div class="card">
+        <h2>Notable Positions</h2>
+        <ul>
+          <li>Senator of the Philippines (2022–present)</li>
+          <li>Chairperson, Senate Committee on Constitutional Amendments and Revision of Codes</li>
+          <li>Actor, producer, and former top action star in the 1990s</li>
+        </ul>
+      </div>
+
+    <div class="card">
+      <h2>Notable Laws and Projects (Contributions)</h2> <!-- Title adjusted slightly -->
+      <ul>
+        <li>Principal sponsor of resolutions pushing for Constitutional Amendments (Cha-cha), specifically economic liberalization</li>
+        <li>Authored Senate Bill No. 2230 — proposed amendments to allow 100% foreign ownership of industries via constitutional revision</li>
+        <li>Advocated strongly for the Bangsamoro Organic Law (public campaign support)</li>
+        <li>Supporter of Senate Bill No. 230 – Medical Cannabis Compassionate Use Act (2023 version)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Controversies</h2>
+      <ul>
+        <li>Previously convicted for illegal possession of firearms (1994); pardoned by President Fidel V. Ramos in 1998</li>
+        <li>Criticized for limited legislative experience and struggles with Senate interpellations (2022–2024)</li>
+        <li>Received backlash for advocating hasty constitutional changes without sufficient public consultation</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Sources</h2>
+      <ul>
+        <li><a href="https://politiko.com.ph/2025/04/11/duterte-magic-pdp-laban-senatorial-bets-surge-in-pulse-asia-poll-after-icc-arrest/daily-feed/?utm" target="_blank">Politiko - Pulse Asia Poll</a></li>
+        <li><a href="https://www.gmanetwork.com/news/topstories/nation/884074/robin-padilla-will-legalizing-medical-cannabis-entice-foreigners-to-retire-in-ph/story/?" target="_blank">GMA News - Medical Cannabis & Foreigners</a></li>
+        <li><a href="https://mb.com.ph/2022/09/13/robin-padilla-medical-marijuana-can-fund-major-govt-programs?" target="_blank">Manila Bulletin - Medical Marijuana Funding</a></li>
+        <li><a href="https://www.gmanetwork.com/news/topstories/nation/837528/robin-padilla-pitches-federalism-divorce-medical-marijuana-as-priority-bills/story/?" target="_blank">GMA News - Priority Bills (Federalism, Divorce, MMJ)</a></li>
+        <li><a href="https://mb.com.ph/2022/8/12/church-balks-at-robin-padillas-same-sex-union-bill" target="_blank">Manila Bulletin - Same-Sex Union Bill Reaction</a></li>
+        <li>Philippine Senate Official Website (General Reference)</li>
+        <!-- Added placeholder for general references -->
+      </ul>
+    </div>
+
+  </div> <!-- end .content -->
+
+</body>
+</html>

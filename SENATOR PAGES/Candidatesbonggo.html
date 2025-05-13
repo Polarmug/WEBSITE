@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Senator Christopher "Bong" Go - Candidate Information</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      overflow-x: hidden; /* Prevent horizontal scrollbar during animation */
+      color: #333; /* Default text color */
+    }
+
+    /* --- Animation Keyframes --- */
+    @keyframes slideUpFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Header Section - Using Flexbox layout */
+    .header {
+      position: relative;
+      height: 300px;
+      background-color: black; /* Black background from original */
+      overflow: hidden;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      /* --- Header Animation --- */
+      opacity: 0;
+      animation: slideUpFadeIn 0.6s ease-out 0.2s forwards;
+    }
+
+    .header img.bg-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.2;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .profile-pic {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #ffffff; /* Fallback */
+      border: 4px solid #fff;
+      /* --- IMPORTANT: Replace with Sotto's profile image path --- */
+      background-image: url('../SENATOR\ PICS/GO.jpg'); /* <<<--- REMEMBER TO REPLACE THIS IMAGE */
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 3;
+    }
+
+    /* Name Styling - Gradient + Responsive Sizes */
+    .name {
+      position: relative;
+      z-index: 2;
+      padding: 0 20px;
+      box-sizing: border-box;
+      width: 100%;
+
+      font-size: 1.875rem; /* text-3xl */
+      font-weight: 600;    /* font-semibold */
+      text-align: center;  /* text-center */
+      margin-bottom: 1rem; /* mb-4 */
+
+      background: linear-gradient(to right, #FBBF24, #F97316); /* Gradient */
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent; /* text-transparent */
+
+    }
+
+    /* Responsive Font Sizes for Name */
+    @media (min-width: 640px) { /* sm breakpoint */
+      .name { font-size: 2.25rem; } /* text-4xl */
+    }
+    @media (min-width: 768px) { /* md breakpoint */
+      .name { font-size: 3rem; } /* text-5xl */
+    }
+
+    /* Main Content Area */
+    .content {
+      padding: 0 20px 20px 20px;
+      max-width: 900px; /* Optional: Limit content width for better readability on large screens */
+      margin: 0 auto; /* Center the content area */
+    }
+
+    /* Card Styling */
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+      /* --- Card Animation (Base) --- */
+      opacity: 0;
+      animation: slideUpFadeIn 0.5s ease-out forwards;
+      animation-delay: 0.4s; /* Default delay */
+    }
+
+    /* Staggered Card Animation Delays */
+    .content > .card:nth-child(1) { animation-delay: 0.4s; }
+    .content > .card:nth-child(2) { animation-delay: 0.5s; }
+    .content > .card:nth-child(3) { animation-delay: 0.6s; }
+    .content > .card:nth-child(4) { animation-delay: 0.7s; }
+    .content > .card:nth-child(5) { animation-delay: 0.8s; }
+    .content > .card:nth-child(6) { animation-delay: 0.9s; }
+    .content > .card:nth-child(7) { animation-delay: 1.0s; }
+    .content > .card:nth-child(8) { animation-delay: 1.1s; }
+    /* Add more if needed */
+
+    /* Card Content Styling */
+    .card h2 {
+      color: #333; /* Color from original Sotto example */
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    .card p, .card li {
+      line-height: 1.6;
+      color: #333; /* Default text color */
+      margin-bottom: 0.5em; /* Add spacing between list items and paragraphs */
+    }
+
+    .card ul {
+      padding-left: 20px;
+      margin-top: 0;
+      list-style: disc; /* Explicitly set list style */
+    }
+
+     .card p strong, .card li strong {
+        color: #333; /* Make bold text same color or slightly darker */
+        display: inline-block; /* Prevents awkward line breaks after strong tag */
+        margin-right: 5px; /* Add a small space after the bold label */
+     }
+
+     .card a {
+        color: #007bff; /* Standard link color */
+        text-decoration: none;
+        word-break: break-all; /* Break long URLs */
+     }
+     .card a:hover {
+        text-decoration: underline;
+     }
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <!-- --- IMPORTANT: Replace image paths --- -->
+    <img src="your-background-image.jpg" class="bg-overlay" alt="Header Overlay">
+    <div class="profile-pic"></div>
+    <div class="name">Senator Christopher "Bong" Go</div>
+  </div>
+
+  <!-- Main Content Cards -->
+  <div class="content">
+
+    <div class="card">
+      <h2>Personal Information</h2>
+      <p><strong>Full Name:</strong> Christopher Lawrence "Bong" Go</p>
+      <p><strong>Birthdate:</strong> June 14, 1974</p>
+      <p><strong>Age on Election Day:</strong> 50</p>
+      <p><strong>Birthplace:</strong> Davao City, Davao del Sur</p>
+      <p><strong>Residence:</strong> Brgy. San Jose, Lupon, Davao Oriental</p>
+      <p><strong>Sex:</strong> Male</p>
+      <p><strong>Civil Status:</strong> Married</p>
+      <p><strong>Spouse:</strong> Emmylou Cruz Go</p>
+      <p><strong>Profession/Occupation:</strong> Senator</p>
+      <p><strong>Political Party:</strong> PDP–Laban</p>
+    </div>
+
+    <div class="card">
+      <h2>Political Platforms</h2>
+      <ul>
+        <li><strong>Institutionalizing Malasakit Centers:</strong> Advocates for the establishment of one-stop shops for medical assistance in public hospitals nationwide, ensuring easy and free access to healthcare services for Filipinos.</li>
+        <li><strong>Creation of the Department of Disaster Resilience:</strong> Proposes the creation of a dedicated government agency for disaster preparedness and response to improve the country’s resilience.</li>
+        <li><strong>Support for Housing and Education:</strong> Pushes for initiatives to provide housing and educational assistance to poor families.</li>
+        <li><strong>Infrastructure and Peace Programs:</strong> Promotes continued infrastructure development and peace programs, particularly those aligned with the Duterte administration’s legacy.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+        <h2>Notable Positions</h2>
+        <ul>
+          <li><strong>Special Assistant to the President (2016–2018):</strong> Served as the trusted aide to former President Rodrigo Duterte during his tenure as mayor and president.</li>
+          <li><strong>Senator (2019–present):</strong> Elected to the Philippine Senate in 2019, ranking third with 20,465,005 votes.</li>
+        </ul>
+      </div>
+
+    <div class="card">
+      <h2>Senatorial Record</h2>
+      <ul>
+        <li>Authored or co-authored 32 laws and sponsored/co-sponsored 170 laws during the 18th Congress.</li>
+        <li>Known for his focus on healthcare, disaster resilience, and public welfare.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+        <h2>Legislative Accomplishments</h2>
+        <ul>
+          <li class="accomplishment-item">
+            <strong>Republic Act No. 11463 – Malasakit Centers Act of 2019</strong>
+            <span><strong>Role:</strong> Principal author and sponsor</span>
+            <span><strong>Contribution:</strong> Institutionalized Malasakit Centers, providing accessible medical assistance in public hospitals nationwide.</span>
+          </li>
+          <li class="accomplishment-item">
+            <strong>Senate Bill No. 205 – Department of Disaster Resilience Act</strong>
+            <span><strong>Role:</strong> Principal author</span>
+            <span><strong>Contribution:</strong> Proposed the creation of a government agency dedicated to disaster preparedness and response.</span>
+          </li>
+          <li class="accomplishment-item">
+            <strong>Republic Act No. 11589 – Bureau of Fire Protection Modernization Act (2021)</strong>
+            <span><strong>Role:</strong> Co-author</span>
+            <span><strong>Contribution:</strong> Supported the modernization of the Bureau of Fire Protection, focusing on capacity building, training, and equipment upgrades.</span>
+          </li>
+          <li class="accomplishment-item">
+            <strong>Balik Probinsya, Bagong Pag-Asa Program</strong>
+            <span><strong>Role:</strong> Proponent and lead advocate</span>
+            <span><strong>Contribution:</strong> Pushed for a program aimed at decongesting urban areas and promoting countryside development, a key initiative during the Duterte administration.</span>
+          </li>
+          <li class="accomplishment-item">
+            <strong>Republic Act 11861 – Solo Parents Welfare Act</strong>
+            <span><strong>Role:</strong> Author</span>
+            <span><strong>Contribution:</strong> This law provides additional benefits for solo parents, including financial assistance for those earning minimum wage, priority for government housing programs, and discounts on basic necessities.</span>
+          </li>
+          <li class="accomplishment-item">
+            <strong>Republic Act 11466 – Salary Standardization Law V</strong>
+            <span><strong>Role:</strong> Author</span>
+            <span><strong>Contribution:</strong> Senator Go was instrumental in the passage of this law, which increases the salaries of civilian government employees, including teachers and nurses.</span>
+          </li>
+          <li class="accomplishment-item">
+            <strong>Republic Act 11641 – Department of Migrant Workers Act</strong>
+            <span><strong>Role:</strong> Principal Author</span>
+            <span><strong>Contribution:</strong> This act consolidates all agencies dealing with overseas Filipino workers into a single department, aiming for a more efficient management of migrant workers' welfare.</span>
+          </li>
+          <li class="accomplishment-item">
+            <strong>Republic Act 11470 – National Academy of Sports Act</strong>
+            <span><strong>Role:</strong> Author and Co-sponsor</span>
+            <span><strong>Contribution:</strong> This act establishes the National Academy of Sports, aimed at providing world-class training facilities for student-athletes, while also offering them a quality secondary education.</span>
+          </li>
+        </ul>
+      </div>
+
+
+    <div class="card">
+      <h2>Key Advocacy Areas</h2>
+      <ul>
+        <li><strong>Healthcare Access:</strong> Advocates for the creation of Super Health Centers across the country to bring essential medical services closer to Filipino communities.</li>
+        <li><strong>Disaster Resilience and Response:</strong> Calls for the creation of a Department of Disaster Resilience and the construction of mandatory evacuation centers nationwide.</li>
+        <li><strong>Educational and Youth Support:</strong> Supports programs such as free college entrance exams and mental health services in public universities.</li>
+        <li><strong>Security and Governance:</strong> Promotes initiatives for better governance, including the Magna Carta for Barangay officials and programs to deter drug abuse through sports.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Controversies</h2>
+      <ul>
+        <li><strong>Malasakit Centers Campaign Allegations:</strong> Criticized for allegedly using government-funded Malasakit Centers for premature campaigning, though no formal charges were filed.</li>
+        <li><strong>Frigate Procurement Controversy (2018):</strong> Denied involvement in the frigate deal controversy and was cleared by various parties, including former Philippine Navy officials.</li>
+        <li><strong>Philippine Offshore Gaming Operators (POGOs):</strong> In 2024, Go expressed opposition to POGOs, despite having previously supported their operations in 2021, raising questions about his changing stance.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Sources</h2>
+      <ul>
+        <li>Senator Bong Go. (n.d.). About. <a href="https://senatorbonggo.ph/about" target="_blank">https://senatorbonggo.ph/about</a></li>
+        <li>PDP–Laban. (n.d.). Christopher Go. <a href="https://pdplaban.org.ph/christopher-go/" target="_blank">https://pdplaban.org.ph/christopher-go/</a></li>
+        <li>Presidential Communications Office. (2018). SAP Bong Go faces Senate frigate probe; reiterates innocence. <a href="https://pco.gov.ph/news_releases/sap-bong-go-faces-senate-frigate-probe-reiterates-innocence/" target="_blank">https://pco.gov.ph/news_releases/sap-bong-go-faces-senate-frigate-probe-reiterates-innocence/</a></li>
+        <li>Rappler. (2024). Fact check: Bong Go ‘against’ POGOs, but previously supported their operations in PH. <a href="https://www.rappler.com/newsbreak/fact-check/bong-go-previously-supported-pogos-now-against-operations/" target="_blank">https://www.rappler.com/newsbreak/fact-check/bong-go-previously-supported-pogos-now-against-operations/</a></li>
+      </ul>
+    </div>
+
+  </div> <!-- end .content -->
+
+</body>
+</html>
