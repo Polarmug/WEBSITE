@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Ronald "Bato" dela Rosa - Senatorial Candidate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Added viewport -->
+  <!-- Updated Title -->
+  <title>Ronald “Bato” dela Rosa - Candidate Profile</title>
   <style>
     body {
       margin: 0;
@@ -28,7 +30,7 @@
     .header {
       position: relative;
       height: 300px;
-      background-color: black; /* Black background from original */
+      background-color: black; /* Black background example */
       overflow: hidden;
       margin-bottom: 20px;
       display: flex;
@@ -62,8 +64,8 @@
       border-radius: 50%;
       background-color: #ffffff; /* Fallback */
       border: 4px solid #fff;
-      /* --- IMPORTANT: Replace with Sotto's profile image path --- */
-      background-image: url('../SENATOR PICS/BATO.jpg'); /* <<<--- REMEMBER TO REPLACE THIS IMAGE */
+      /* --- IMPORTANT: Replace with Dela Rosa's profile image path --- */
+      background-image: url('path/to/delarosa-profile.jpg'); /* <<<--- REMEMBER TO REPLACE THIS IMAGE */
       background-size: cover;
       background-position: center;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -83,7 +85,8 @@
       text-align: center;  /* text-center */
       margin-bottom: 1rem; /* mb-4 */
 
-      background: linear-gradient(to right, #FBBF24, #F97316); /* Gradient */
+      /* Example Gradient - Red theme for PLM/Labor */
+      background: linear-gradient(to right, #dc2626, #b91c1c); /* Red Gradient Example */
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent; /* text-transparent */
@@ -101,7 +104,7 @@
     /* Main Content Area */
     .content {
       padding: 0 20px 20px 20px;
-      max-width: 900px; /* Optional: Limit content width for better readability on large screens */
+      max-width: 900px; /* Optional: Limit content width */
       margin: 0 auto; /* Center the content area */
     }
 
@@ -125,14 +128,15 @@
     .content > .card:nth-child(3) { animation-delay: 0.6s; }
     .content > .card:nth-child(4) { animation-delay: 0.7s; }
     .content > .card:nth-child(5) { animation-delay: 0.8s; }
+    /* Adjust if more cards are added - for more than 5, they will use the default 0.4s or subsequent delays will need to be added */
     .content > .card:nth-child(6) { animation-delay: 0.9s; }
     .content > .card:nth-child(7) { animation-delay: 1.0s; }
     .content > .card:nth-child(8) { animation-delay: 1.1s; }
-    /* Add more if needed */
+
 
     /* Card Content Styling */
     .card h2 {
-      color: #333; /* Color from original Sotto example */
+      color: #333;
       border-bottom: 2px solid #ddd;
       padding-bottom: 10px;
       margin-top: 0;
@@ -140,28 +144,35 @@
       font-size: 20px;
     }
 
-    .card p, .card li {
+    .card p { /* Target only paragraphs for general margin */
       line-height: 1.6;
-      color: #333; /* Default text color */
-      margin-bottom: 0.5em; /* Add spacing between list items and paragraphs */
+      color: #333;
+      margin-bottom: 0.7em;
     }
 
+    .card li { /* Target only list items for general margin */
+        line-height: 1.6;
+        color: #333;
+        margin-bottom: 0.7em; /* Spacing between list items */
+    }
+
+
     .card ul {
-      padding-left: 20px;
+      padding-left: 40px;   /* Indentation for list items */
       margin-top: 0;
-      list-style: disc; /* Explicitly set list style */
+      list-style: disc; /* Default bullet style */
     }
 
      .card p strong, .card li strong {
-        color: #333; /* Make bold text same color or slightly darker */
-        display: inline-block; /* Prevents awkward line breaks after strong tag */
-        margin-right: 5px; /* Add a small space after the bold label */
+        color: #333;
+        display: inline-block;
+        margin-right: 5px;
      }
 
      .card a {
-        color: #007bff; /* Standard link color */
+        color: #007bff;
         text-decoration: none;
-        word-break: break-all; /* Break long URLs */
+        word-break: break-all; /* Helps break long URLs */
      }
      .card a:hover {
         text-decoration: underline;
@@ -171,13 +182,16 @@
 </head>
 <body>
 
+  <!-- Header -->
   <div class="header">
-    <!-- --- IMPORTANT: Replace with your actual image paths --- -->
-    <img src="your-background-image.jpg" class="bg-overlay" alt="Header Overlay">
+    <!-- --- IMPORTANT: Replace image paths --- -->
+    <img src="path/to/delarosa-background.jpg" class="bg-overlay" alt="Header Overlay"> <!-- <<<--- REMEMBER TO REPLACE THIS IMAGE -->
     <div class="profile-pic"></div>
-    <div class="name">Ronald "Bato" dela Rosa</div>
+    <!-- Updated Name -->
+    <div class="name">Ronald “Bato” dela Rosa</div>
   </div>
 
+  <!-- Main Content Cards -->
   <div class="content">
 
     <div class="card">
@@ -188,7 +202,8 @@
       <p><strong>Age on Election Day:</strong> 63</p>
       <p><strong>Birthplace:</strong> Santa Cruz, Davao del Sur</p>
       <p><strong>Residence:</strong> Brgy. Magtuod, Davao City, Davao del Sur</p>
-      <p><strong>Civil Status:</strong> Married to Grace Nancy Commandante Dela Rosa</p>
+      <p><strong>Civil Status:</strong> Married</p>
+      <p><strong>Spouse:</strong> Grace Nancy Commandante Dela Rosa</p>
       <p><strong>Profession/Occupation:</strong> Government Official</p>
       <p><strong>Political Party:</strong> PDP–Laban</p>
     </div>
@@ -196,99 +211,85 @@
     <div class="card">
       <h2>Political Platforms</h2>
       <ul>
-        <li>Reimposition of Death Penalty for drug-related and heinous crimes</li>
-        <li>Welfare and modernization of uniformed personnel</li>
-        <li>Continuation of the government’s anti-drug campaign</li>
-        <li>Anti-Terrorism and National Peacebuilding initiatives</li>
+        <li>Reimposition of the Death Penalty: Advocates for the revival of the death penalty for drug-related and heinous crimes, emphasizing its deterrent effect.</li>
+        <li>Support for Uniformed Personnel: Focuses on the welfare, modernization, and capacity-building of uniformed personnel, particularly those in law enforcement and emergency services.</li>
+        <li>Drug War Continuation: Continues to back the government's war on drugs, emphasizing rehabilitation and prevention.</li>
+        <li>Anti-Terrorism & National Peacebuilding: Strong proponent of anti-terrorism laws and measures aimed at promoting national security and peacebuilding.</li>
       </ul>
     </div>
 
     <div class="card">
       <h2>Notable Positions</h2>
       <ul>
-        <li>Senator (2019–Present)</li>
-        <li>Director General, Bureau of Corrections (April–October 2018)</li>
-        <li>Chief, Philippine National Police (July 2016–April 2018)</li>
-        <li>Executive Officer, PNP Directorate for Human Resource and Doctrine Development</li>
-        <li>Deputy Director for Administration, PNP Intelligence Group</li>
-        <li>City Director, Davao City Police Office</li>
-        <li>Chief, Regional Intelligence and Investigation Division, PNP</li>
+        <li>Senator: 2019 – Present</li>
+        <li>Director General, Bureau of Corrections: April 2018 – October 2018</li>
+        <li>Chief, Philippine National Police (PNP): July 2016 – April 2018</li>
+        <li>Chairperson: Senate Committee on Public Order and Dangerous Drugs</li>
+        <li>Chairperson: Special Committee on Marawi City Rehabilitation and Victims’ Compensation</li>
+        <li>Vice-Chairperson: Senate Committees on Finance, National Defense and Security, and Foreign Relations</li>
+        <li><strong>Other Notable Police Roles:</strong>
+          <ul>
+            <li>Executive Officer, PNP Directorate for Human Resource and Doctrine Development</li>
+            <li>Deputy Director for Administration, PNP Intelligence Group</li>
+            <li>City Director, Davao City Police Office</li>
+            <li>Chief, Regional Intelligence and Investigation Division, PNP</li>
+          </ul>
+        </li>
       </ul>
     </div>
 
     <div class="card">
-        <h2>Senatorial Record</h2>
-        <ul>
-          <li>Authored or Co-authored: 22 laws</li>
-          <li>Sponsored or Co-sponsored: 20 laws during the 18th Congress</li>
-        </ul>
+      <h2>Senatorial Record</h2>
+      <ul>
+        <li>Authored or Co-authored: 22 laws</li>
+        <li>Sponsored/co-sponsored: 20 laws during the 18th Congress</li>
+      </ul>
     </div>
 
     <div class="card">
       <h2>Legislative Accomplishments</h2>
       <ul>
-        <li>RA 11549 – Height Equality Act (PNP, BFP, BJMP, BuCor)</li>
-        <li>RA 11589 – BFP Modernization Act</li>
-        <li>RA 11766 – Firearms Licensing Validity Extension</li>
-        <li>RA 11926 – Penalizing Indiscriminate Discharge of Firearms</li>
-        <li>RA 11917 – Private Security Services Industry Act</li>
-        <li>RA 11479 – Anti-Terrorism Act of 2020</li>
-        <li>RA 11525 – COVID-19 Vaccination Program Act of 2021</li>
-        <li>RA 11547 – Davao as Chocolate Capital of the Philippines</li>
-        <li>RA 11468 – National Day of Remembrance for Road Crash Victims</li>
-        <li>RA 11641 – Department of Migrant Workers Act</li>
-        <li>RA 11691 – Judicial Marshals Act</li>
-        <li>RA 11712 – COVID-19 Benefits and Allowances for Health Workers Act</li>
+        <li><strong>Republic Act 11549 – PNP, BFP, BJMP and BuCor Height Equality Act:</strong> Principal author; ensures inclusive recruitment standards by lowering height restrictions for various law enforcement agencies.</li>
+        <li><strong>Republic Act 11589 – Bureau of Fire Protection Modernization Act:</strong> Principal author; aimed at modernizing the Bureau of Fire Protection to improve its capability in fire prevention and suppression.</li>
+        <li><strong>Republic Act 11766 – Fixing the Validity Period of the License to Own, Permit to Carry, and Registration of Firearms:</strong> Principal author; simplifies firearm ownership and licensing processes.</li>
+        <li><strong>Republic Act 11926 – Penalizing Wilful and Indiscriminate Discharge of Firearms:</strong> Principal author; aims to curb the reckless use of firearms.</li>
+        <li><strong>Republic Act 11917 – Private Security Services Industry Act:</strong> Principal author; regulates and modernizes the private security industry.</li>
+        <li><strong>Republic Act 11479 – Anti-Terrorism Act of 2020:</strong> Co-sponsored and defended the law, which grants enhanced powers for counterterrorism efforts.</li>
+        <li><strong>Republic Act 11525 – COVID-19 Vaccination Program Act of 2021:</strong> Co-sponsored the law aimed at facilitating the country's vaccination efforts.</li>
+        <li><strong>Republic Act 11641 – Department of Migrant Workers Act:</strong> Co-authored to establish a new government agency to address the welfare of migrant workers.</li>
+        <li><strong>Republic Act 11691 – Judicial Marshals Act:</strong> Co-authored the act to ensure the protection of judicial officers.</li>
+        <li><strong>Republic Act 11712 – COVID-19 Benefits and Allowances for Health Workers Act:</strong> Co-authored the act to provide benefits for health workers during the pandemic.</li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>Key Advocacy Areas</h2>
-      <ul>
-        <li>Drug Control and Rehabilitation</li>
-        <li>Law Enforcement Modernization</li>
-        <li>National Security and Anti-Terrorism</li>
-        <li>Support for Uniformed Personnel</li>
-      </ul>
-    </div>
+        <h2>Key Advocacy Areas</h2>
+        <ul>
+          <li>Drug Control and Rehabilitation: Advocates for both punitive and rehabilitative measures to address drug-related crimes.</li>
+          <li>Law Enforcement Modernization: Focuses on enhancing the capabilities of law enforcement agencies such as the PNP, BFP, and BJMP.</li>
+          <li>National Security and Anti-Terrorism: Strongly supports laws aimed at combating terrorism and insurgency.</li>
+          <li>Support for Uniformed Personnel: Prioritizes the welfare and professional development of uniformed personnel, such as police and firefighters.</li>
+        </ul>
+      </div>
 
     <div class="card">
       <h2>Controversies</h2>
       <ul>
-        <li><strong>Oplan Tokhang & ICC Investigation:</strong> Criticized for alleged extrajudicial killings during drug war; subject of ICC probe</li>
-        <li><strong>Red-Tagging Accusations:</strong> Accused of linking progressive groups to insurgents without solid evidence</li>
-        <li><strong>Populist Rhetoric:</strong> Criticized for emotional and controversial remarks on national issues</li>
+        <li><strong>Oplan Tokhang & ICC Investigation:</strong> His tenure as PNP Chief, particularly his involvement in the drug war, has been criticized for alleged extrajudicial killings. This led to an ongoing investigation by the International Criminal Court (ICC).</li>
+        <li><strong>Red-Tagging Accusations:</strong> Dela Rosa has been accused of red-tagging progressive groups, linking them to insurgent movements without substantial evidence (Palaubsanon, 2024).</li>
+        <li><strong>Populist Rhetoric:</strong> Known for his controversial and often emotional remarks, Dela Rosa has faced criticism for his use of populist rhetoric in debates, particularly on national security and the drug war.</li>
       </ul>
-    </div>
-
-    <div class="card">
-        <h2>Notable Recognitions</h2>
-        <ul>
-          <li>Medalya ng Pambihirang Paglilingkod (2014)</li>
-          <li>Cavalier Award (2015)</li>
-          <li>PAOCTF Award (2012)</li>
-          <li>Senior Police Commissioned Officer of the Year – Operations (2012)</li>
-          <li>Achievement Award in Police Operations (2013)</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h2>Senate Leadership</h2>
-        <ul>
-          <li>Chairperson: Senate Committee on Public Order and Dangerous Drugs</li>
-          <li>Chairperson: Special Committee on Marawi City Rehabilitation</li>
-          <li>Vice-Chairperson: Committees on Finance, National Defense, and Foreign Relations</li>
-        </ul>
     </div>
 
     <div class="card">
       <h2>Sources</h2>
       <ul>
-        <li><a href="https://legacy.senate.gov.ph/senators/sen_bio/delarosa_bio.asp" target="_blank">Senate of the Philippines</a></li>
-        <li><a href="https://web.senate.gov.ph/senators/sen_bio/delarosa_resume.asp" target="_blank">Dela Rosa Resume</a></li>
-        <li><a href="https://pdplaban.org.ph/ronald-dela-rosa/" target="_blank">PDP-Laban</a></li>
-        <li><a href="https://thediplomat.com/2025/03/philippine-govt-condemns-senator-for-saying-he-wont-surrender-to-icc/" target="_blank">The Diplomat (2025)</a></li>
-        <li><a href="https://www.pna.gov.ph/articles/1235713" target="_blank">Philippine News Agency (2024)</a></li>
+        <li>Senate of the Philippines. (n.d.). Ronald “Bato” Dela Rosa biography. Retrieved from <a href="https://legacy.senate.gov.ph/senators/sen_bio/delarosa_bio.asp" target="_blank">https://legacy.senate.gov.ph/senators/sen_bio/delarosa_bio.asp</a></li>
+        <li>Dela Rosa, R. (n.d.). Ronald “Bato” Dela Rosa resume. Retrieved from <a href="https://web.senate.gov.ph/senators/sen_bio/delarosa_resume.asp" target="_blank">https://web.senate.gov.ph/senators/sen_bio/delarosa_resume.asp</a></li>
+        <li>PDP-Laban. (n.d.). Ronald “Bato” Dela Rosa. Retrieved from <a href="https://pdplaban.org.ph/ronald-dela-rosa/" target="_blank">https://pdplaban.org.ph/ronald-dela-rosa/</a></li>
+        <li>Strangio, S. (2025, March 21). Philippine Govt condemns senator for saying he won’t surrender to ICC. The Diplomat. <a href="https://thediplomat.com/2025/03/philippine-govt-condemns-senator-for-saying-he-wont-surrender-to-icc/" target="_blank">https://thediplomat.com/2025/03/philippine-govt-condemns-senator-for-saying-he-wont-surrender-to-icc/</a></li>
+        <li>Palaubsanon. (2024). “Bato” hit over remarks encouraging red-tagging. Retrieved from <a href="https://www.philstar.com/the-freeman/cebu-news/2024/08/08/2376308/bato-hit-over-remarks-encouraging-red-tagging" target="_blank">https://www.philstar.com/the-freeman/cebu-news/2024/08/08/2376308/bato-hit-over-remarks-encouraging-red-tagging</a></li>
+        <li>Cervantes, F. M. (2024, October 16). Solon raises concern over Dela Rosa's impartiality in drug war probe. Philippine News Agency. <a href="https://www.pna.gov.ph/articles/1235713" target="_blank">https://www.pna.gov.ph/articles/1235713</a></li>
       </ul>
     </div>
 

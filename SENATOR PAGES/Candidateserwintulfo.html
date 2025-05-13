@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Added viewport -->
-  <title>Erwin Tulfo - Senatorial Candidate</title>
+  <!-- Updated Title -->
+  <title>Erwin Teshiba Tulfo - Candidate Profile</title>
   <style>
     body {
       margin: 0;
@@ -29,7 +30,7 @@
     .header {
       position: relative;
       height: 300px;
-      background-color: black; /* Black background from original */
+      background-color: black; /* Black background example */
       overflow: hidden;
       margin-bottom: 20px;
       display: flex;
@@ -63,8 +64,8 @@
       border-radius: 50%;
       background-color: #ffffff; /* Fallback */
       border: 4px solid #fff;
-      /* --- IMPORTANT: Replace with Erwin's profile image path --- */
-      background-image: url('../SENATOR\ PICS/TULFO ERWIN.jpg');
+      /* --- IMPORTANT: Replace with Tulfo's profile image path --- */
+      background-image: url('path/to/tulfo-profile.jpg'); /* <<<--- REMEMBER TO REPLACE THIS IMAGE */
       background-size: cover;
       background-position: center;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -84,7 +85,8 @@
       text-align: center;  /* text-center */
       margin-bottom: 1rem; /* mb-4 */
 
-      background: linear-gradient(to right, #FBBF24, #F97316); /* Gradient */
+      /* Example Gradient - Red theme for PLM/Labor */
+      background: linear-gradient(to right, #dc2626, #b91c1c); /* Red Gradient Example */
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent; /* text-transparent */
@@ -102,6 +104,8 @@
     /* Main Content Area */
     .content {
       padding: 0 20px 20px 20px;
+      max-width: 900px; /* Optional: Limit content width */
+      margin: 0 auto; /* Center the content area */
     }
 
     /* Card Styling */
@@ -124,13 +128,11 @@
     .content > .card:nth-child(3) { animation-delay: 0.6s; }
     .content > .card:nth-child(4) { animation-delay: 0.7s; }
     .content > .card:nth-child(5) { animation-delay: 0.8s; }
-    .content > .card:nth-child(6) { animation-delay: 0.9s; }
-    .content > .card:nth-child(7) { animation-delay: 1.0s; }
-    /* Adjust if more cards are added */
+    /* Additional cards will use the default 0.4s delay */
 
     /* Card Content Styling */
     .card h2 {
-      color: #333; /* Color from original Erwin example */
+      color: #333;
       border-bottom: 2px solid #ddd;
       padding-bottom: 10px;
       margin-top: 0;
@@ -138,24 +140,35 @@
       font-size: 20px;
     }
 
-    .card p, .card li {
+    .card p { /* Target only paragraphs for general margin */
       line-height: 1.6;
-      color: #333; /* Default text color */
+      color: #333;
+      margin-bottom: 0.7em;
     }
+
+    .card li { /* Target only list items for general margin */
+        line-height: 1.6;
+        color: #333;
+        margin-bottom: 0.7em; /* Spacing between list items */
+    }
+
 
     .card ul {
-      padding-left: 20px;
+      padding-left: 40px;   /* Indentation for list items */
       margin-top: 0;
-      list-style: disc; /* Explicitly set list style */
+      list-style: disc; /* Default bullet style */
     }
 
-     .card p strong {
-        color: #333; /* Make bold text same color or slightly darker */
+     .card p strong, .card li strong {
+        color: #333;
+        display: inline-block; /* Changed from inline to inline-block for potential better spacing control if needed */
+        margin-right: 5px;
      }
 
      .card a {
-        color: #007bff; /* Standard link color */
+        color: #007bff;
         text-decoration: none;
+        word-break: break-all; /* Helps break long URLs */
      }
      .card a:hover {
         text-decoration: underline;
@@ -168,9 +181,10 @@
   <!-- Header -->
   <div class="header">
     <!-- --- IMPORTANT: Replace image paths --- -->
-    <img src="your-background-image.jpg" class="bg-overlay" alt="Header Overlay">
+    <img src="path/to/tulfo-background.jpg" class="bg-overlay" alt="Header Overlay"> <!-- <<<--- REMEMBER TO REPLACE THIS IMAGE -->
     <div class="profile-pic"></div>
-    <div class="name">Erwin Tulfo</div>
+    <!-- Updated Name -->
+    <div class="name">Erwin Teshiba Tulfo</div>
   </div>
 
   <!-- Main Content Cards -->
@@ -182,72 +196,110 @@
       <p><strong>Birthdate:</strong> August 10, 1963</p>
       <p><strong>Age on Election Day:</strong> 61</p>
       <p><strong>Birthplace:</strong> Tacloban City, Leyte</p>
-      <p><strong>Residence:</strong> Brgy. Paligsahan, Quezon City</p>
+      <p><strong>Residence:</strong> Brgy. Paligsahan, Quezon City, Metro Manila</p>
       <p><strong>Sex:</strong> Male</p>
-      <p><strong>Civil Status:</strong> Married to Rizalina Aquino</p>
-      <p><strong>Occupation:</strong> Journalist / Congressman</p>
+      <p><strong>Civil Status:</strong> Married</p>
+      <p><strong>Spouse:</strong> Rizalina Aquino</p>
+      <p><strong>Profession/Occupation:</strong> Journalist / Congressman</p>
       <p><strong>Political Party:</strong> Lakas-CMD / ACT-CIS</p>
     </div>
 
     <div class="card">
       <h2>Political Platforms</h2>
       <ul>
-        <li>Mandatory Annual Physical Exams for Women (House Bill No. 8989)</li>
-        <li>Digital Transformation of Government Services</li>
-        <li>24/7 Infrastructure Construction</li>
-        <li>Empowering Local Governments</li>
+        <li><strong>Mandatory Annual Physical Exams for Women:</strong> Advocates for a law mandating free annual physical exams for women aged 30 and above (House Bill No. 8989).</li>
+        <li><strong>Digital Transformation of Government Services:</strong> Supports the modernization of government services to make them more accessible and efficient through digital platforms.</li>
+        <li><strong>24/7 Infrastructure Construction:</strong> Proposes round-the-clock construction schedules to accelerate the completion of key infrastructure projects.</li>
+        <li><strong>Empowering Local Governments:</strong> Focuses on strengthening basic services by empowering local government units (LGUs) to better serve their constituents.</li>
       </ul>
     </div>
 
     <div class="card">
       <h2>Notable Positions</h2>
       <ul>
-        <li>ACT-CIS Party-list Representative (2023–Present)</li>
-        <li>Deputy House Majority Leader (2023–Present)</li>
-        <li>DSWD Secretary (June–December 2022)</li>
+        <li><strong>Current Position:</strong>
+          <ul>
+            <li>Party-list Representative (ACT-CIS, 2023–Present)</li>
+            <li>Deputy House Majority Leader (2023–Present)</li>
+          </ul>
+        </li>
+        <li><strong>Previous Position:</strong>
+          <ul>
+            <li>Secretary of the Department of Social Welfare and Development (DSWD), June–December 2022</li>
+          </ul>
+        </li>
+        <li><strong>Other Occupation:</strong> TV and radio broadcaster, host of "Tutok Tulfo"</li>
       </ul>
+    </div>
+
+    <div class="card">
+      <h2>Senatorial Record (IF ANY)</h2>
+      <p>None (Tulfo, E., is a first-time senatorial candidate in 2025)</p>
     </div>
 
     <div class="card">
       <h2>Legislative Accomplishments</h2>
+      <p><strong>As Secretary of the DSWD (2022):</strong></p>
       <ul>
-        <li>House Bill No. 8989: Free annual physical exams for women</li>
-        <li>“Digital Assistance Card” implementation at DSWD</li>
-        <li>House Resolution No. 1261: Audit of LGU budgets</li>
-        <li>Support for SOGIE Equality Bill</li>
-        <li>Co-authored bill to strengthen the Commission on Human Rights</li>
+        <li>Led relief efforts for disaster-stricken communities, including fire victims in Quezon City.</li>
+        <li>Collaborated with the Anti-Red Tape Authority (ARTA) to expedite processes for disaster-related foreign donations.</li>
+        <li>Played a key role in providing financial aid to marginalized sectors, such as indigenous peoples and solo parents.</li>
+        <li>“Digital Assistance Card” under DSWD (2022): Key implementer, proposing a centralized digital ID system for efficient distribution of aid.</li>
+      </ul>
+      <p><strong>As a Lawmaker:</strong></p>
+      <ul>
+        <li><strong>House Bill No. 8989 (Mandatory Annual Physical Exam for Women Act):</strong> Principal author of this bill, advocating for free annual physical exams for women aged 30 and above.</li>
+        <li><strong>House Resolution No. 1261 (Investigation into LGU Budget Utilization):</strong> Principal author, calling for an audit of LGUs’ spending on assistance programs.</li>
+        <li><strong>Support for SOGIE Equality Bill:</strong> Expressed support for the SOGIE Equality Bill during his 2024 interpellation in Congress.</li>
+        <li><strong>Co-Author for the House Bill 10212:</strong> Erwin Tulfo, along with Rep. Ralph and Jocelyn Tulfo filed HB 10212, a house bill that would strengthen the Commission on Human Rights—helping it embody the will of the Paris Principles.</li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>Key Advocacy Areas</h2>
-      <ul>
-        <li>Women’s Health and Rights</li>
-        <li>Digital Government Services</li>
-        <li>Infrastructure Development</li>
-        <li>Local Governance Empowerment</li>
-      </ul>
-    </div>
+        <h2>Key Advocacy Areas</h2>
+        <ul>
+          <li><strong>Women’s Health and Rights:</strong> Advocates for accessible healthcare for women, especially through mandatory physical exams.</li>
+          <li><strong>Digital Government Services:</strong> Pushes for modernized and accessible government systems through digital transformation.</li>
+          <li><strong>Infrastructure Development:</strong> Focuses on enhancing infrastructure, with a particular emphasis on accelerating projects through round-the-clock construction.</li>
+          <li><strong>Local Governance Empowerment:</strong> Aims to strengthen the role and capacity of LGUs in delivering public services.</li>
+        </ul>
+      </div>
 
     <div class="card">
       <h2>Controversies</h2>
       <ul>
-        <li>2025 Disqualification Case: Libel conviction and citizenship issues</li>
-        <li>Allegations of identity fraud and holding a U.S. passport</li>
-        <li>Admission of undocumented (TNT) status in the U.S.</li>
-        <li>Accusations of violating anti-political dynasty provisions</li>
+        <li>
+            <strong>Disqualification Case Filed (February 2025):</strong>
+            <p>A petition filed by lawyer Berteni Causing seeks to disqualify Tulfo from the 2025 Senate race on grounds including a 2008 libel conviction and questions regarding his citizenship and academic qualifications.</p>
+            <p>COMELEC, on March 13, 2025, junked the second petition for disqualification that Bertini filed, citing failure to submit sufficient or complete evidence to all relevant authorities (Manabat, 2025).</p>
+        </li>
+        <li>
+            <strong>Citizenship and Identity Fraud Allegations:</strong>
+            <p>Accused of failing to renounce his U.S. citizenship and obtaining an American passport under the name “Erich Sylvester Tulfo.” Tulfo has not fully addressed these allegations (Oliquino, 2025).</p>
+            <p>His DSWD appointment was bypassed in 2022 due to these issues.</p>
+        </li>
+        <li>
+            <strong>Admission of TNT Status in the U.S.:</strong>
+            <p>Tulfo admitted to being an undocumented immigrant (TNT) in the U.S. for about ten years before becoming a U.S. citizen in the late 1980s (Oliquino, 2025).</p>
+        </li>
+        <li>
+            <strong>Political Dynasty Concerns:</strong>
+            <p>Critics argue that his senatorial run, alongside his brother Senator Raffy Tulfo, violates the 1987 Constitution’s anti-political dynasty provision.</p>
+            <p>Despite this, Tulfo supports anti-political dynasty legislation, stating that his family agrees with reforms to give others a chance (Lalu, 2025).</p>
+        </li>
       </ul>
     </div>
 
     <div class="card">
       <h2>Sources</h2>
       <ul>
-        <li>Erwin Tulfo takes heart — and acts on it, too. (2025). Tribune.net.ph. <a href="https://tribune.net.ph/2025/02/16/erwin-tulfo-takes-heart-and-acts-on-it-too" target="_blank">https://tribune.net.ph/2025/02/16/erwin-tulfo-takes-heart-and-acts-on-it-too</a></li>
-        <li>Rolling Stone Philippines. (2025). 2025 Philippine Elections: Senatorial Primer - Erwin Tulfo. <a href="https://rollingstonephilippines.com/state-of-affairs/2025-philippine-elections-senatorial-primer-erwin-tulfo" target="_blank">https://rollingstonephilippines.com/state-of-affairs/2025-philippine-elections-senatorial-primer-erwin-tulfo</a></li>
-        <li>Congressional Records. (2024). House of Representatives, Philippines. <a href="https://www.congress.gov.ph/house-members/view/?member=K140&page=" target="_blank">https://www.congress.gov.ph/house-members/view/?member=K140&page=</a></li>
-        <li>Locus, S. (2025). Another disqualification case vs. Erwin Tulfo filed. GMA News Online. <a href="https://www.gmanetwork.com/news/topstories/nation/937490/another-disqualification-case-vs-erwin-tulfo-filed/story/" target="_blank">https://www.gmanetwork.com/news/topstories/nation/937490/another-disqualification-case-vs-erwin-tulfo-filed/story/</a></li>
-        <li>Lalu, G. P. (2025). Erwin Tulfo on anti-dynasty bill: We’ll give others a chance. INQUIRER.net. <a href="https://www.inquirer.net/435108/tulfo-sees-nothing-wrong-with-anti-dynasty-bill-well-give-chance-to-others/" target="_blank">https://www.inquirer.net/435108/tulfo-sees-nothing-wrong-with-anti-dynasty-bill-well-give-chance-to-others/</a></li>
-        <li>Oliquino, E. (2025). Erwin Tulfo admits going 'TNT' in US amid identity theft revelation. Daily Tribune. <a href="https://tribune.net.ph/2025/01/06/erwin-tulfo-admits-going-tnt-in-us-amid-identity-theft-revelation" target="_blank">https://tribune.net.ph/2025/01/06/erwin-tulfo-admits-going-tnt-in-us-amid-identity-theft-revelation</a></li>
+        <li>Erwin Tulfo takes heart — and acts on it, too. (2025). Tribune.net.ph. Retrieved from <a href="https://tribune.net.ph/2025/02/16/erwin-tulfo-takes-heart-and-acts-on-it-too" target="_blank">https://tribune.net.ph/2025/02/16/erwin-tulfo-takes-heart-and-acts-on-it-too</a></li>
+        <li>Rolling Stone Philippines. (2025). 2025 Philippine Elections: Senatorial Primer - Erwin Tulfo. Retrieved from <a href="https://rollingstonephilippines.com/state-of-affairs/2025-philippine-elections-senatorial-primer-erwin-tulfo" target="_blank">https://rollingstonephilippines.com/state-of-affairs/2025-philippine-elections-senatorial-primer-erwin-tulfo</a></li>
+        <li>Congressional Records. (2024). House of Representatives, Philippines. Retrieved from <a href="https://www.congress.gov.ph/house-members/view/?member=K140&page=" target="_blank">https://www.congress.gov.ph/house-members/view/?member=K140&page=</a></li>
+        <li>Locus, S. (2025). Another disqualification case vs. Erwin Tulfo filed. GMA News Online. Retrieved from <a href="https://www.gmanetwork.com/news/topstories/nation/937490/another-disqualification-case-vs-erwin-tulfo-filed/story/" target="_blank">https://www.gmanetwork.com/news/topstories/nation/937490/another-disqualification-case-vs-erwin-tulfo-filed/story/</a></li>
+        <li>Lalu, G. P. (2025). Erwin Tulfo on anti-dynasty bill: We’ll give others a chance. INQUIRER.net. Retrieved from <a href="https://www.inquirer.net/435108/tulfo-sees-nothing-wrong-with-anti-dynasty-bill-well-give-chance-to-others/" target="_blank">https://www.inquirer.net/435108/tulfo-sees-nothing-wrong-with-anti-dynasty-bill-well-give-chance-to-others/</a></li>
+        <li>Manabat. (2025). Comelec junks 2nd Erwin Tulfo disqualification bid. Retrieved from <a href="https://www.abs-cbn.com/news/nation/2025/3/13/comelec-junks-second-erwin-tulfo-disqualification-bid-1233" target="_blank">https://www.abs-cbn.com/news/nation/2025/3/13/comelec-junks-second-erwin-tulfo-disqualification-bid-1233</a></li>
+        <li>Oliquino, E. (2025). Erwin Tulfo admits going 'TNT' in US amid identity theft revelation. Daily Tribune. Retrieved from <a href="https://tribune.net.ph/2025/01/06/erwin-tulfo-admits-going-tnt-in-us-amid-identity-theft-revelation" target="_blank">https://tribune.net.ph/2025/01/06/erwin-tulfo-admits-going-tnt-in-us-amid-identity-theft-revelation</a></li>
       </ul>
     </div>
 
