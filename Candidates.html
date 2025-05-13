@@ -85,9 +85,21 @@
             letter-spacing: 0.05em; /* Wider tracking */
         }
 
-        .candidate-grid { /* Renamed from candidate-list for clarity */
+        /* --- New Section Title Styles --- */
+        .section-title {
+            font-size: 1.75rem; /* Tailwind text-xl or text-2xl */
+            font-weight: 600; /* semibold */
+            color: #1f2937; /* Tailwind gray-800 */
+            margin-top: 3rem; /* More space above section title */
+            margin-bottom: 1.5rem; /* Space below title, before grid */
+            text-align: center;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid #d1d5db; /* Tailwind gray-300 */
+        }
+
+
+        .candidate-grid {
             display: grid;
-            /* Adjusted columns for potentially better fit on various screens */
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 2rem;
             align-items: start; /* Align cards to the top */
@@ -119,13 +131,13 @@
             flex-grow: 1; /* Allow link to fill card */
         }
 
-        .candidate-image-wrapper { /* Added wrapper for consistent image sizing */
+        .candidate-image-wrapper {
              width: 180px;
-             height: 180px; /* Make it square for easier circle */
-             border-radius: 50%; /* Make image circular */
-             overflow: hidden; /* Clip image to circle */
-             margin-bottom: 1rem; /* Space below image */
-             border: 3px solid #e5e7eb; /* Tailwind gray-200 border */
+             height: 180px;
+             border-radius: 50%;
+             overflow: hidden;
+             margin-bottom: 1rem;
+             border: 3px solid #e5e7eb;
         }
 
         .candidate-image {
@@ -134,11 +146,11 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            transition: transform 0.3s ease; /* Zoom effect on image */
+            transition: transform 0.3s ease;
         }
 
         .candidate-card:hover .candidate-image {
-             transform: scale(1.1); /* Zoom image slightly on card hover */
+             transform: scale(1.1);
         }
 
 
@@ -146,14 +158,14 @@
             font-size: 1.25rem; /* Tailwind text-xl */
             font-weight: 600; /* semibold */
             color: #111827; /* Tailwind gray-900 */
-            margin-top: 0.5rem; /* Space above name */
+            margin-top: 0.5rem;
             line-height: 1.4;
         }
 
         .candidate-party {
             font-size: 0.875rem; /* Tailwind text-sm */
             color: #6b7280; /* Tailwind gray-500 */
-            margin-top: 0.25rem; /* Smaller space above party */
+            margin-top: 0.25rem;
         }
 
     </style>
@@ -164,9 +176,8 @@
     <header class="main-header">
         <nav class="nav-container">
             <ul class="nav-list">
-                <li><a href="#" class="active">CANDIDATES</a></li> <!-- '#' or actual link -->
-                <li><a href="partylists.html">PARTYLIST</a></li> <!-- Link to your partylist page -->
-                <!-- Add more links as needed -->
+                <li><a href="#" class="active">CANDIDATES</a></li>
+                <li><a href="partylists.html">PARTYLIST</a></li>
             </ul>
         </nav>
     </header>
@@ -178,9 +189,9 @@
             <h2>SENATORS</h2>
         </div>
 
-        <div class="candidate-grid"> <!-- Changed class name -->
-            <!-- Candidate Cards Start -->
-
+        <!-- Section: Magic 23 Pulse Asia March 2025 Survey -->
+        <h3 class="section-title">Magic 23 Pulse Asia March 2025 Survey</h3>
+        <div class="candidate-grid">
             <div class="candidate-card">
                 <a href="SENATOR PAGES/Candidatesbonggo.html">
                     <div class="candidate-image-wrapper">
@@ -214,7 +225,7 @@
             <div class="candidate-card">
                 <a href="SENATOR PAGES/Candidatessotto.html">
                     <div class="candidate-image-wrapper">
-                        <div class="candidate-image" style="background-image: url('SENATOR PICS/SOTTO.jpg');"></div> <!-- Updated placeholder -->
+                        <div class="candidate-image" style="background-image: url('SENATOR PICS/SOTTO.jpg');"></div>
                     </div>
                     <p class="candidate-name">TITO SOTTO</p>
                     <p class="candidate-party">Nationalist People's Coalition</p>
@@ -232,7 +243,7 @@
             </div>
 
             <div class="candidate-card">
-                 <a href="SENATOR PAGES/Candidatesrevilla.html"> <!-- Updated link -->
+                 <a href="SENATOR PAGES/Candidatesrevilla.html">
                     <div class="candidate-image-wrapper">
                         <div class="candidate-image" style="background-image: url('SENATOR PICS/REVILLA.jpg');"></div>
                     </div>
@@ -242,7 +253,7 @@
             </div>
 
             <div class="candidate-card">
-                 <a href="SENATOR PAGES/Candidateslacson.html"> <!-- Updated link -->
+                 <a href="SENATOR PAGES/Candidateslacson.html">
                     <div class="candidate-image-wrapper">
                         <div class="candidate-image" style="background-image: url('SENATOR PICS/LACSON.JPG');"></div>
                     </div>
@@ -252,7 +263,7 @@
             </div>
 
             <div class="candidate-card">
-                 <a href="SENATOR PAGES/CandidatesrevillameW.html"> <!-- Updated link -->
+                 <a href="SENATOR PAGES/CandidatesrevillameW.html">
                     <div class="candidate-image-wrapper">
                         <div class="candidate-image" style="background-image: url('SENATOR PICS/REVILLAME.JPG');"></div>
                     </div>
@@ -262,7 +273,7 @@
             </div>
 
             <div class="candidate-card">
-                <a href="SENATOR PAGES/Candidatestulfo.html"> <!-- Keep '#' if no page exists yet -->
+                <a href="SENATOR PAGES/Candidatestulfo.html">
                     <div class="candidate-image-wrapper">
                         <div class="candidate-image" style="background-image: url('SENATOR PICS/TULFO\ BITAG.JPG');"></div>
                     </div>
@@ -272,7 +283,7 @@
             </div>
 
             <div class="candidate-card">
-                <a href="SENATOR PAGES/Candidatesbinay.html"> <!-- Keep '#' if no page exists yet -->
+                <a href="SENATOR PAGES/Candidatesbinay.html">
                     <div class="candidate-image-wrapper">
                         <div class="candidate-image" style="background-image: url('SENATOR PICS/BINAY.jpg');"></div>
                     </div>
@@ -282,7 +293,7 @@
             </div>
 
             <div class="candidate-card">
-                <a href="SENATOR PAGES/Candidateslapid.html"> <!-- Keep '#' if no page exists yet -->
+                <a href="SENATOR PAGES/Candidateslapid.html">
                      <div class="candidate-image-wrapper">
                          <div class="candidate-image" style="background-image: url('SENATOR PICS/LAPID.JPG');"></div>
                     </div>
@@ -292,7 +303,7 @@
             </div>
 
             <div class="candidate-card">
-                <a href="SENATOR PAGES/Candidatespaquiao.html"> <!-- Keep '#' if no page exists yet -->
+                <a href="SENATOR PAGES/Candidatespaquiao.html">
                     <div class="candidate-image-wrapper">
                         <div class="candidate-image" style="background-image: url('SENATOR PICS/PACQUIAO.JPG');"></div>
                     </div>
@@ -302,7 +313,7 @@
             </div>
 
             <div class="candidate-card">
-                <a href="SENATOR PAGES/Candidatessalvador.html"> <!-- Keep '#' if no page exists yet -->
+                <a href="SENATOR PAGES/Candidatessalvador.html">
                     <div class="candidate-image-wrapper">
                         <div class="candidate-image" style="background-image: url('SENATOR PICS/SALVADOR.JPG');"></div>
                     </div>
@@ -312,9 +323,9 @@
             </div>
 
             <div class="candidate-card">
-                <a href="SENATOR PAGES/Candidatesvillar.html"> <!-- Keep '#' if no page exists yet -->
+                <a href="SENATOR PAGES/Candidatesvillar.html">
                     <div class="candidate-image-wrapper">
-                        <div class="candidate-image" style="background-image: url('SENATOR PICS/VILLAR.jpg');"></div> <!-- Updated placeholder -->
+                        <div class="candidate-image" style="background-image: url('SENATOR PICS/VILLAR.jpg');"></div>
                     </div>
                     <p class="candidate-name">CAMILLE VILLAR</p>
                     <p class="candidate-party">Nacionalista Party</p>
@@ -322,9 +333,9 @@
             </div>
 
             <div class="candidate-card">
-                <a href="SENATOR PAGES/Candidatesaquino.html"> <!-- Keep '#' if no page exists yet -->
+                <a href="SENATOR PAGES/Candidatesaquino.html">
                     <div class="candidate-image-wrapper">
-                        <div class="candidate-image" style="background-image: url('SENATOR PICS/AQUINO.jpg');"></div> <!-- Updated placeholder -->
+                        <div class="candidate-image" style="background-image: url('SENATOR PICS/AQUINO.jpg');"></div>
                     </div>
                     <p class="candidate-name">BAM AQUINO</p>
                     <p class="candidate-party">Katipunan ng Nagkakaisang Pilipino</p>
@@ -332,7 +343,7 @@
             </div>
 
             <div class="candidate-card">
-                <a href="SENATOR PAGES/Candidatesmarcoleta.html"> <!-- Keep '#' if no page exists yet -->
+                <a href="SENATOR PAGES/Candidatesmarcoleta.html">
                     <div class="candidate-image-wrapper">
                          <div class="candidate-image" style="background-image: url('SENATOR PICS/MARCOLETA.jpg');"></div>
                     </div>
@@ -342,7 +353,7 @@
             </div>
 
             <div class="candidate-card">
-                <a href="SENATOR PAGES/Candidatespangilinan.html"> <!-- Keep '#' if no page exists yet -->
+                <a href="SENATOR PAGES/Candidatespangilinan.html">
                     <div class="candidate-image-wrapper">
                         <div class="candidate-image" style="background-image: url('SENATOR PICS/KIKO.jpg');"></div>
                     </div>
@@ -352,7 +363,7 @@
             </div>
 
             <div class="candidate-card">
-                <a href="SENATOR PAGES/Candidatesmarcos.html"> <!-- Keep '#' if no page exists yet -->
+                <a href="SENATOR PAGES/Candidatesmarcos.html">
                     <div class="candidate-image-wrapper">
                         <div class="candidate-image" style="background-image: url('SENATOR PICS/MARCOS.JPG');"></div>
                     </div>
@@ -362,7 +373,7 @@
             </div>
 
             <div class="candidate-card">
-                <a href="SENATOR PAGES/Candidateshonasan.html"> <!-- Keep '#' if no page exists yet -->
+                <a href="SENATOR PAGES/Candidateshonasan.html">
                      <div class="candidate-image-wrapper">
                          <div class="candidate-image" style="background-image: url('SENATOR PICS/HONASAN.JPG');"></div>
                     </div>
@@ -372,7 +383,7 @@
             </div>
 
             <div class="candidate-card">
-                <a href="SENATOR PAGES/Candidatestolentino.html"> <!-- Keep '#' if no page exists yet -->
+                <a href="SENATOR PAGES/Candidatestolentino.html">
                     <div class="candidate-image-wrapper">
                         <div class="candidate-image" style="background-image: url('SENATOR PICS/TOLENTINO.JPG');"></div>
                     </div>
@@ -382,7 +393,7 @@
             </div>
 
              <div class="candidate-card">
-                 <a href="SENATOR PAGES/Candidatesbosita.html"> <!-- Keep '#' if no page exists yet -->
+                 <a href="SENATOR PAGES/Candidatesbosita.html">
                     <div class="candidate-image-wrapper">
                          <div class="candidate-image" style="background-image: url('SENATOR PICS/BOSITA.JPG');"></div>
                     </div>
@@ -392,7 +403,7 @@
             </div>
 
             <div class="candidate-card">
-                <a href="SENATOR PAGES/Candidatesbondoc.html"> <!-- Keep '#' if no page exists yet -->
+                <a href="SENATOR PAGES/Candidatesbondoc.html">
                      <div class="candidate-image-wrapper">
                          <div class="candidate-image" style="background-image: url('SENATOR PICS/BONDOC.JPG');"></div>
                     </div>
@@ -402,7 +413,7 @@
             </div>
 
             <div class="candidate-card">
-                <a href="SENATOR PAGES/Candidatespadilla.html"> <!-- Updated link -->
+                <a href="SENATOR PAGES/Candidatespadilla.html">
                     <div class="candidate-image-wrapper">
                         <div class="candidate-image" style="background-image: url('SENATOR PICS/PADILLA.jpg');"></div>
                     </div>
@@ -410,73 +421,76 @@
                     <p class="candidate-party">Partido Demokratiko Pilipino Lakas ng Bayan</p>
                 </a>
             </div>
-
-            <!-- MAKABAYAN/PLM/INDEPENDENT Block -->
-            <div class="candidate-card">
-                <a href="SENATOR PAGES/Candidatescasino.html"> <!-- Updated link -->
+             <div class="candidate-card">
+                <a href="SENATOR PAGES/Candidatescastro.html">
                     <div class="candidate-image-wrapper">
-                        <div class="candidate-image" style="background-image: url('SENATOR PICS/CASIÑO.JPG');"></div> <!-- Replace placeholder -->
-                    </div>
-                    <p class="candidate-name">TEDDY CASIÑO</p>
-                    <p class="candidate-party">Makabayang Koalisyon ng Mamamayan</p>
-                </a>
-            </div>
-            <div class="candidate-card">
-                <a href="SENATOR PAGES/Candidatescastro.html"> <!-- Updated link -->
-                    <div class="candidate-image-wrapper">
-                        <div class="candidate-image" style="background-image: url('SENATOR PICS/CASTRO.jpg');"></div> <!-- Replace placeholder -->
+                        <div class="candidate-image" style="background-image: url('SENATOR PICS/CASTRO.jpg');"></div>
                     </div>
                     <p class="candidate-name">TEACHER FRANCE CASTRO</p>
                     <p class="candidate-party">Makabayang Koalisyon ng Mamamayan</p>
                 </a>
             </div>
             <div class="candidate-card">
-                 <a href="SENATOR PAGES/Candidatesdeguzman.html"> <!-- Updated link -->
+                <a href="SENATOR PAGES/Candidatesquiboloy.html">
                     <div class="candidate-image-wrapper">
-                        <div class="candidate-image" style="background-image: url('SENATOR PICS/de\ Guzman.JPG');"></div> <!-- Replace placeholder -->
+                        <div class="candidate-image" style="background-image: url('SENATOR PICS/QUIBOLOY.jpg');"></div>
+                    </div>
+                    <p class="candidate-name">APOLLO CARREON QUIBOLOY</p>
+                    <p class="candidate-party">Partido Demokratiko Pilipino Lakas ng Bayan</p>
+                </a>
+            </div>
+        </div> <!-- End .candidate-grid for Magic 23 -->
+
+        <!-- Section: ALAB’s Additional Picks -->
+        <h3 class="section-title">ALAB’s Additional Picks</h3>
+        <div class="candidate-grid">
+            <div class="candidate-card">
+                <a href="SENATOR PAGES/Candidatescasino.html">
+                    <div class="candidate-image-wrapper">
+                        <div class="candidate-image" style="background-image: url('SENATOR PICS/CASIÑO.JPG');"></div>
+                    </div>
+                    <p class="candidate-name">TEDDY CASIÑO</p>
+                    <p class="candidate-party">Makabayang Koalisyon ng Mamamayan</p>
+                </a>
+            </div>
+            <div class="candidate-card">
+                 <a href="SENATOR PAGES/Candidatesdeguzman.html">
+                    <div class="candidate-image-wrapper">
+                        <div class="candidate-image" style="background-image: url('SENATOR PICS/de\ Guzman.JPG');"></div>
                     </div>
                     <p class="candidate-name">KA LEODY DE GUZMAN</p>
                     <p class="candidate-party">Partido Lakas ng Masa</p>
                 </a>
             </div>
             <div class="candidate-card">
-                <a href="SENATOR PAGES/Candidatesespiritu.html"> <!-- Updated link -->
+                <a href="SENATOR PAGES/Candidatesespiritu.html">
                      <div class="candidate-image-wrapper">
-                         <div class="candidate-image" style="background-image: url('SENATOR PICS/ESPIRITU.jpg');"></div> <!-- Replace placeholder -->
+                         <div class="candidate-image" style="background-image: url('SENATOR PICS/ESPIRITU.jpg');"></div>
                     </div>
                     <p class="candidate-name">LUKE ESPIRITU</p>
                     <p class="candidate-party">Partido Lakas ng Masa</p>
                 </a>
             </div>
             <div class="candidate-card">
-                 <a href="SENATOR PAGES/Candidatesmendoza.html"> <!-- Updated link -->
+                 <a href="SENATOR PAGES/Candidatesmendoza.html">
                     <div class="candidate-image-wrapper">
-                        <div class="candidate-image" style="background-image: url('SENATOR PICS/MENDOZA.JPG');"></div> <!-- Replace placeholder -->
+                        <div class="candidate-image" style="background-image: url('SENATOR PICS/MENDOZA.JPG');"></div>
                     </div>
                     <p class="candidate-name">HEIDI MENDOZA</p>
                     <p class="candidate-party">Independent</p>
                 </a>
             </div>
             <div class="candidate-card">
-                <a href="SENATOR PAGES/Candidatesquiboloy.html"> <!-- Updated link -->
+                <a href="SENATOR PAGES/Candidatesramos.html">
                     <div class="candidate-image-wrapper">
-                        <div class="candidate-image" style="background-image: url('SENATOR PICS/QUIBOLOY.jpg');"></div> <!-- Replace placeholder -->
-                    </div>
-                    <p class="candidate-name">APOLLO CARREON QUIBOLOY</p>
-                    <p class="candidate-party">Partido Demokratiko Pilipino Lakas ng Bayan</p>
-                </a>
-            </div>
-            <div class="candidate-card">
-                <a href="SENATOR PAGES/Candidatesramos.html"> <!-- Updated link -->
-                    <div class="candidate-image-wrapper">
-                        <div class="candidate-image" style="background-image: url('SENATOR PICS/RAMOS.jpg');"></div> <!-- Replace placeholder -->
+                        <div class="candidate-image" style="background-image: url('SENATOR PICS/RAMOS.jpg');"></div>
                     </div>
                     <p class="candidate-name">DANILO KA DANING RAMOS</p>
                     <p class="candidate-party">Makabayang Koalisyon ng Mamamayan</p>
                 </a>
             </div>
-             <!-- Candidate Cards End -->
-        </div> <!-- End .candidate-grid -->
+        </div> <!-- End .candidate-grid for ALAB's Picks -->
+
     </div> <!-- End .candidate-list-container -->
 
 </body>
